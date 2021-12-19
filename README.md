@@ -1,7 +1,7 @@
 Hi, I’m @carlosiborra
   - I’m interested in python, automation, web scrapping... software programming in general.
   - I’m currently learning selenium and blockchain automation.
-  - I’m currently studying Information Technology.
+  - I’m currently studying Computer Science Engineering.
 
 In order to reach me just send me an email.
 
