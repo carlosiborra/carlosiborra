@@ -5,11 +5,13 @@
 
 <a href = "url"><img src = "https://media.giphy.com/media/YSfTtA25qBg8R7z5ms/giphy.gif" align="right" width="50" height="50"></a>
 ## Table of Contents:
-<a href = "url"><img src = "https://media.giphy.com/media/jdPMeyv9rn0hZHh8n9/giphy.gifhttps://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" align="right" width="240" height="240"></a>
+<a href = "url"><img src = "https://media.giphy.com/media/jdPMeyv9rn0hZHh8n9/giphy.gifhttps://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" align="right" width="150" height="150"></a>
 * [Personal Data](#personal-data) 
 * [Lenguages](#lenguages)
 * [Projects:](#projects)
-  - [Binance Automation](#binance-automation) ![Alt Text](https://media.giphy.com/media/n8GZd4jfDh9IuLEsIV/giphy.gif)
+  - [Binance Automation](#binance-automation)
+  - [OpenSea Automation](#opensea-automation)
+
 
 ## Personal Data
 Welcome, I am @carlosiborra
@@ -26,12 +28,12 @@ Welcome, I am @carlosiborra
 ## Projects
   ### Binance Automation
    #### About
-   Consist of a real-time cryptocurrency prices checker 
-  
+   Consist of a real-time cryptocurrency prices checker...
+   
   ### OpenSea Automation 
 
 
-In order to reach me just send me an email.
+In order to reach me just send me an email or LinkedIn.
 
 
 
