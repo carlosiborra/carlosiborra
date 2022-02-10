@@ -12,7 +12,7 @@
 
 ## Personal Data
 Welcome, I am @carlosiborra
-  - I am currently learning C, C# and machine learning.
+  - I am currently learning C, C#, machine learning, and SQL.
   - I am interested in python, automation, web scrapping and programming in general.
   - I am currently studying Computer Science Engineering at Carlos III de Madrid University .
 
