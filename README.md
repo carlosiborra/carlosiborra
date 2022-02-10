@@ -35,7 +35,7 @@ Welcome, I am @carlosiborra
 
 ## Projects
   ### Binance Automation
-  ![status badge](https://img.shields.io/static/v1?label=status&message=private&color=red)
+  ![status badge](https://img.shields.io/static/v1?label=Status&message=private&color=red)
   ![maintainance badge](	https://img.shields.io/badge/Maintained%3F-yes-green.svg)
    - #### Used Lenguages and More
       ![](https://img.shields.io/badge/Code-Python-informational?style=flat&logo=python&logoColor=white&color=yellow)
@@ -45,7 +45,7 @@ Welcome, I am @carlosiborra
       Consists of a real-time cryptocurrency price tracker (using Trading View in a Binance account), where you can observe and compare tendencies in different time intervals and where you can set alerts that will be sent to you via a Telegram bot with all the data.
    
   ### OpenSea Automation
-  ![status badge](https://img.shields.io/static/v1?label=status&message=private&color=red)
+  ![status badge](https://img.shields.io/static/v1?label=Status&message=private&color=red)
   ![maintainance badge](https://img.shields.io/badge/Maintained%3F-no-red.svg)
    - #### Used Lenguages and More
       ![](https://img.shields.io/badge/Code-Python-informational?style=flat&logo=python&logoColor=white&color=yellow)
