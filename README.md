@@ -1,4 +1,4 @@
-<a href = "url"><img src = "https://user-images.githubusercontent.com/41797418/153309984-33746328-34c8-45d9-8810-296fdc9a1686.gif" align="center" width="850" height="400"></a>
+<a href = "url"><img src = "https://user-images.githubusercontent.com/41797418/153309984-33746328-34c8-45d9-8810-296fdc9a1686.gif" align="center" ></a>
 
 
 ## Table of Contents
