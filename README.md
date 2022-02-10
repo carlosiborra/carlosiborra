@@ -30,11 +30,13 @@ Welcome, I am @carlosiborra
   
 <a href="https://github.com/carlosiborra">
   <img align="center" style="margin:0.5rem" src="https://github-readme-stats.vercel.app/api?username=carlosiborra&show_icons=true&line_height=27&count_private=true&title_color=ffffff&text_color=c9cacc&icon_color=4AB097&bg_color=1A2B34" alt="Braydon's GitHub Stats" /></a>
+  
+
 
 ## Projects
   ### Binance Automation
-  ![privacy badge](https://img.shields.io/static/v1?label=privacy&message=private&color=red)
-  ![privacy badge](https://img.shields.io/static/v1?label=status&message=developing&color=green)
+  ![status badge](https://img.shields.io/static/v1?label=status&message=private&color=red)
+  ![maintainance badge](	https://img.shields.io/badge/Maintained%3F-yes-green.svg)
    - #### Used Lenguages and More
       ![](https://img.shields.io/badge/Code-Python-informational?style=flat&logo=python&logoColor=white&color=yellow)
       ![](https://img.shields.io/badge/Code-Selenium-informational?style=flat&logo=Selenium&logoColor=white&color=4AB197)
@@ -43,8 +45,8 @@ Welcome, I am @carlosiborra
       Consists of a real-time cryptocurrency price tracker (using Trading View in a Binance account), where you can observe and compare tendencies in different time intervals and where you can set alerts that will be sent to you via a Telegram bot with all the data.
    
   ### OpenSea Automation
-  ![privacy badge](https://img.shields.io/static/v1?label=privacy&message=private&color=red)
-  ![privacy badge](https://img.shields.io/static/v1?label=status&message=outdated&color=black)
+  ![status badge](https://img.shields.io/static/v1?label=status&message=private&color=red)
+  ![maintainance badge](https://img.shields.io/badge/Maintained%3F-no-red.svg)
    - #### Used Lenguages and More
       ![](https://img.shields.io/badge/Code-Python-informational?style=flat&logo=python&logoColor=white&color=yellow)
       ![](https://img.shields.io/badge/Code-Selenium-informational?style=flat&logo=Selenium&logoColor=white&color=4AB197)
@@ -56,6 +58,8 @@ In order to reach me, you can do it through:
   - Mail
   - [![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-Profile-informational?style=flat&logo=linkedin&logoColor=white&color=0D76A8)](https://www.linkedin.com/in/carlos-iborra-llopis-bb84a1214/) 
 
+#
+![LinkedIn Badge](http://ForTheBadge.com/images/badges/built-by-developers.svg)
 <!---
 Hi intruder!
 --->
