@@ -57,9 +57,10 @@ Welcome, I am @carlosiborra
       This project consisted of a python script that mixed different .png's with a given order and probability creating different images. The images were stored in a folder and then picked up and uploaded sequentially with different ID's and order numbers to the OpenSea NFT's market.
 
   ### Automatic Fish Feeder
+  <a href = "url"><img src = "https://media.giphy.com/media/Jh11uVLJx3a8emy29U/giphy.gif" align="right" width="160" height="160"></a>
   ![status badge](https://img.shields.io/static/v1?label=Status&message=private&color=red)
   ![maintainance badge](https://img.shields.io/badge/Maintained%3F-no-red.svg)
-  <a href = "url"><img src = "https://media.giphy.com/media/Jh11uVLJx3a8emy29U/giphy.gif" align="right" width="160" height="160"></a>
+  
    - #### Used Lenguages and More
       ![](https://img.shields.io/static/v1?label=3D&message=printer&color=green)
       ![](https://img.shields.io/badge/Code-Arduino-informational?style=flat&logo=Arduino&logoColor=white&color=lightgrey)
