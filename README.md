@@ -1,7 +1,7 @@
 <a href = "url"><img src = "https://user-images.githubusercontent.com/41797418/153309984-33746328-34c8-45d9-8810-296fdc9a1686.gif" align="center" ></a>
 
 ## Table of Contents
-<a href = "url"><img src = "https://media.giphy.com/media/jdPMeyv9rn0hZHh8n9/giphy.gifhttps://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" align="right" width="150" height="150"></a>
+<a href = "url"><img src = "https://media.giphy.com/media/jdPMeyv9rn0hZHh8n9/giphy.gifhttps://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" align="right" width="160" height="150"></a>
 * [Personal Data](#personal-data) 
 * [Skills](#skills)
 * [Projects](#projects)
@@ -34,10 +34,9 @@ Welcome, I am @carlosiborra
 
 ## Projects
   ### Binance Automation
-  <a href = "url"><img src = "https://media.giphy.com/media/0KQHJ6xghJqgOJ8zl1/giphy.gif" align="right" width="140" height="140"></a>
-  
   ![status badge](https://img.shields.io/static/v1?label=Status&message=private&color=red)
   ![maintainance badge](	https://img.shields.io/badge/Maintained%3F-yes-green.svg)
+  <a href = "url"><img src = "https://media.giphy.com/media/0KQHJ6xghJqgOJ8zl1/giphy.gif" align="right" width="140" height="140"></a>
    - #### Used Lenguages and More
       ![](https://img.shields.io/badge/Code-Python-informational?style=flat&logo=python&logoColor=white&color=yellow)
       ![](https://img.shields.io/badge/Code-Selenium-informational?style=flat&logo=Selenium&logoColor=white&color=brown)
@@ -47,8 +46,8 @@ Welcome, I am @carlosiborra
    
   ### OpenSea Automation
   ![status badge](https://img.shields.io/static/v1?label=Status&message=private&color=red)
-  <a href = "url"><img src = "https://media.giphy.com/media/HRuLuZ4d0ekCZlHVlt/giphy.gif" align="right" width="140" height="120"></a>
   ![maintainance badge](https://img.shields.io/badge/Maintained%3F-no-red.svg)
+  <a href = "url"><img src = "https://media.giphy.com/media/HRuLuZ4d0ekCZlHVlt/giphy.gif" align="right" width="130" height="110"></a>
    - #### Used Lenguages and More
       ![](https://img.shields.io/badge/Code-Python-informational?style=flat&logo=python&logoColor=white&color=yellow)
       ![](https://img.shields.io/badge/Code-Selenium-informational?style=flat&logo=Selenium&logoColor=white&color=brown)
@@ -56,10 +55,10 @@ Welcome, I am @carlosiborra
       This project consisted of a python script that mixed different .png's with a given order and probability creating different images. The images were stored in a folder and then picked up and uploaded sequentially with different ID's and order numbers to the OpenSea NFT's market.
 
   ### Automatic Fish Feeder
-  <a href = "url"><img src = "https://media.giphy.com/media/Jh11uVLJx3a8emy29U/giphy.gif" align="right" width="180" height="180"></a>
   ![status badge](https://img.shields.io/static/v1?label=Status&message=private&color=red)
   ![maintainance badge](https://img.shields.io/badge/Maintained%3F-no-red.svg)
-  - #### Used Lenguages and More
+  <a href = "url"><img src = "https://media.giphy.com/media/Jh11uVLJx3a8emy29U/giphy.gif" align="right" width="160" height="160"></a>
+   - #### Used Lenguages and More
       ![](https://img.shields.io/static/v1?label=3D&message=printer&color=green)
       ![](https://img.shields.io/badge/Code-Arduino-informational?style=flat&logo=Arduino&logoColor=white&color=lightgrey)
    - #### About
