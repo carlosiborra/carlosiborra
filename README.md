@@ -47,8 +47,8 @@ Welcome, I am @carlosiborra
    
   ### OpenSea Automation
   ![status badge](https://img.shields.io/static/v1?label=Status&message=private&color=red)
-  <a href = "url"><img src = "https://media.giphy.com/media/HRuLuZ4d0ekCZlHVlt/giphy.gif" align="right" width="130" height="110"></a>
   ![maintainance badge](https://img.shields.io/badge/Maintained%3F-no-red.svg)
+  <a href = "url"><img src = "https://media.giphy.com/media/HRuLuZ4d0ekCZlHVlt/giphy.gif" align="right" width="130" height="110"></a>
   
    - #### Used Lenguages and More
       ![](https://img.shields.io/badge/Code-Python-informational?style=flat&logo=python&logoColor=white&color=yellow)
