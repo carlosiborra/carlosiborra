@@ -2,7 +2,7 @@
 
 
 ## Table of Contents
-<a href = "url"><img src = "https://media.giphy.com/media/jdPMeyv9rn0hZHh8n9/giphy.gifhttps://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" align="right" width="160" height="160"></a>
+<a href = "url"><img src = "https://media.giphy.com/media/jdPMeyv9rn0hZHh8n9/giphy.gifhttps://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" align="right" width="160" height="160" responsive="true"></a>
 * [Personal Data](#personal-data) 
 * [Skills](#skills)
 * [Projects](#projects)
