@@ -30,13 +30,13 @@ Welcome, I am @carlosiborra
   - R
   - More on LinkedIn
 
-<a href="https://github.com/carlosiborra"><img align="center" style="margin:0.5rem" src="https://github-readme-stats.vercel.app/api?username=carlosiborra&show_icons=true&line_height=27&count_private=true&title_color=ffffff&text_color=c9cacc&icon_color=4AB097&bg_color=1A2B34" alt="Braydon's GitHub Stats" /></a>
+[![My GitHub Stats](https://github-readme-stats.vercel.app/api/?username=carlosiborra&count_private=true&theme=dark&showicons=true)]()
 
 ## Projects
   ### Binance Automation
   ![status badge](https://img.shields.io/static/v1?label=Status&message=private&color=red)
   <a href = "url"><img src = "https://media.giphy.com/media/0KQHJ6xghJqgOJ8zl1/giphy.gif" align="right" width="140" height="140"></a>
-  ![maintainance badge](	https://img.shields.io/badge/Maintained%3F-yes-green.svg)
+  ![maintainance badge](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
   
    - #### Used Lenguages and More
       ![](https://img.shields.io/badge/Code-Python-informational?style=flat&logo=python&logoColor=white&color=yellow)
