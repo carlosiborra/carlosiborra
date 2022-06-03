@@ -3142,6 +3142,7 @@ fieldset:disabled .btn {
   color: rgb(0, 214, 18);
   background-color: #0a0a0a;
   border-color: #64a19d;
+  border-radius: 15px;
 }
 .btn-primary:hover {
   color: rgb(0, 214, 18);
@@ -3182,7 +3183,73 @@ fieldset:disabled .btn {
 /* Google Translator */
 
 
+/*==================================================*/
+/* Typewriter effect */
 
+/* DEMO-SPECIFIC STYLES */
+.typewriter-effect1 {
+  color: rgb(0, 214, 18);
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid rgb(0, 214, 18); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+@keyframes typing { /* The typewriter effect */
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink-caret { /* Blinking cursor */
+  from, to { border-color: transparent }
+  50% { border-color: rgb(0, 214, 18); }
+}
+/*==================================================*/
+.line-1{
+  position: relative;
+  top: 50%;  
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255,255,255,.75);
+  font-size: 100%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);    
+}
+/* Animation 2 */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+
+/*==================================================*/
+/* Blinking text */
+
+.blinking1{
+  animation:blinkingText 1s infinite;
+}
+@keyframes blinkingText{
+  5%{     rgb(0, 214, 18);    }
+  15%{    color: transparent; }
+  60%{   rgb(0, 214, 18);    }
+  100%{   rgb(0, 214, 18);    }
+}
+
+
+/*==================================================*/
 /* Button - hello world!*/
 
 .btn-secondary {
@@ -12078,6 +12145,7 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
 }
+
 .masthead h2,
 .masthead .h2 {
   max-width: 20rem;
