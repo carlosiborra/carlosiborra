@@ -30,6 +30,8 @@ Hello world!, I am @carlosiborra
   - R
   - More on LinkedIn
 
+[![My GitHub Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=carlosiborra&theme=dark)]()
+
 [![My GitHub Stats](https://github-readme-stats.vercel.app/api/?username=carlosiborra&count_private=true&theme=dark&showicons=true)]()
 
 ## Projects
