@@ -77,7 +77,7 @@ Hello world!, I am @carlosiborra
 In order to reach me, you can do it through:
   - Mail
   - [![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-Profile-informational?style=flat&logo=linkedin&logoColor=white&color=0D76A8)](https://www.linkedin.com/in/carlos-iborra-llopis-bb84a1214/)
-  - [![Mail Badge](https://img.shields.io/static/v1?label=My&message=WebPage&color=red)](https://carlosiborra.github.io/carlosiborra/#about)
+  - [![Mail Badge](https://img.shields.io/static/v1?label=My&message=WebPage&color=red)](https://carlosiborra.github.io/carlosiborra/)
 
 #
 ![LinkedIn Badge](http://ForTheBadge.com/images/badges/built-by-developers.svg)
