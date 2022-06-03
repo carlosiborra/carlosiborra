@@ -3189,14 +3189,14 @@ fieldset:disabled .btn {
 /* DEMO-SPECIFIC STYLES */
 .typewriter-effect1 {
   color: rgb(0, 214, 18);
-  font-family: monospace;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 110%;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid rgb(0, 214, 18); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
   animation: 
-    typing 3.5s steps(30, end),
+    typing 4s steps(30, end),
     blink-caret .5s step-end infinite;
 }
 @keyframes typing { /* The typewriter effect */
@@ -3207,6 +3207,7 @@ fieldset:disabled .btn {
   from, to { border-color: transparent }
   50% { border-color: rgb(0, 214, 18); }
 }
+
 /*==================================================*/
 .line-1{
   position: relative;
