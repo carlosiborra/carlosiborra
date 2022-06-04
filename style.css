@@ -47,6 +47,10 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-white-rgb: 255, 255, 255;
   --bs-white-rgb: 255, 255, 255;
+
+  /*MOST USED GREEN*/
+  --bs-green-rgb: 0, 214, 18;
+
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
@@ -3195,17 +3199,17 @@ hr {
 /* Typewriter effect */
 
 .typewriter-effect {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 120%;
-  color: rgb(22, 190, 0);
+  font-family: default, Courier New', Courier, monospace;
+  font-size: 100%;
+  color: default, rgb(22, 190, 0);
   overflow: hidden;
   display: inline-block;
   white-space: nowrap;
   border-right:  solid rgb(22, 190, 0);
   animation:
-    typewriter 5s steps(8) infinite,
+    typewriter 5s steps(7) infinite,
     blinking-cursor 0.8s infinite;
-  animation-fill-mode: forwards
+  animation-fill-mode: forwards;
 }
 @keyframes typewriter {
   0% { width:0 }
@@ -3245,6 +3249,20 @@ hr {
   from, to { border-color: transparent }
   50% { border-color: rgb(22, 190, 0); }
 }
+
+
+/*==================================================*/
+/* Blinking cursor */
+
+.cursor1 {
+  animation:
+    blink-caret .8s infinite;
+}
+@keyframes blink-caret { /* Blinking cursor */
+  from, to { border-color: transparent }
+  50% { border-color: rgb(22, 190, 0); }
+}
+
 
 
 /*==================================================*/
@@ -4447,7 +4465,7 @@ hr {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #64a19d;
+  color: rgb(0, 214, 18);
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out;
@@ -4457,12 +4475,21 @@ hr {
     transition: none;
   }
 }
-.nav-link:hover,
+.nav-link:hover{
+  border-color: rgba(0, 214, 18, 0.9);
+  background-color: rgba(1, 200, 0, 0.1);
+  border-radius: 5px;
+}
 .nav-link:focus {
-  color: #50817e;
+  border-color: rgba(0, 214, 18, 0.9);
+  background-color: rgba(1, 200, 0, 0.1);
+  border-radius: 5px;
 }
 .nav-link.disabled {
-  color: #6c757d;
+  border-color: rgba(0, 214, 18, 0.9);
+  background-color: rgba(1, 200, 0, 0.1);
+  border-radius: 5px;
+  color: rgb(0, 214, 18);
   pointer-events: none;
   cursor: default;
 }
@@ -4591,12 +4618,12 @@ hr {
 }
 
 .navbar-toggler {
-  padding: 0.25rem 0.75rem;
-  font-size: 1.25rem;
+  padding: 0.2rem 0.4rem;
+  font-size: 1.5rem;
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
-  border-radius: 0.25rem;
+  border-radius: .5rem;
   transition: box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -4606,11 +4633,12 @@ hr {
 }
 .navbar-toggler:hover {
   text-decoration: none;
+  background-color: rgba(22, 190, 0, 0.1);
 }
 .navbar-toggler:focus {
   text-decoration: none;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem;
+  box-shadow: 0 0 0 0.1rem;
 }
 
 .navbar-toggler-icon {
@@ -4931,6 +4959,7 @@ hr {
   border-left: 0;
   transition: none;
   transform: none;
+  color: rgba(0, 0, 0, 0.9);
 }
 .navbar-expand .offcanvas-top,
 .navbar-expand .offcanvas-bottom {
@@ -6731,6 +6760,9 @@ hr {
   background-size: 100% 100%;
 }
 
+
+
+
 /* rtl:options: {
   "autoRename": true,
   "stringMap":[ {
@@ -8417,6 +8449,11 @@ hr {
 .text-white {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+}
+
+.text-green {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-green-rgb), var(--bs-text-opacity)) !important;
 }
 
 .text-body {
@@ -11966,24 +12003,25 @@ body {
 
 #mainNav {
   min-height: 3.5rem;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #64a19d;
-  border: 1px solid #64a19d;
+  color: rgba(22, 190, 0, 0.9);
+  border: 1px solid rgba(22, 190, 0, 0.9);
 }
 #mainNav .navbar-toggler:focus {
   outline: none;
 }
 #mainNav .navbar-brand {
-  color: #000;
-  font-weight: 700;
+  color: rgb(22, 190, 0);
+  font-family: Georgia, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 500;
   padding: 0.9rem 0;
 }
 #mainNav .navbar-nav .nav-item:hover {
-  color: fade(#fff, 80%);
+  color: fade(rgba(22, 190, 0, 0.9), 80%);
   outline: none;
   background-color: transparent;
 }
@@ -12002,40 +12040,40 @@ body {
   }
   #mainNav .navbar-brand {
     padding: 0.5rem 0;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(22, 190, 0, 0.9);
   }
   #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(22, 190, 0, 0.9);
   }
   #mainNav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(22, 190, 0, 0.9);
   }
   #mainNav .nav-link:active {
-    color: #fff;
+    color: rgba(22, 190, 0, 0.9);
   }
   #mainNav.navbar-shrink {
     background-color: #fff;
   }
   #mainNav.navbar-shrink .navbar-brand {
-    color: #000;
+    color: rgba(22, 190, 0, 0.9);
   }
   #mainNav.navbar-shrink .nav-link {
-    color: #000;
+    color: rgba(22, 190, 0, 0.9);
     padding: 1.5rem 1.5rem 1.25rem;
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #64a19d;
+    color: rgba(22, 190, 0, 0.9);
   }
   #mainNav.navbar-shrink .nav-link:active {
-    color: #467370;
+    color: rgba(22, 190, 0, 0.9);
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: #64a19d;
+    color: rgba(22, 190, 0, 0.9);
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.2rem solid #64a19d;
   }
 }
 
