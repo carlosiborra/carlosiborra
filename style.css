@@ -1,15 +1,8 @@
 @charset "UTF-8";
 /*!
-* Start Bootstrap - Grayscale v7.0.5 (https://startbootstrap.com/theme/grayscale)
-* Copyright 2013-2022 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
+* MADE WITH LOVE from Carlos Iborra Llopis
 */
-/*!
- * Bootstrap v5.1.3 (https://getbootstrap.com/)
- * Copyright 2011-2021 The Bootstrap Authors
- * Copyright 2011-2021 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -3136,22 +3129,24 @@ fieldset:disabled .btn {
 }
 
 
+/*==================================================*/
 /* Button - hello world!*/
 
 .btn-primary {
-  color: rgb(0, 214, 18);
+  color: rgb(22, 190, 0);
+  text-align: left;
   background-color: #0a0a0a;
-  border-color: #64a19d;
-  border-radius: 15px;
+  border: none;
+  border-radius: 19px;
 }
 .btn-primary:hover {
-  color: rgb(0, 214, 18);
+  color: rgb(22, 190, 0);
   background-color: #1d2020;
   border-color: #50817e;
 }
 .btn-check:focus + .btn-primary,
 .btn-primary:focus {
-  color: rgb(0, 214, 18);
+  color: rgb(22, 190, 0);
   background-color: #1d2020;
   border-color: #50817e;
   box-shadow: 0 0 0 0.25rem rgba(123, 175, 172, 0.5);
@@ -3161,7 +3156,7 @@ fieldset:disabled .btn {
 .btn-primary:active,
 .btn-primary.active,
 .show > .btn-primary.dropdown-toggle {
-  color: rgb(0, 214, 18);
+  color: rgb(22, 190, 0);
   background-color: #1d2020;
   border-color: #4b7976;
 }
@@ -3180,73 +3175,75 @@ fieldset:disabled .btn {
 }
 
 
+/*==================================================*/
 /* Google Translator */
 
 
 /*==================================================*/
-/* Typewriter effect */
+/* Horizontal Line */
 
-/* DEMO-SPECIFIC STYLES */
-.typewriter-effect1 {
-  color: rgb(0, 214, 18);
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 110%;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid rgb(0, 214, 18); /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  animation: 
-    typing 4s steps(30, end),
-    blink-caret .5s step-end infinite;
-}
-@keyframes typing { /* The typewriter effect */
-  from { width: 0 }
-  to { width: 100% }
-}
-@keyframes blink-caret { /* Blinking cursor */
-  from, to { border-color: transparent }
-  50% { border-color: rgb(0, 214, 18); }
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 /*==================================================*/
-.line-1{
-  position: relative;
-  top: 50%;  
-  width: 24em;
-  margin: 0 auto;
-  border-right: 2px solid rgba(255,255,255,.75);
-  font-size: 100%;
-  text-align: center;
-  white-space: nowrap;
+/* Typewriter effect */
+
+.typewriter-effect {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 120%;
+  color: rgb(22, 190, 0);
   overflow: hidden;
-  transform: translateY(-50%);    
+  display: inline-block;
+  white-space: nowrap;
+  border-right:  solid rgb(22, 190, 0);
+  animation:
+    typewriter 5s steps(8) infinite,
+    blinking-cursor 0.8s infinite;
+  animation-fill-mode: forwards
 }
-/* Animation 2 */
-.anim-typewriter{
-  animation: typewriter 4s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
+@keyframes typewriter {
+  0% { width:0 }
+  25% { width: 70% }
+  48% { width: 100% }
+  50% { width: 100% }
+  55% { width: 100% }
+  75% { width: 70%; }
+  85% { width: 30%; }
+  100% { width: 0; }
 }
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 24em;}
-}
-@keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
+@keyframes blinking-cursor {
+  from { border-color: transparent }
+  to { border-color: rgb(22, 190, 0)}
 }
 
 
 /*==================================================*/
 /* Blinking text */
 
-.blinking1{
-  animation:blinkingText 1s infinite;
+.blink1 {
+  color: rgb(22, 190, 0);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 110%;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation:
+    blinkingText .8s infinite;
 }
 @keyframes blinkingText{
-  5%{     rgb(0, 214, 18);    }
-  15%{    color: transparent; }
-  60%{   rgb(0, 214, 18);    }
-  100%{   rgb(0, 214, 18);    }
+  5%{rgb(22, 190, 0);}
+  55%{color: transparent;}
+  100%{rgb(22, 190, 0);}
+}
+@keyframes blink-caret { /* Blinking cursor */
+  from, to { border-color: transparent }
+  50% { border-color: rgb(22, 190, 0); }
 }
 
 
@@ -12109,7 +12106,7 @@ body {
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 80%;
   text-transform: uppercase;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.12rem;
   border: 0;
 }
 
@@ -12121,8 +12118,9 @@ body {
   padding: 15rem 0;
   background: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.9) 0%,
-      rgba(0, 0, 0, 0.7) 75%,
+      rgba(10, 0, 0, 1) 0%,
+      rgba(0, 40, 0, 0.9) 40%,
+      rgba(0, 30, 0, 0.9) 70%,
       #000 100%
     ),
     url("../assets/img/bg-masthead.jpg");
@@ -12139,7 +12137,7 @@ body {
     "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 2.5rem;
   line-height: 2.5rem;
-  letter-spacing: 0.8rem;
+  letter-spacing: 0.2rem;
   background: linear-gradient(rgb(0, 214, 18), rgb(0, 214, 18));
   border-color: #000000;
   -webkit-text-fill-color: transparent;
@@ -12150,7 +12148,7 @@ body {
 .masthead h2,
 .masthead .h2 {
   max-width: 20rem;
-  font-size: 1rem;
+  font-size: 0.7rem;
 }
 @media (min-width: 768px) {
   .masthead h1,
@@ -12173,25 +12171,45 @@ body {
   .masthead h2,
   .masthead .h2 {
     max-width: 30rem;
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 }
 
-.about-section {
+
+/*
+ * ==============================================
+ * about-section
+ * ==============================================
+ */
+
+ .about-section {
   padding-top: 10rem;
   background: linear-gradient(
     to bottom,
     #000 0%,
-    rgba(0, 0, 0, 0.9) 75%,
-    rgba(0, 0, 0, 0.8) 100%
+    rgba(0, 0, 0, 1) 75%,
+    rgba(0, 0, 0, .9) 100%
   );
 }
 .about-section p {
   margin-bottom: 5rem;
 }
 
+
+/*
+ * ==============================================
+ * projects-section
+ * ==============================================
+ */
+
 .projects-section {
   padding: 10rem 0;
+  background: linear-gradient(
+    to bottom,
+    #000 0%,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
 .projects-section .featured-text {
   padding: 2rem;
