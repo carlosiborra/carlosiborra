@@ -12149,19 +12149,13 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(
-      to bottom,
-      rgba(10, 0, 0, 1) 0%,
-      rgba(0, 40, 0, 0.9) 40%,
-      rgba(0, 30, 0, 0.9) 70%,
-      #000 100%
-    ),
-    url("../assets/img/bg-masthead.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 8%, rgba(256, 256, 256, 0.0) 30%, rgba(0, 0, 0, 1) 100%), url('assets/img/bg-cloudy.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
 }
+
 .masthead h1,
 .masthead .h1 {
   font-family: serif, Georgia, Times New Roman, Times, Baskerville, serif,
@@ -12171,6 +12165,7 @@ body {
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.2rem;
+  color: #121212;
   background: linear-gradient(rgb(0, 214, 18), rgb(0, 214, 18));
   border-color: #000000;
   -webkit-text-fill-color: transparent;
