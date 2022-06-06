@@ -26,20 +26,18 @@
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand" href="#page-top">Carlos Iborra.</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about", style="color:rgb(0, 214, 18)">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects", style="color:rgb(0, 214, 18)">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#signup", style="color:rgb(0, 214, 18)">Contact</a></li>
+                <input id="menu-toggle" type="checkbox" />
+                <label class="menu-button-container" for="menu-toggle">
+                    <div class="menu-button"></div>
+                </label>
+                    <ul class="menu">
+                        <li><a class="nav-link" href="#about", style="color:rgb(0, 214, 18)">About</a></li>
+                        <li><a class="nav-link" href="#projects", style="color:rgb(0, 214, 18)">Projects</a></li>
+                        <li><a class="nav-link" href="#signup", style="color:rgb(0, 214, 18)">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        
         <!-- Masthead-->
         <header class="masthead">
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
@@ -62,7 +60,7 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
-                        <a href = "url"><img src = "https://media.giphy.com/media/jdPMeyv9rn0hZHh8n9/giphy.gifhttps://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" align="center" width="180" height="165"></a></br>
+                        <a href = ""><img src = "https://media.giphy.com/media/jdPMeyv9rn0hZHh8n9/giphy.gifhttps://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" align="center" width="180" height="165"></a></br>
                         </br><h2 class="text-green mb-4">Who am I?</h2>
                         <p class="text-white-50">
                             I am an Spanish student currently studying Computer Science Engineering at Universidad Carlos III de Madrid.</br>
@@ -89,19 +87,101 @@
                 </div>
                 <!-- Project One Row-->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /></div>
                     <div class="col-lg-6">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-green">Misty</h4>
-                                    <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
-                                    <hr class="d-none d-lg-block mb-0 ms-0" />
-                                </div>
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-left">
+                                <h4 class="text-green">Misty</h4>
+                                <p class="text-white-50 mb-0">An example of where you can put an image of a project, or anything else, along with a description.</p>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- TIMELINE -->
+                <section id="cd-timeline" class="cd-container">
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-picture">
+                        </div>
+            
+                        <div class="cd-timeline-content">
+                            <h2>Penta Consulting</h2>
+                    <div class="timeline-content-info">
+                      <span class="timeline-content-info-title">
+                        <i class="fa fa-certificate" aria-hidden="true"></i>
+                        Front End Developer
+                      </span>
+                      <span class="timeline-content-info-date">
+                        <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                        June 2016 - Present
+                      </span>
+                    </div>
+                            <p>Working alongside the designer team implementing the designs, also developing custom solutions to address team necessities.</p>
+                            <span class="cd-date">Jan 24</span>
+                    <p>Required Skills:</p>
+                    <ul class="content-skills">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                    <li>Wordpress</li>
+                    </ul>
+                        </div> <!-- cd-timeline-content -->
+                    </div> <!-- cd-timeline-block -->
+            
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-movie">
+                        </div> <!-- cd-timeline-img -->
+            
+                        <div class="cd-timeline-content">
+                            <h2>Title of section 2</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
+                            <span class="cd-date">Jan 18</span>
+                        </div> <!-- cd-timeline-content -->
+                    </div> <!-- cd-timeline-block -->
+            
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-picture">
+                        </div> <!-- cd-timeline-img -->
+            
+                        <div class="cd-timeline-content">
+                            <h2>Title of section 3</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
+                            <span class="cd-date">Jan 24</span>
+                        </div> <!-- cd-timeline-content -->
+                    </div> <!-- cd-timeline-block -->
+            
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-location">
+                        </div> <!-- cd-timeline-img -->
+            
+                        <div class="cd-timeline-content">
+                            <h2>Title of section 4</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+                            <span class="cd-date">Feb 14</span>
+                        </div> <!-- cd-timeline-content -->
+                    </div> <!-- cd-timeline-block -->
+            
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-location">
+                        </div> 
+            
+                        <div class="cd-timeline-content">
+                            <h2>Title of section 5</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
+                            <span class="cd-date">Feb 18</span>
+                        </div> <!-- cd-timeline-content -->
+                    </div> <!-- cd-timeline-block -->
+            
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-movie">
+                        </div> <!-- cd-timeline-img -->
+            
+                        <div class="cd-timeline-content">
+                            <h2>Final Section</h2>
+                            <p>This is the content of the last section</p>
+                            <span class="cd-date">Feb 26</span>
+                        </div> <!-- cd-timeline-content -->
+                    </div> <!-- cd-timeline-block -->
+                </section> <!-- cd-timeline -->
                 <!-- Project Two Row-->
                 <div class="row gx-0 justify-content-center">
                     <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div>
