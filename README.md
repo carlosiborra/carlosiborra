@@ -30,9 +30,9 @@ Hello world!, I am @carlosiborra
   - R
   - More on LinkedIn
 
-[![My GitHub Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=carlosiborra&theme=dark)]()
+[![My GitHub Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=carlosiborra&theme=darcula)]()
 
-[![My GitHub Stats](https://github-readme-stats.vercel.app/api/?username=carlosiborra&count_private=true&theme=dark&show_icons=true)]()
+[![My GitHub Stats](https://github-readme-stats.vercel.app/api/?username=carlosiborra&count_private=true&theme=darcula&show_icons=true)]()
 
 ## Projects
   ### Binance Automation
