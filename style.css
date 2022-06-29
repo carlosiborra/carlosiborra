@@ -12616,3 +12616,14 @@ Main components
     text-align: right;
   }
 }
+
+
+/* -------------------------------- 
+Responsive Image Title
+-------------------------------- */
+
+.responsive-img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
