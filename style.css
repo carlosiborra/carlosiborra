@@ -4655,7 +4655,7 @@ hr {
   .navbar-expand-sm {
     flex-wrap: nowrap;
     justify-content: flex-start;
-  }
+    }
   .navbar-expand-sm .navbar-nav {
     flex-direction: row;
   }
@@ -4684,8 +4684,7 @@ hr {
     bottom: 0;
     z-index: 1000;
     flex-grow: 1;
-    visibility: visible !important;
-    background-color: transparent;
+    visibility: visible !important;;
     border-right: 0;
     border-left: 0;
     transition: none;
@@ -11998,7 +11997,7 @@ body {
 
 #mainNav {
   min-height: 3.5rem;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -12030,7 +12029,7 @@ body {
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: none;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.8);
     transition: background-color 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
@@ -12205,10 +12204,10 @@ body {
 
 
 /*
- * ==============================================
- * about-section
- * ==============================================
- */
+==============================================
+about-section
+==============================================
+*/
 
  .about-section {
   padding-top: 10rem;
@@ -12225,10 +12224,10 @@ body {
 
 
 /*
- * ==============================================
- * projects-section
- * ==============================================
- */
+ ==============================================
+ projects-section
+ ==============================================
+*/
 
 .projects-section {
   padding: 10rem 0;
@@ -12252,6 +12251,13 @@ body {
   padding: 3rem;
   font-size: 90%;
 }
+
+/*
+==============================================
+menu
+==============================================
+*/
+
 @media (min-width: 992px) {
   .projects-section .project-text {
     padding: 5rem;
@@ -12262,28 +12268,20 @@ body {
     width: 30%;
   }
 }
-
-/*
- * ==============================================
- * menu - 
- * ==============================================
- */
-
 .menu {
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  margin: 0;
+  margin: -1rem;
   padding: 0;
 }
 .menu > li {
-  margin: 1rem;
+  margin: 0.9rem;
   overflow: hidden;
 }
 .menu-button-container {
   display: none;
   height: 100%;
-  width: 30px;
   cursor: pointer;
   flex-direction: column;
   justify-content: center;
@@ -12322,6 +12320,8 @@ body {
   margin-top: 0px;
   transform: rotate(-405deg);
 }
+
+
 @media (max-width: 991px) {
   .menu-button-container {
     display: flex;
@@ -12329,7 +12329,7 @@ body {
   .menu {
     position: absolute;
     top: 0;
-    margin-top: 75px;
+    margin-top: 5.1rem;
     left: 0;
     flex-direction: column;
     width: 100%;
@@ -12337,23 +12337,29 @@ body {
     align-items: center;
   }
   #menu-toggle ~ .menu li {
-    height: 0;
+    height: 0rem;
     margin: 0;
     padding: 0;
     border: 0;
+    text-align: center;
+    display: inline-block;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
   #menu-toggle:checked ~ .menu li {
     border: 1px transparent;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    display: table;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    height: 2.5em;
-    padding: 0.5em;
+    height: 2.2em;
+    padding: 0.02em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
   .menu > li {
     display: flex;
+    text-align: center;
+    display: inline-block;
     align-items: center;
     justify-items: ;
     justify-items: 20%;
@@ -12361,7 +12367,7 @@ body {
     padding: 0.5em 0em;
     width: 100%;
     color: white;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
   }
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
