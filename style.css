@@ -12337,6 +12337,8 @@ menu
     width: 100%;
     justify-content: center;
     align-items: center;
+    padding-left: 0em;
+    padding-right: 0em;
   }
   #menu-toggle ~ .menu li {
     height: 0;
@@ -12357,10 +12359,10 @@ menu
   .menu > li {
     display: flex;
     align-items: center;
-    justify-items: 20%;
+    justify-items: center;
     margin: 0;
     padding: 0.5em 0em;
-    width: 110%;
+    width: 108%;
     color: white;
     background-color: rgba(0, 0, 0, 0.9);
   }
