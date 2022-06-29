@@ -11997,7 +11997,7 @@ body {
 
 #mainNav {
   min-height: 3.5rem;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -12029,7 +12029,7 @@ body {
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: none;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
     transition: background-color 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
@@ -12347,7 +12347,7 @@ menu
   }
   #menu-toggle:checked ~ .menu li {
     border: 1px transparent;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
     text-align: center;
     display: table;
     padding-top: 0.5rem;
@@ -12367,7 +12367,7 @@ menu
     padding: 0.5em 0em;
     width: 100%;
     color: white;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
   }
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
