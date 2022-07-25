@@ -28,10 +28,10 @@ Hello world!, I am @carlosiborra
   - Arduino
   - C#
   - R
-  - More on LinkedIn
   - HTML, CSS & JS
   - Bootstrap
   - Angular
+  - More on LinkedIn
   </br></br>
 
 [![My GitHub Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=carlosiborra&theme=darcula)]()
