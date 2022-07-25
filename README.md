@@ -23,14 +23,15 @@ Hello world!, I am @carlosiborra
 ![](https://img.shields.io/badge/Code-CSharp-informational?style=flat&logo=CSharp&logoColor=white&color=blue)
 ![](https://img.shields.io/badge/Code-R-informational?style=flat&logo=R&logoColor=white&color=red)
 
-  - Python
-  - Selenium (.py)
-  - Arduino
-  - C#
+  
   - R
-  - HTML, CSS & JS
-  - Bootstrap
+  - C#
+  - Python
+  - Arduino
   - Angular
+  - Bootstrap
+  - Selenium (.py)
+  - HTML, CSS & JS
   - More on LinkedIn
   </br></br>
 
