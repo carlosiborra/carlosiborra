@@ -4064,7 +4064,7 @@ hr {
 
 .dropdown-menu {
   position: absolute;
-  z-index: 1000;
+  z-index: 100¡00;
   display: none;
   min-width: 10rem;
   padding: 0.5rem 0;
@@ -4460,7 +4460,8 @@ hr {
 
 .nav-link {
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 0.2rem 1rem;
+  align-items: center;
   color: rgb(0, 214, 18);
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
