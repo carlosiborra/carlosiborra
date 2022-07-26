@@ -1,3 +1,5 @@
+<!-- Hello World! This is Carlos Iborra's readme -->
+
 <a href = "url"><img src = "https://user-images.githubusercontent.com/41797418/153309984-33746328-34c8-45d9-8810-296fdc9a1686.gif" align="center" ></a>
 
 ## Table of Contents
@@ -34,6 +36,8 @@ Hello world!, I am @carlosiborra
   - HTML, CSS & JS
   - More on LinkedIn
   </br></br>
+
+[//]: [![trophy](https://github-profile-trophy.vercel.app/?username=carlosiborra&theme=onedark)](https://github.com/ryo-ma/github-profile-trophy)
 
 [![My GitHub Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=carlosiborra&theme=darcula)]()
 
@@ -86,6 +90,5 @@ In order to reach me, you can do it through:
 
 #
 ![LinkedIn Badge](http://ForTheBadge.com/images/badges/built-by-developers.svg)
-<!---
-Hi intruder!
---->
+
+<!-- See you! -->
