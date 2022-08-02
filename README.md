@@ -39,7 +39,7 @@ Hello world!, I am @carlosiborra
 
 [//]: [![trophy](https://github-profile-trophy.vercel.app/?username=carlosiborra&theme=onedark)](https://github.com/ryo-ma/github-profile-trophy)
 
-[![My GitHub Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=carlosiborra&theme=darcula)]()
+[![My GitHub Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=carlosiborra&theme=darcula&title_color=00d612)]()
 
 [![My GitHub Stats](https://github-readme-stats.vercel.app/api/?username=carlosiborra&count_private=true&theme=darcula&show_icons=true)]()
 
