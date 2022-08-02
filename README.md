@@ -41,7 +41,7 @@ Hello world!, I am @carlosiborra
 
 [![My GitHub Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=carlosiborra&theme=darcula&title_color=00d612)]()
 
-[![My GitHub Stats](https://github-readme-stats.vercel.app/api/?username=carlosiborra&count_private=true&theme=darcula&show_icons=true)]()
+[![My GitHub Stats](https://github-readme-stats.vercel.app/api/?username=carlosiborra&count_private=true&theme=darcula&show_icons=truea&title_color=00d612)]()
 
 ## Projects
   ### Binance Automation
