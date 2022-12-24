@@ -12632,3 +12632,9 @@ Responsive Image Title
   max-width: 60rem;
   height: auto;
 }
+
+#logo_3D {
+  width: 50%;
+  height: 50%;
+  display: block;
+}
