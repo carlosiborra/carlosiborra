@@ -20,11 +20,11 @@ Hello world!, I am @carlosiborra
 ![](https://img.shields.io/badge/Code-Selenium-informational?style=flat&logo=Selenium&logoColor=white&color=brown)
 ![](https://img.shields.io/badge/Code-Arduino-informational?style=flat&logo=Arduino&logoColor=white&color=lightgrey)
 
-<a href="https://github.com/jstrieb/github-stats">
+<!-- This better GitHub stats were provided by https://github.com/jstrieb/github-stats -->
+<a href="https://github.com/carlosiborra/Better-GitHub-Stats">
 <img src="https://github.com/carlosiborra/Better-GitHub-Stats/blob/master/generated/overview.svg#gh-dark-mode-only" />
 <img src="https://github.com/carlosiborra/Better-GitHub-Stats/blob/master/generated/languages.svg#gh-dark-mode-only" />
 </a>
-<!-- This better GitHub stats were provided by https://github.com/jstrieb/github-stats -->
 
 ## Contact
 In order to reach me, you can do it through:
