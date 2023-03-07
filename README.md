@@ -19,26 +19,12 @@ Hello world!, I am @carlosiborra
 ![](https://img.shields.io/badge/Code-Python-informational?style=flat&logo=python&logoColor=white&color=yellow)
 ![](https://img.shields.io/badge/Code-Selenium-informational?style=flat&logo=Selenium&logoColor=white&color=brown)
 ![](https://img.shields.io/badge/Code-Arduino-informational?style=flat&logo=Arduino&logoColor=white&color=lightgrey)
-![](https://img.shields.io/badge/Code-CSharp-informational?style=flat&logo=CSharp&logoColor=white&color=blue)
-![](https://img.shields.io/badge/Code-R-informational?style=flat&logo=R&logoColor=white&color=red)
 
-  
-  - R
-  - C#
-  - Python
-  - Arduino
-  - Angular
-  - Bootstrap
-  - Selenium (.py)
-  - HTML, CSS & JS
-  - More on LinkedIn
-  </br></br>
-
-[//]: [![trophy](https://github-profile-trophy.vercel.app/?username=carlosiborra&theme=onedark)](https://github.com/ryo-ma/github-profile-trophy)
-
-[![My GitHub Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=carlosiborra&theme=darcula&title_color=00d612)]()
-
-[![My GitHub Stats](https://github-readme-stats.vercel.app/api/?username=carlosiborra&count_private=true&theme=darcula&show_icons=truea&title_color=00d612)]()
+<a href="https://github.com/jstrieb/github-stats">
+<img src="https://github.com/carlosiborra/Better-GitHub-Stats/blob/master/generated/overview.svg#gh-dark-mode-only" />
+<img src="https://github.com/carlosiborra/Better-GitHub-Stats/blob/master/generated/languages.svg#gh-dark-mode-only" />
+</a>
+<!-- This better GitHub stats were provided by https://github.com/jstrieb/github-stats -->
 
 ## Contact
 In order to reach me, you can do it through:
