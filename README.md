@@ -26,6 +26,9 @@ Hello world!, I am @carlosiborra
 <img src="https://github.com/carlosiborra/Better-GitHub-Stats/blob/master/generated/languages.svg#gh-dark-mode-only" />
 </a>
 
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
+
 ## Contact
 In order to reach me, you can do it through:
   - Mail
