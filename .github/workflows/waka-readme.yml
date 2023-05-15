@@ -10,8 +10,11 @@ jobs:
     name: WakaReadme DevMetrics
     runs-on: ubuntu-latest
     steps:
-      - name: languages-carlosiborra
-      - uses: athul/waka-readme@master
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Run WakaReadme action
+        uses: athul/waka-readme@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           BLOCKS: >
@@ -27,5 +30,4 @@ jobs:
           TIME_RANGE: all_time
           SHOW_TIME: true
           SHOW_MASKED_TIME: true
-          SHOW_OS: true
           LANG_COUNT: 10
