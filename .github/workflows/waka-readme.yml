@@ -1,20 +1,31 @@
 name: 'Profile readme'
 
 on:
-  workflow_dispatch: # for manual workflow trigger
+  workflow_dispatch: # For manual workflow trigger
   schedule:
-    - cron: "0 0 * * *" # runs at every 12AM UTC
+    - cron: "0 */2 * * *" # Runs every 2 hours
 
 jobs:
   update-readme:
     name: WakaReadme DevMetrics
     runs-on: ubuntu-latest
     steps:
+      - name: languages-carlosiborra
       - uses: athul/waka-readme@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          BLOCKS: ->
+          BLOCKS: >
+            {
+              "commits": true,
+              "lines": true,
+              "languages": true,
+              "os": true,
+              "editors": true,
+              "projects": true,
+              "gitstats": true
+            }
           TIME_RANGE: all_time
           SHOW_TIME: true
           SHOW_MASKED_TIME: true
+          SHOW_OS: true
           LANG_COUNT: 10
