@@ -1,11 +1,16 @@
- name: WakaReadme DevMetrics
+name: 'Profile readme'
+
+on:
+  workflow_dispatch: # for manual workflow trigger
+  schedule:
+    - cron: "0 0/2 * * *" # runs at every 12AM UTC
+
+jobs:
+  update-readme:
+    name: WakaReadme DevMetrics
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Run WakaReadme action
-        uses: athul/waka-readme@master
+      - uses: athul/waka-readme@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           BLOCKS: ░▒▓█
