@@ -29,12 +29,12 @@ Hello world!, I am @carlosiborra
 <!--START_SECTION:waka-->
 
 ```text
-Total Time: 27 hrs 36 mins
+Total Time: 27 hrs 43 mins
 
-Other        13 hrs 3 mins   ███████████▓░░░░░░░░░░░░░   47.26 %
-Python       10 hrs 11 mins  █████████▒░░░░░░░░░░░░░░░   36.89 %
-C            3 hrs 5 mins    ██▓░░░░░░░░░░░░░░░░░░░░░░   11.21 %
-Text         41 mins         ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.48 %
+Other        13 hrs 9 mins   ████████████░░░░░░░░░░░░░   47.47 %
+Python       10 hrs 11 mins  █████████▒░░░░░░░░░░░░░░░   36.74 %
+C            3 hrs 5 mins    ██▓░░░░░░░░░░░░░░░░░░░░░░   11.17 %
+Text         41 mins         ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.47 %
 Markdown     11 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.68 %
 HTML         9 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.59 %
 JavaScript   6 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.39 %
