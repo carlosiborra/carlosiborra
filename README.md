@@ -28,7 +28,7 @@ Hello world!, I am @carlosiborra
 
 <!--START_SECTION:waka-->
 
-```text
+```txt
 Total Time: 45 hrs 37 mins
 
 Other         19 hrs 4 mins   ██████████▒░░░░░░░░░░░░░░   41.80 %
