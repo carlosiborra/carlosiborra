@@ -16,9 +16,9 @@ Hello world!, I am @carlosiborra
   - I am currently studying Computer Science Engineering at Carlos III de Madrid University .
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20professions/Technologist%20Light%20Skin%20Tone.png" alt="Technologist Light Skin Tone" width="30" height="30" /> Skills
-![](https://img.shields.io/badge/Code-Python-informational?style=flat&logo=python&logoColor=white&color=yellow)
+<!-- ![](https://img.shields.io/badge/Code-Python-informational?style=flat&logo=python&logoColor=white&color=yellow)
 ![](https://img.shields.io/badge/Code-Selenium-informational?style=flat&logo=Selenium&logoColor=white&color=brown)
-![](https://img.shields.io/badge/Code-Arduino-informational?style=flat&logo=Arduino&logoColor=white&color=lightgrey)
+![](https://img.shields.io/badge/Code-Arduino-informational?style=flat&logo=Arduino&logoColor=white&color=lightgrey) -->
 
 <!-- This better GitHub stats were provided by https://github.com/jstrieb/github-stats -->
 <a href="https://github.com/carlosiborra/Better-GitHub-Stats">
