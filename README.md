@@ -22,9 +22,11 @@ Hello world!, I am @carlosiborra
 
 <!-- This better GitHub stats were provided by https://github.com/jstrieb/github-stats -->
 <a href="https://github.com/carlosiborra/Better-GitHub-Stats">
-<img src="https://github.com/carlosiborra/Better-GitHub-Stats/blob/master/generated/overview.svg#gh-dark-mode-only" />
-<img src="https://github.com/carlosiborra/Better-GitHub-Stats/blob/master/generated/languages.svg#gh-dark-mode-only" />
+  <img src="https://github.com/carlosiborra/Better-GitHub-Stats/blob/master/generated/overview.svg#gh-dark-mode-only" />
+  <img src="https://github.com/carlosiborra/Better-GitHub-Stats/blob/master/generated/languages.svg#gh-dark-mode-only" align="left" />
 </a>
+
+<a></a>
 
 <!--START_SECTION:waka-->
 
