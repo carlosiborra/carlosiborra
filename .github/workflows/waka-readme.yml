@@ -22,8 +22,4 @@ jobs:
           SHOW_LOC_CHART: "False"
           SHOW_LINES_OF_CODE: "True"
           SHOW_SHORT_INFO: "False"
-          BLOCKS: ⠁⠉⠛⠿
-          TIME_RANGE: all_time
-          SHOW_TIME: true
-          SHOW_MASKED_TIME: true
-          LANG_COUNT: 10
+          
