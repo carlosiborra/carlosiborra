@@ -6,14 +6,17 @@
 <a href = "url"><img src = "https://media.giphy.com/media/jdPMeyv9rn0hZHh8n9/giphy.gifhttps://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" align="right" width="160" height="150"></a>
 * [Personal Data](#personal-data) 
 * [Skills](#skills)
-* [Projects](#projects) - legacy
+* [Portfolio](#portfolio) - legacy
 * [Contact](#contact)
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Sauropod.png" alt="Sauropod" width="30" height="30" /> Personal Data
 Hello world!, I am @carlosiborra
-  - I am currently learning C, C#, machine learning, and SQL.
-  - I am interested in python, automation, web scrapping and programming in general.
-  - I am currently studying Computer Science Engineering at Carlos III de Madrid University .
+  - I am currently studying Computer Science Engineering at Carlos III de Madrid University.
+  - So as not to waste your time with a 2600-letter biography, I will reduce it to the fact that I love programming, coming up with  innovative ideas, and solving problems. I am always on the lookout for new things and projects to start.
+
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" alt="Rocket" width="30" height="30" /> Portfolio
+
+If you really want to read an extended biography, you have my portfolio at the following link (legacy as I'm currently on to other projects): https://carlosiborra.github.io/carlosiborra/
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20professions/Technologist%20Light%20Skin%20Tone.png" alt="Technologist Light Skin Tone" width="30" height="30" /> Skills
 <!-- ![](https://img.shields.io/badge/Code-Python-informational?style=flat&logo=python&logoColor=white&color=yellow)
