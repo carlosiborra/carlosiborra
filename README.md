@@ -2,20 +2,20 @@
 
 <a href = "url"><img src = "https://user-images.githubusercontent.com/41797418/153309984-33746328-34c8-45d9-8810-296fdc9a1686.gif" align="center" ></a>
 
-## Table of Contents
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Bubbles.png" alt="Bubbles" width="30" height="30"/> Table of Contents
 <a href = "url"><img src = "https://media.giphy.com/media/jdPMeyv9rn0hZHh8n9/giphy.gifhttps://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" align="right" width="160" height="150"></a>
 * [Personal Data](#personal-data) 
 * [Skills](#skills)
 * [Projects](#projects) - legacy
 * [Contact](#contact)
 
-## Personal Data
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Sauropod.png" alt="Sauropod" width="30" height="30" /> Personal Data
 Hello world!, I am @carlosiborra
   - I am currently learning C, C#, machine learning, and SQL.
   - I am interested in python, automation, web scrapping and programming in general.
   - I am currently studying Computer Science Engineering at Carlos III de Madrid University .
 
-## Skills
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20professions/Technologist%20Light%20Skin%20Tone.png" alt="Technologist Light Skin Tone" width="30" height="30" /> Skills
 ![](https://img.shields.io/badge/Code-Python-informational?style=flat&logo=python&logoColor=white&color=yellow)
 ![](https://img.shields.io/badge/Code-Selenium-informational?style=flat&logo=Selenium&logoColor=white&color=brown)
 ![](https://img.shields.io/badge/Code-Arduino-informational?style=flat&logo=Arduino&logoColor=white&color=lightgrey)
