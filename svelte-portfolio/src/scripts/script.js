@@ -53,7 +53,6 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
-HTML CSS JS Result Skip Results Iframe
 var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;

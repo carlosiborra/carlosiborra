@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="src/styles/style.css">
 <script src="script.js"></script>
 
 <html lang="en">
@@ -11,16 +11,17 @@
         <title>
             Carlos Iborra - Portfolio
         </title>
-        <link rel="icon" type="image/x-icon" href="assets/img/logo_Gr.png"/>
+        <link rel="icon" type="image/x-icon" href="logo_Gr.png"/>
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="src/styles/style.css" rel="stylesheet" />
         <!-- Preload Header Image-->
-        <link rel="preload" href="waves2.gif" as "image_header"/>
+        <link rel="preload" href="waves2.gif"/>
     </head>
     <body id="page-top">
 
@@ -28,18 +29,17 @@
         <!--! NAVIGATION -->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#page-top"><img src="assets/img/logo_Gr.png" alt="Header Icon" width="35rem"></a>
+                <a class="navbar-brand" href="#page-top"><img src="logo_Gr.png" alt="Header Icon" width="35rem"></a>
                 <input id="menu-toggle" type="checkbox" />
                 <label class="menu-button-container" for="menu-toggle">
                     <div class="menu-button"></div>
                 </label>
-                    <ul class="menu">
-                        <li class="nav-item"><a class="nav-link" href="#about", style="color:rgb(0, 214, 18)">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects", style="color:rgb(0, 214, 18)">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#timeli", style="color:rgb(0, 214, 18)">Timeline</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#signup", style="color:rgb(0, 214, 18)">Contact</a></li>
-                    </ul>
-                </div>
+                <ul class="menu">
+                    <li class="nav-item"><a class="nav-link" href="#about", style="color:rgb(0, 214, 18)">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects", style="color:rgb(0, 214, 18)">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#timeli", style="color:rgb(0, 214, 18)">Timeline</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#signup", style="color:rgb(0, 214, 18)">Contact</a></li>
+                </ul>
             </div>
         </nav>
 
@@ -49,7 +49,7 @@
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
-                        <h1 class="mx-auto"><img src="assets/img/carlos_iborra_title.png" alt="Title Name" class="responsive-img"></h1>
+                        <h1 class="mx-auto"><img src="carlos_iborra_title.png" alt="Title Name" class="responsive-img"></h1>
                         <br><h2 class="text-white-50 mx-auto mt-2 mb-5">
                             <em>
                                 Software Engineer - Developer
@@ -67,11 +67,15 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
-                        <a href = ""><img src = "https://media.giphy.com/media/jdPMeyv9rn0hZHh8n9/giphy.gifhttps://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" align="center" width="180" height="165"></a></br>
-                        </br><h2 class="text-green mb-4">Who am I?</h2>
+                        <a href = ""><img src = "https://media.giphy.com/media/jdPMeyv9rn0hZHh8n9/giphy.gifhttps://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" align="center" width="180" height="165"></a>
+                        <br>
+                        <br>
+                        <h2 class="text-green mb-4">Who am I?</h2>
                         <p class="text-white-50">
-                            I am an Spanish student currently studying Computer Science Engineering at Universidad Carlos III de Madrid.</br>
-                            I've been passionate for programming since I was 8, always looking for new challenges thereby improving my skills.</br>
+                            I am an Spanish student currently studying Computer Science Engineering at Universidad Carlos III de Madrid.
+                            <br>
+                            I've been passionate for programming since I was 8, always looking for new challenges thereby improving my skills.
+                            <br>
                             If you want to learn more about my present and future career, feel free to visit <a href="https://www.linkedin.com/in/carlos-iborra/">my LinkedIn profile</a>.
                         </p>
                     </div>
@@ -88,7 +92,7 @@
             <div class="container px-4 px-lg-5">
                 <!-- Featured Project Row-->
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt="..."/></div>
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="bg-masthead.jpg" alt="..."/></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4 class="text-green">Chapter 0: White</h4>
@@ -153,7 +157,7 @@
                       </span>
                     </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                <a href = "url"><img src = "https://media.giphy.com/media/Jh11uVLJx3a8emy29U/giphy.gif" align="right" width="80" height="80"></a></br></br>   
+                                <a href = "url"><img src = "https://media.giphy.com/media/Jh11uVLJx3a8emy29U/giphy.gif" align="right" width="80" height="80"></a><br><br>   
                             </p>
                             <span class="cd-date">Jan 24</span>
                     <p>Required Skills:</p>
@@ -183,7 +187,7 @@
                       </span>
                     </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            <a href = "url"><img src = "https://media.giphy.com/media/HRuLuZ4d0ekCZlHVlt/giphy.gif" align="right" width="90" height="70"></a></br></br>
+                            <a href = "url"><img src = "https://media.giphy.com/media/HRuLuZ4d0ekCZlHVlt/giphy.gif" align="right" width="90" height="70"></a><br><br>
                             </p>
                             <span class="cd-date">Jan 24</span>
                     <p>Required Skills:</p>
@@ -214,7 +218,7 @@
                       </span>
                     </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            <a href = "url"><img src = "https://media.giphy.com/media/0KQHJ6xghJqgOJ8zl1/giphy.gif" align="right" width="90" height="70"></a></br></br>
+                            <a href = "url"><img src = "https://media.giphy.com/media/0KQHJ6xghJqgOJ8zl1/giphy.gif" align="right" width="90" height="70"></a><br><br>
                             </p>
                             <span class="cd-date">Jan 24</span>
                     <p>Required Skills:</p>
@@ -257,7 +261,7 @@
         <!--! PROJECT 2 ROW -->
         <br/><br/><br/><br/>
                 <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="demo-image-02.jpg" alt="..." /></div>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
@@ -318,7 +322,7 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>        
+        <script src="../scripts/script.js"></script>        
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
