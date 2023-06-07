@@ -23,7 +23,7 @@
 <style lang="scss">
 
   // Import global styles  
-  @import '../../../../static/styles/global.scss';
+  @import '../global.scss';
 
 	// Acquire the glass morph effect from the global.scss file as a callable mixin
 	@mixin glass-morph-styles {
@@ -44,8 +44,8 @@
 		position: fixed;
 
 		height: $navbar-height;
-		width: calc(100% - $navbar-padding-left-right * 2);
-    padding: 0 $navbar-padding-left-right;
+		width: calc(100% - ($navbar-padding-left + $navbar-padding-right));
+    padding: 0 $navbar-padding-right 0 $navbar-padding-left;
 
 		@include glass-morph-styles;
 

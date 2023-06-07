@@ -10,7 +10,7 @@
 <style lang="scss">
 
   // Import global styles  
-  @import '../../../../static/styles/global.scss';
+  @import '../global.scss';
 
 	// Acquire the glass morph effect from the global.scss file as a callable mixin
 	@mixin glass-morph-styles {

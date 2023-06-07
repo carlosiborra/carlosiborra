@@ -1,0 +1,51 @@
+// !  Color
+$color-primary: #181818;
+$color-secondary: #0e0e0e;
+$color-tertiary: #282828;
+
+$color-primary-light: #fbfbfb;
+$color-secondary-light: #e9e9e9;
+
+$color-text-active: #b3b3b3;
+$color-text-blue: #00bfff;
+
+$color-primary-glass-morph: (
+  background: rgba(14, 14, 14, 0.8),
+  box-shadow: 4 4px 30px rgba(0, 0, 0, 1),
+  backdrop-filter: blur(12px),
+  -webkit-backdrop-filter: blur(12px)
+);
+
+// ! Fonts
+@import url('https://fonts.googleapis.com/css2?family=Lora');
+$font-primary: 'Lora', serif;
+
+// ! Size
+$navbar-padding-right: 45px;
+$navbar-padding-left: 60px;
+$navbar-padding-top-bottom: 10px;
+$navbar-height: 60px;
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  //   width: 100%;
+	//   height: calc(100% - $navbar-height);
+	//   padding: 0;
+	margin: 0;
+	//   margin-top: 100px;
+	background-color: $color-primary;
+  
+  // Make the scroll bar invisible
+  
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+  &::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+  }
+}
+	

@@ -1,6 +1,6 @@
 <!-- Importing Tailwind CSS -->
 <script>
-    import Navbar from '../components/Navbar/Navbar.svelte';
+    import Navbar from '../components/Navbar.svelte';
 </script>
 
 <aside class="about">
