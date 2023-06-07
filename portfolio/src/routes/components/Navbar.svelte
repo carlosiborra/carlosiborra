@@ -3,17 +3,16 @@
 <nav class="Navbar">
   <div class="navbar-brand">
     <a href="/" class="logo-navbar-container">
-      <img class="logo-navbar" src="icon-white.png" alt="Logo" />
+      <img class="logo-navbar" src="icon-white-cream.png" alt="Logo" />
       <span class="logo-navbar-text">Carlos Iborra</span>
     </a>
   </div>
 
   <div class="navbar-menu">
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/projects">Projects</a></li>
+      <li><a href="/contact">Contact</a></li>
     </ul>
   </div>
 </nav>
@@ -48,6 +47,9 @@
     padding: 0 $navbar-padding-right 0 $navbar-padding-left;
 
 		@include glass-morph-styles;
+
+    // add a shadow only at the bottom color white to make it look like a glass
+    box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.05);  
 
 		.logo-navbar-container {
       top: 0;
