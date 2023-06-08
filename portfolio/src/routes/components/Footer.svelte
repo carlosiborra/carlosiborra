@@ -2,7 +2,7 @@
 
 <footer class="footer">
   <div class="footer-content">
-    <p class="footer-content-text">Carlos Iborra. All rights reserved.</p>
+    <p class="footer-content-text">Copyrigth © Carlos Iborra Llopis, 2023</p>
   </div>
 </footer>
 
@@ -22,8 +22,6 @@
   .footer {
     @include glass-morph-styles;
     color: $color-primary-light;
-    // position: absolute;
-    // position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -43,6 +41,8 @@
         padding: 0;
         width: 100%;
         font-family: $font-primary;
+        font-size: .5em;
+        color: $color-secondary-light;
       }
     }
   }

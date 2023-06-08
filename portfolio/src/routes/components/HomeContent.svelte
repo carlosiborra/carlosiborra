@@ -1,9 +1,8 @@
 <!-- ! Content -->
 
 <script lang="ts">
-	import Footer from './Footer.svelte';
-
 	import { onMount } from 'svelte';
+	import Contact from './Contact.svelte';
 
 	// console.log('\nContent component NOT-loaded\n');
 
@@ -113,6 +112,7 @@
 			<div class="section-wrapper">
 				<h1>Social Media</h1>
 				<p>Lorem ipsum dolor sit amet consectetur adipi sicing elit. Quisquam, quod.</p>
+				<Contact />
 			</div>
 		</div>
 	</div>
@@ -162,22 +162,27 @@
 			.section {
 				@include glass-morph-styles;
 				background: rgba(14, 14, 14, 1);
-				height: 400px;
+				height: min-content;
 				border-radius: 15px;
 				// border: 1px solid $color-tertiary;
 
 				.section-wrapper {
 					color: $color-primary-light;
 					font-family: $font-primary;
-					padding: 20px 40px;
+					padding: 40px 40px 40px 40px;
 					display: flex;
 					flex-direction: column;
 
 					h1 {
 						font-size: 2rem;
 						font-weight: 600;
-						margin-bottom: 10px;
+						margin-bottom: 5px;
+						margin-top: 0px;
 						color: #ffd84c;
+					}
+
+					p {
+						font-family: $font-secondary;
 					}
 				}
 			}
@@ -210,7 +215,7 @@
 
 				.scrollspy-link {
 					color: $color-primary-light;
-					font-family: $font-primary;
+					font-family: $font-secondary;
 
 					padding: 10px;
 
