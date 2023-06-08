@@ -2,54 +2,179 @@
 	import { onMount } from 'svelte';
 
 	let showLoading: boolean = true;
-  // sessionStorage.setItem('showLoading', 'true');
+	// sessionStorage.setItem('showLoading', 'true');
 
 	onMount(() => {
 		setTimeout(() => {
 			showLoading = false;
-      // sessionStorage.setItem('showLoading', 'false');
+			// sessionStorage.setItem('showLoading', 'false');
 		}, 3000);
-	});
+		let document = window.document;
+		let balls = document.querySelectorAll('.ball-loader');
 
+		balls.forEach((ball) => {
+			let randomX = Math.floor(Math.random() * 80);
+			let randomY = Math.floor(Math.random() * 80);
+			ball.style.left = `${randomX}%`;
+			ball.style.top = `${randomY}%`;
+			ball.style.backgroundColor = `rgba(255, 255, 255, ${Math.random() + 0.1})`;
+			ball.style.transform = `scale(${Math.random()})`;
+			// ball.style.animation = `move-slow ${Math.random() + 1}s infinite`;
+		});
+	});
 </script>
 
 {#if showLoading === true}
-	<div class="welcome-container">
-        <div class="loading-wrapper">
-		    <div class="loading-name"><span style="color:#FFD84C">C</span>arlos <span style="color:#FFD84C">I</span>borra.</div>
-        </div>
-        <p class="loading-portfolio">Portfolio</p>
-        <p class="loading-loading">Loading...</p>
+	<!-- <div class="ball-loader"></div>
+	<div class="ball-loader"></div>
+	<div class="ball-loader"></div>
+	<div class="ball-loader"></div>
+	<div class="ball-loader"></div>
+	<div class="ball-loader"></div>
+	<div class="ball-loader"></div>
+	<div class="ball-loader"></div>
+	<div class="ball-loader"></div> -->
+	<div class="view-square" id="view-square-main">
+		<div class="view-square" id="view-square-inner">
+			<div class="view-square" id="view-square-inner-inner" />
+		</div>
 	</div>
-{:else}
-	<!-- <div>
-		<h1>Welcome to Carlos Iborra's Portfolio!</h1>
-	</div> -->
+	<div class="loader">
+		<img src="icon-white-cream.png" alt="logo" class="loader-image" />
+	</div>
+	<div class="welcome-container">
+		<div class="loading-wrapper">
+			<div class="loading-name">
+				&lt;<span style="color:#FFD84C">C</span>arlos <span style="color:#FFD84C">I</span>borra&gt;</div>
+			</div>
+		</div>
+		{:else}
+		<div />
 {/if}
 
 <style lang="scss">
+	@import '../global.scss';
 
-    @import '../global.scss';
-    
+	.view-square {
+		position: fixed;
+		top: $welcome-height-square;
+		left: $welcome-width-square;
+		height: calc(100vh - ($welcome-height-square * 4));
+		width: calc(100vw - ($welcome-width-square * 4));
+		border: $welcome-square-border solid $color-primary-light-trans;
+		background-color: none;
+		z-index: 102;
+		border-radius: 10px;
+		/* Just two rotations to make it look like it's spinning */
+		-webkit-animation: spin-cc 3s linear;
+		-moz-animation: spin-cc 3s linear;
+		animation: spin-cc 3s linear, dissappear 3s normal;
+
+		#view-square-inner {
+			position: fixed;
+			top: $welcome-height-square*2 + 0.5vh;
+			left: $welcome-width-square*2 + 0.5vw;
+			height: calc(100vh - ($welcome-height-square * 4) - $welcome-height-square * 2 - 1vh);
+			width: calc(100vw - ($welcome-width-square * 4) - $welcome-width-square * 2 - 1vw);
+
+			#view-square-inner-inner {
+				position: fixed;
+				top: $welcome-height-square*3 + 1vh;
+				left: $welcome-width-square*3 + 1vw;
+				height: calc(100vh - ($welcome-height-square * 4) - $welcome-height-square * 4 - 2vh);
+				width: calc(100vw - ($welcome-width-square * 4) - $welcome-width-square * 4 - 2vw);
+			}
+		}
+
+		@-moz-keyframes spin-cc {
+			0% {
+				-moz-transform: rotate(0deg);
+			}
+			100% {
+				-moz-transform: rotate(-360deg);
+				transform: rotate(-360deg);
+			}
+		}
+
+		@-webkit-keyframes spin-cc {
+			0% {
+				-webkit-transform: rotate(0deg);
+			}
+			100% {
+				-moz-transform: rotate(-360deg);
+				transform: rotate(-360deg);
+			}
+		}
+
+		@keyframes spin-cc {
+			0% {
+				-webkit-transform: rotate(0deg);
+				transform: rotate(0deg);
+				border: $welcome-square-border solid $color-primary-light-trans;
+			}
+			100% {
+				-moz-transform: rotate(-360deg);
+				transform: rotate(-360deg);
+			}
+		}
+
+		@keyframes dissappear {
+			0% {
+				border-color: rgba(251, 251, 251, 0.05);
+			}
+			100% {
+				border-color: rgba(251, 251, 251, 0.0);
+			}
+		}
+
+		border-color: rgba(251, 251, 251, 0.0);
+		
+		#view-square-inner {
+			border: $welcome-square-border solid $color-tertiary;
+		}
+		
+	}
+
+	.ball-loader {
+		position: fixed;
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		filter: blur(200px);
+		z-index: 101;
+		background-color: none;
+	}
+
+	@keyframes move-slow {
+		0% {
+			transform: translate(0, 0);
+		}
+		50% {
+			transform: translate(10vw, 10vh);
+		}
+		100% {
+			transform: translate(0, 0);
+		}
+	}
+
 	.welcome-container {
-        position: fixed;
-        top: 0;
+		position: fixed;
+		top: 0;
 		display: flex;
-        flex-direction: column;
-        width: 100vw;
-        height: 100vh;
+		flex-direction: column;
+		width: 100vw;
+		height: 100vh;
 		justify-content: center;
 		align-items: center;
 		font-family: Arial, sans-serif;
-		font-size: 24px;
 		color: $color-primary-light;
-        background-color: $color-primary;
-        z-index: 100;
+		background-color: $color-primary;
+		z-index: 100;
 
-        font-family: $font-primary;
+		font-family: $font-primary;
 
-        // Do not permit the user to scroll the page while the loading screen is active
-        overflow: hidden;
+		// Do not permit the user to scroll the page while the loading screen is active
+		overflow: hidden;
 	}
 
 	.loading {
@@ -70,34 +195,72 @@
 		}
 	}
 
-    .loading-wrapper {
-      height: 100vh;
-      /*This part is important for centering*/
-      display: grid;
-      place-items: center;
-    }
+	.loading-wrapper {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		z-index: 110;
+	}
 
-    .loading-name {
-      width: 14ch;  // Number of characters
-      animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-      white-space: nowrap;
-      overflow: hidden;
-      border-right: 3px solid;
-      font-family: monospace;
-    //   font-size: 2em;
-    }
+	.loading-name {
+		position: fixed;
+		width: 15ch; // Number of characters
+		animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+		white-space: nowrap;
+		overflow: hidden;
+		border-right: 3px solid;
+		font-family: monospace;
+		font-size: 30px;
+		top: 35%;
+		// left: 31vw;
+		z-index: 110;
+	}
 
-    @keyframes typing {
-      from {
-        width: 0
-      }
-    }
+	@keyframes typing {
+		from {
+			width: 0;
+		}
+	}
 
-    @keyframes blink {
-      50% {
-        border-color: transparent
-      }
-    }
+	@keyframes blink {
+		50% {
+			border-color: transparent;
+		}
+	}
 
+	// ! Loading animation for the logo
 
+	.loader {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.loader-image {
+		position: fixed;
+		bottom: 45%;
+		height: 60px;
+		-webkit-animation: spin 3s linear infinite;
+		-moz-animation: spin 3s linear infinite;
+		animation: spin 3s linear infinite, pulse 0.8s ease-in-out infinite;
+		z-index: 110;
+	}
+	@-moz-keyframes spin {
+		100% {
+			-moz-transform: rotate(360deg);
+		}
+	}
+	@-webkit-keyframes spin {
+		100% {
+			-webkit-transform: rotate(360deg);
+		}
+	}
+	@keyframes spin {
+		100% {
+			-webkit-transform: rotate(360deg);
+			transform: rotate(360deg);
+		}
+	}
 </style>
