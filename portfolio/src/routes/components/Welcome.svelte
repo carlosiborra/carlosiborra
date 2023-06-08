@@ -45,11 +45,12 @@
 	<div class="welcome-container">
 		<div class="loading-wrapper">
 			<div class="loading-name">
-				&lt;<span style="color:#FFD84C">C</span>arlos <span style="color:#FFD84C">I</span>borra&gt;</div>
+				&lt;<span style="color:#FFD84C">C</span>arlos <span style="color:#FFD84C">I</span>borra&gt;
 			</div>
 		</div>
-		{:else}
-		<div />
+	</div>
+{:else}
+	<div />
 {/if}
 
 <style lang="scss">
@@ -57,10 +58,10 @@
 
 	.view-square {
 		position: fixed;
-		top: $welcome-height-square;
-		left: $welcome-width-square;
-		height: calc(100vh - ($welcome-height-square * 4));
-		width: calc(100vw - ($welcome-width-square * 4));
+		top: $welcome-square-border * 2;
+		left: $welcome-square-border * 2;
+		height: calc(100vh - ($welcome-square-border * 4));
+		width: calc(100vw - ($welcome-square-border * 4));
 		border: $welcome-square-border solid $color-primary-light-trans;
 		background-color: none;
 		z-index: 102;
@@ -72,17 +73,17 @@
 
 		#view-square-inner {
 			position: fixed;
-			top: $welcome-height-square*2 + 0.5vh;
-			left: $welcome-width-square*2 + 0.5vw;
-			height: calc(100vh - ($welcome-height-square * 4) - $welcome-height-square * 2 - 1vh);
-			width: calc(100vw - ($welcome-width-square * 4) - $welcome-width-square * 2 - 1vw);
+			top: $welcome-square-border * 2 + 2;
+			left: $welcome-square-border * 2 + 2;
+			height: calc(100vh - ($welcome-square-border * 4) - $welcome-square-border * 2 - 8px);
+			width: calc(100vw - ($welcome-square-border * 4) - $welcome-square-border * 2 - 8px);
 
 			#view-square-inner-inner {
 				position: fixed;
-				top: $welcome-height-square*3 + 1vh;
-				left: $welcome-width-square*3 + 1vw;
-				height: calc(100vh - ($welcome-height-square * 4) - $welcome-height-square * 4 - 2vh);
-				width: calc(100vw - ($welcome-width-square * 4) - $welcome-width-square * 4 - 2vw);
+				top: $welcome-square-border * 2 + 4;
+				left: $welcome-square-border * 2 + 4;
+				height: calc(100vh - ($welcome-square-border * 4) - $welcome-square-border * 4 - 16px);
+				width: calc(100vw - ($welcome-square-border * 4) - $welcome-square-border * 4 - 16px);
 			}
 		}
 
@@ -123,16 +124,15 @@
 				border-color: rgba(251, 251, 251, 0.05);
 			}
 			100% {
-				border-color: rgba(251, 251, 251, 0.0);
+				border-color: rgba(251, 251, 251, 0);
 			}
 		}
 
-		border-color: rgba(251, 251, 251, 0.0);
-		
+		border-color: rgba(251, 251, 251, 0);
+
 		#view-square-inner {
 			border: $welcome-square-border solid $color-tertiary;
 		}
-		
 	}
 
 	.ball-loader {
