@@ -15,23 +15,47 @@
 		// console.log('Content component mounted');
 
 		let document = window.document;
+		let currentPageWidth = window.innerWidth;
 
 		sections = Array.from(document.querySelectorAll('.section'));
 		scrollspy = Array.from(document.querySelectorAll('.scrollspy-link'));
 
 		window.addEventListener('scroll', scrollHandler);
 
-		// Get the scrollspy links and add child corresponding to their section h1 text
-		scrollspy.forEach((link) => {
-			const targetSectionId = link.getAttribute('href')?.substring(1); // Use optional chaining to avoid undefined
-			const targetSection = targetSectionId ? document.getElementById(targetSectionId) : undefined; // Check if targetSectionId is defined
-			const targetSectionHeading = targetSection?.querySelector('h1');
-			const targetSectionText = targetSectionHeading?.innerText;
-			if (targetSectionText) {
-				const child = document.createElement('span');
-				child.textContent = targetSectionText;
-				link.appendChild(child);
-			}
+		// Function to update the scrollspy links based on window width
+		const updateScrollspyLinks = () => {
+			scrollspy.forEach((link, index) => {
+				const targetSectionId = link.getAttribute('href')?.substring(1);
+				const targetSection = targetSectionId
+					? document.getElementById(targetSectionId)
+					: undefined;
+				const targetSectionHeading = targetSection?.querySelector('h1');
+				const targetSectionText = targetSectionHeading?.innerText;
+				let targetSectionContent = '';
+
+				if (window.innerWidth < 800) {
+					if (targetSectionText) {
+						const match = targetSectionText.match(/^\d/);
+						targetSectionContent = match ? match[0] : '';
+					}
+				} else if (window.innerWidth < 1000) {
+					if (targetSectionText) {
+						const match = targetSectionText.match(/^\d+\.\s(.+)/);
+						targetSectionContent = match ? match[0].replace(/^\d+\.\s/, '') : '';
+					}
+				} else {
+					targetSectionContent = targetSectionText || '';
+				}
+
+				link.textContent = targetSectionContent.trim();
+			});
+		};
+
+		updateScrollspyLinks(); // Initial call to set the scrollspy links based on window width
+
+		window.addEventListener('resize', () => {
+			// Update the scrollspy links when the window is resized
+			updateScrollspyLinks();
 		});
 
 		function scrollHandler() {
@@ -64,7 +88,7 @@
 					//   scrollspyLink.style.fontWeight = 'bold';
 					scrollspyLink.style.color = '#FFD84C';
 					scrollspyLink.style.backgroundColor = 'rgba(13, 13, 13, 1)';
-					// scrollspyLink.style.border = '0.5px solid rgba(255, 255, 255, 0.05)';  
+					// scrollspyLink.style.border = '0.5px solid rgba(255, 255, 255, 0.05)';
 					scrollspyLink.style.borderRadius = '10px';
 				} else {
 					// Reset the style for inactive sections
@@ -76,9 +100,7 @@
 				}
 			});
 		}
-
 	});
-
 </script>
 
 <div class="container">
@@ -87,30 +109,33 @@
 
 		<div id="section1" class="section">
 			<div class="section-wrapper">
-				<h1>Introduction</h1>
-				<p>I am an Spanish student currently studying Computer Science Engineering at Universidad Carlos III de Madrid.
-					I've been passionate for programming since I was 8, always looking for new challenges thereby improving my skills.
-					If you want to learn more about my present and future career, feel free to visit my LinkedIn profile.</p>
+				<h1>0. Introduction</h1>
+				<p>
+					I am an Spanish student currently studying Computer Science Engineering at Universidad
+					Carlos III de Madrid. I've been passionate for programming since I was 8, always looking
+					for new challenges thereby improving my skills. If you want to learn more about my present
+					and future career, feel free to visit my LinkedIn profile.
+				</p>
 			</div>
 		</div>
 
 		<div id="section2" class="section">
 			<div class="section-wrapper">
-				<h1>Roadmap</h1>
+				<h1>1. Roadmap</h1>
 				<p>Lorem ipsum dolor sit amet consectetur adipi sicing elit. Quisquam, quod.</p>
 			</div>
 		</div>
 
 		<div id="section3" class="section">
 			<div class="section-wrapper">
-				<h1>Timeline</h1>
+				<h1>2. Timeline</h1>
 				<p>Lorem ipsum dolor sit amet consectetur adipi sicing elit. Quisquam, quod.</p>
 			</div>
 		</div>
 
 		<div id="section4" class="section">
 			<div class="section-wrapper">
-				<h1>Social Media</h1>
+				<h1>3. Social Media</h1>
 				<p>Lorem ipsum dolor sit amet consectetur adipi sicing elit. Quisquam, quod.</p>
 				<Contact />
 			</div>
@@ -122,17 +147,16 @@
 			<!-- add the different sections as scrollspy -->
 			<nav class="scrollspy">
 				<!-- On load change the child of each a to the text in the section h1 -->
-				<a href="#section1" class="scrollspy-link"> </a>
-				<a href="#section2" class="scrollspy-link"> </a>
-				<a href="#section3" class="scrollspy-link"> </a>
-				<a href="#section4" class="scrollspy-link"> </a>
+				<a href="#section1" class="scrollspy-link" />
+				<a href="#section2" class="scrollspy-link" />
+				<a href="#section3" class="scrollspy-link" />
+				<a href="#section4" class="scrollspy-link" />
 			</nav>
 		</div>
 	</div>
 </div>
 
 <style lang="scss">
-	
 	// Import global styles
 	@import '../global.scss';
 
@@ -213,6 +237,14 @@
 				overflow-y: auto;
 				height: 100%;
 
+				@media screen and (max-width: 450px) {
+					padding: 10px;
+				}
+
+				@media screen and (max-width: 360px) {
+					padding: 1px;
+				}
+
 				.scrollspy-link {
 					color: $color-primary-light;
 					font-family: $font-secondary;
@@ -226,12 +258,25 @@
 					display: flex;
 					justify-content: center;
 
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+
 					&:hover {
 						color: $color-secondary-light;
 					}
 
 					&:active {
 						color: $color-text-active;
+					}
+
+					// On click, same effect as hover
+					&:focus {
+						color: $color-text-active;
+						// color: #FFD84C;
+						// background-color: rgba(13, 13, 13, 1);
+						// // scrollspyLink.style.border = '0.5px solid rgba(255, 255, 255, 0.05)';
+						// border-radius: 10px;
 					}
 				}
 			}

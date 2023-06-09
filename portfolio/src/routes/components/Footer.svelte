@@ -22,15 +22,15 @@
   .footer {
     @include glass-morph-styles;
     color: $color-primary-light;
-    left: 0;
-    bottom: 0;
+    // left: 0;
+    // bottom: 0;
     width: 100%;
     height: 60px;
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-
 
     .footer-content {
       font-size: 14px;

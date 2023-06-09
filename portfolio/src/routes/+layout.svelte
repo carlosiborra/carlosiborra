@@ -18,7 +18,6 @@
 
 <style lang="scss">
 	@import './global.scss';
-
 	main {
 		margin-top: $navbar-height;
 		margin-bottom: 10px;
