@@ -234,14 +234,19 @@
 
 	.loader {
 		display: flex;
-		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		height: 100vh; /* Set the loader container to the full viewport height */
 	}
+
 	.loader-image {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		position: fixed;
-		bottom: 45%;
+		top: 50%; /* Position the image at the vertical middle of the loader container */
 		height: 60px;
+		left: calc(50vw - 13px); /* Position the image at the horizontal middle of the loader container */
 		-webkit-animation: spin 3s linear infinite;
 		-moz-animation: spin 3s linear infinite;
 		animation: spin 3s linear infinite, pulse 0.8s ease-in-out infinite;

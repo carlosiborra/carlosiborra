@@ -38,13 +38,11 @@
 						const match = targetSectionText.match(/^\d/);
 						targetSectionContent = match ? match[0] : '';
 					}
-				} else if (window.innerWidth < 1000) {
+				} else {
 					if (targetSectionText) {
 						const match = targetSectionText.match(/^\d+\.\s(.+)/);
 						targetSectionContent = match ? match[0].replace(/^\d+\.\s/, '') : '';
 					}
-				} else {
-					targetSectionContent = targetSectionText || '';
 				}
 
 				link.textContent = targetSectionContent.trim();
@@ -87,9 +85,12 @@
 					// Apply the style to the corresponding scrollspy link
 					//   scrollspyLink.style.fontWeight = 'bold';
 					scrollspyLink.style.color = '#FFD84C';
-					scrollspyLink.style.backgroundColor = 'rgba(13, 13, 13, 1)';
+					scrollspyLink.style.backgroundColor = 'rgba(5, 5, 5, 1)';
 					// scrollspyLink.style.border = '0.5px solid rgba(255, 255, 255, 0.05)';
 					scrollspyLink.style.borderRadius = '10px';
+					scrollspyLink.style.transition = 'all 0.25s ease-in-out';
+					scrollspyLink.style.fontWeight = 'bold';
+					// scrollspyLink.style.transitionDelay = '0.1s';
 				} else {
 					// Reset the style for inactive sections
 					//   scrollspyLink.style.fontWeight = 'normal';
@@ -97,68 +98,140 @@
 					scrollspyLink.style.backgroundColor = '';
 					// scrollspyLink.style.border = '';
 					scrollspyLink.style.borderRadius = '';
+					scrollspyLink.style.transition = '';
+					scrollspyLink.style.fontWeight = '';
+					// scrollspyLink.style.transitionDelay = '';
 				}
 			});
 		}
+
+		const displayTime = document.querySelector('.display-time');
+		// Time
+		function showTime() {
+			let time = new Date();
+			if (displayTime) {
+				displayTime.innerText = time.toLocaleTimeString('en-US', { hour12: false });
+			}
+			setTimeout(showTime, 1000);
+		}
+
+		showTime();
+
+		// * Check when left-card-heading width = 0 and execute changeText function
+		const leftCardHeading = document.querySelector('.left-card-heading');
+		
+		if (leftCardHeading) {
+			const observer = new IntersectionObserver(
+				(entries) => {
+					entries.forEach((entry) => {
+						if (entry.intersectionRatio > 0) {
+							changeText();
+						}
+					});
+				},
+				{
+					threshold: 0.5,
+				}
+			);
+			observer.observe(leftCardHeading);
+		}
+
+		// * Function to change text in the left card h1
+		const changeText = () => {
+			const text = [
+				'Hi, I am Carlos Iborra',
+				'Welcome to my Portfolio',
+				'Feel free to explore my GitHub',
+				'Feel free to explore my LinkedIn',
+				'Feel free to explore my Twitter',
+				'Have a nice day!',
+			];
+			// Choose randomly a text from the array
+			const randomText = text[Math.floor(Math.random() * text.length)];
+			// Get the title element
+			const title = document.querySelector('.title');
+			// Change the text
+			if (title) {
+				title.textContent = randomText;
+			}
+		};
+
+
+
 	});
 </script>
 
+<!-- ! ------------------------------------>
+
 <div class="container">
 	<div class="left-card">
-		<!-- Add your content for the left card here -->
+		<div class="left-card-heading">
+			<span class="title-holder">
+				<h1 class="title">Hi, I am Carlos Iborra</h1>
+			</span>
+		</div>
 
-		<div id="section1" class="section">
-			<div class="section-wrapper">
-				<h1>0. Introduction</h1>
-				<p>
-					I am an Spanish student currently studying Computer Science Engineering at Universidad
-					Carlos III de Madrid. I've been passionate for programming since I was 8, always looking
-					for new challenges thereby improving my skills. If you want to learn more about my present
-					and future career, feel free to visit my LinkedIn profile.
-				</p>
+		<div class="left-card-body">
+			<div id="section1" class="section">
+				<div class="section-wrapper">
+					<h1>0. Introduction</h1>
+					<p>
+						I am an Spanish student currently studying Computer Science Engineering at Universidad
+						Carlos III de Madrid. I've been passionate for programming since I was 8, always looking
+						for new challenges thereby improving my skills. If you want to learn more about my
+						present and future career, feel free to visit my LinkedIn profile.
+					</p>
+				</div>
+			</div>
+
+			<div id="section2" class="section">
+				<div class="section-wrapper">
+					<h1>1. Roadmap</h1>
+					<p>Lorem ipsum dolor sit amet consectetur adipi sicing elit. Quisquam, quod.</p>
+				</div>
+			</div>
+
+			<div id="section3" class="section">
+				<div class="section-wrapper">
+					<h1>2. Timeline</h1>
+					<p>Lorem ipsum dolor sit amet consectetur adipi sicing elit. Quisquam, quod.</p>
+				</div>
+			</div>
+
+			<div id="section4" class="section">
+				<div class="section-wrapper">
+					<h1>3. Social Media</h1>
+					<p>Lorem ipsum dolor sit amet consectetur adipi sicing elit. Quisquam, quod.</p>
+					<Contact />
+				</div>
 			</div>
 		</div>
 
-		<div id="section2" class="section">
-			<div class="section-wrapper">
-				<h1>1. Roadmap</h1>
-				<p>Lorem ipsum dolor sit amet consectetur adipi sicing elit. Quisquam, quod.</p>
+		<div class="right-card">
+			<div class="card">
+				<!-- add the different sections as scrollspy -->
+				<nav class="scrollspy">
+					<!-- On load change the child of each a to the text in the section h1 -->
+					<a href="#section1" class="scrollspy-link" />
+					<a href="#section2" class="scrollspy-link" />
+					<a href="#section3" class="scrollspy-link" />
+					<a href="#section4" class="scrollspy-link" />
+				</nav>
 			</div>
-		</div>
 
-		<div id="section3" class="section">
-			<div class="section-wrapper">
-				<h1>2. Timeline</h1>
-				<p>Lorem ipsum dolor sit amet consectetur adipi sicing elit. Quisquam, quod.</p>
+			<div class="container-time">
+				<div class="display-time" />
 			</div>
-		</div>
-
-		<div id="section4" class="section">
-			<div class="section-wrapper">
-				<h1>3. Social Media</h1>
-				<p>Lorem ipsum dolor sit amet consectetur adipi sicing elit. Quisquam, quod.</p>
-				<Contact />
-			</div>
-		</div>
-	</div>
-
-	<div class="right-card">
-		<div class="card">
-			<!-- add the different sections as scrollspy -->
-			<nav class="scrollspy">
-				<!-- On load change the child of each a to the text in the section h1 -->
-				<a href="#section1" class="scrollspy-link" />
-				<a href="#section2" class="scrollspy-link" />
-				<a href="#section3" class="scrollspy-link" />
-				<a href="#section4" class="scrollspy-link" />
-			</nav>
 		</div>
 	</div>
 </div>
 
+<!-- ! ------------------------------------>
+
 <style lang="scss">
 	// Import global styles
 	@import '../global.scss';
+	// @import changeText;
 
 	// Acquire the glass morph effect from the global.scss file as a callable mixin
 	@mixin glass-morph-styles {
@@ -172,8 +245,73 @@
 		gap: 0px;
 		width: 100%;
 
-		// make left card occupy 4/5 of the container
-		.left-card {
+		.left-card-heading {
+			width: calc(80% - 30px);
+			background-color: rgba(14, 14, 14, 1);
+			margin: 20px 10px 20px 20px;
+			gap: 20px;
+			border-radius: 15px;
+			z-index: 1;
+			padding: 20px 0px;
+
+			.title-holder {
+				width: min-content;
+				height: min-content;
+
+				.title {
+					padding: 0px 40px;
+					font-family: $font-primary;
+					font-size: 2vw;
+					color: $color-text-cream;
+					width: 0;
+					max-width: min-content;
+					height: min-content;
+					overflow: hidden;
+					white-space: nowrap;
+					border-right: 2px solid $color-text-cream;
+					animation: typewriter 5s steps(7) infinite, blinking-cursor 0.8s infinite;
+					animation-fill-mode: forwards;
+				}
+			}
+		}
+
+		@keyframes typewriter {
+			0% {
+				width: 0;
+			}
+			25% {
+				width: 70%;
+			}
+			48% {
+				width: 100%;
+			}
+			50% {
+				width: 100%;
+			}
+			55% {
+				width: 100%;
+			}
+			75% {
+				width: 70%;
+			}
+			85% {
+				width: 30%;
+			}
+			100% {
+				width: 0;
+			}
+		}
+
+		@keyframes blinking-cursor {
+			from {
+				border-color: transparent;
+			}
+			to {
+				border-color: $color-text-cream;
+			}
+		}
+
+		.left-card-body {
 			width: calc(80% - 30px);
 			background-color: rgba(14, 14, 14, 1);
 			margin: 20px 10px 20px 20px;
@@ -215,8 +353,11 @@
 		// make right card occupy 1/5 of the container
 		.right-card {
 			position: fixed;
-			// @include glass-morph-styles;
-			background: rgba(14, 14, 14, 0.7);
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			// justify-content: flex-start;
+			gap: 15px;
 			width: calc(20% - 30px);
 			// Get the height of scrollspy
 			height: min-content;
@@ -224,17 +365,17 @@
 			top: 0;
 			bottom: 0;
 			margin: calc($navbar-height + 20px) 20px 20px 10px;
-			border-radius: 15px;
-			// border: 2px solid $color-tertiary;
 			color: $color-primary-light;
 			z-index: 1;
 
 			.scrollspy {
+				// width: 100%;
+				background: rgba(14, 14, 14, 0.7);
+				border-radius: 15px;
 				padding: 20px;
 				display: flex;
 				flex-direction: column;
 				gap: 20px;
-				overflow-y: auto;
 				height: 100%;
 
 				@media screen and (max-width: 450px) {
@@ -264,6 +405,7 @@
 
 					&:hover {
 						color: $color-secondary-light;
+						font-weight: bold;
 					}
 
 					&:active {
@@ -278,8 +420,50 @@
 						// // scrollspyLink.style.border = '0.5px solid rgba(255, 255, 255, 0.05)';
 						// border-radius: 10px;
 					}
+
+					behavior: smooth;
 				}
 			}
+		}
+
+		.display-time {
+			// width: 100%;
+			font-family: $font-code;
+			// font-size: inherit;
+			// font-weight: bold;
+			// // border: 2px solid #ffd868;
+			padding: 10px 10px;
+			border-radius: 10px;
+			// transition: ease-in-out 0.1s;
+			// transition-property: background, box-shadow, color;
+			// margin: 20px;
+
+			background: rgba(14, 14, 14, 0.7);
+			// border-radius: 15px;
+			// padding: 100%;
+
+			.display-time:hover {
+				background: #ffd868;
+				box-shadow: 0 0 30px#ffd868;
+				color: #272727;
+				cursor: pointer;
+			}
+
+			// On media query < 550px, spin the clock 90deg
+			@media screen and (max-width: 550px) {
+				text-align: center;
+				margin: 40px 0px 0px 0px;
+				width: min-content;
+				transform: rotate(90deg);
+			}
+
+			@media screen and (max-width: 799px) {
+				text-align: center;
+				margin: 40px 0px 0px 0px;
+				width: min-content;
+				transform: rotate(90deg);
+			}
+
 		}
 	}
 </style>

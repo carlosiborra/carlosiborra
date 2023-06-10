@@ -22,9 +22,12 @@ $color-primary-glass-morph: (
 // ! Fonts
 @import url('https://fonts.googleapis.com/css2?family=Lora');
 @import url('https://fonts.googleapis.com/css2?family=Sen');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code');
 
 $font-primary: 'Lora', serif;
 $font-secondary: 'Sen', sans-serif;
+// A coding font
+$font-code: 'Fira Code', monospace;
 
 // ! Size
 $navbar-padding-right: 45px;
@@ -40,22 +43,33 @@ html {
 	scroll-behavior: smooth;
 }
 
-html,
 body {
-	//   width: 100%;
-	//   height: calc(100% - $navbar-height);
-	//   padding: 0;
-	margin: 0;
-	//   margin-top: 100px;
-	background-color: $color-primary;
+  /* Set "my-sec-counter" to 0 */
+  display: flex;
+  min-height: 100vh; /* Ensure the body takes up at least the viewport height */
+  margin: 0;
+  
 
-	// Make the scroll bar invisible
 
-	-ms-overflow-style: none; /* IE and Edge */
-	scrollbar-width: none; /* Firefox */
+  background-image: url('waves-dark.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 
-	&::-webkit-scrollbar {
-		width: 0px;
-		background: transparent; /* make scrollbar transparent */
-	}
+  /* Make the background darker */
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity (0.5) to make it darker */
+
+  /* Make the scroll bar invisible */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  &::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+  }
+
+  /* Smooth scrolling */
+  behavior: smooth;
+  scroll-behavior: smooth;
 }

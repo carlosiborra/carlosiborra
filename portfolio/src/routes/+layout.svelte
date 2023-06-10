@@ -5,21 +5,27 @@
 	import Welcome from './components/Welcome.svelte';
 </script>
 
-
 <Welcome />
 <body>
-	<Navbar />
-	<main>
-		<slot />
-		<Balls />
-	</main>
-	<Footer />
+	<div id="background-wrapper">
+		<Navbar />
+		<main>
+			<slot />
+			<!-- <Balls /> -->
+		</main>
+		<Footer />
+	</div>
 </body>
 
 <style lang="scss">
 	@import './global.scss';
+
 	main {
 		margin-top: $navbar-height;
 		margin-bottom: 10px;
+	}
+
+	#background-wrapper {
+		background-color: rgba(0, 0, 0, 0.75);
 	}
 </style>

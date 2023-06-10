@@ -71,6 +71,7 @@
         font-size: 2rem;
         margin: 0 20px 0 20px;
         color: $color-primary-light;
+        white-space: nowrap;
 
         &:hover {
           color: $color-secondary-light;
@@ -79,6 +80,11 @@
         &:active {
           color: $color-text-active;
         }
+
+        @media (max-width: 600px) {
+          display: none;
+        }
+
       } 
 		}
 
@@ -104,12 +110,18 @@
 
             &:hover {
               color: $color-secondary-light;
-              text-decoration: underline;
+              font-weight: bold;
+              // text-decoration: underline;
             }
 
             &:active {
               color: $color-text-active;
             }
+
+            @media (max-width: 600px) {
+              font-size: 1.2rem;
+            }
+            
           }
         }
       }
