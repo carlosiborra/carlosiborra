@@ -119,7 +119,7 @@
 
 		// * Check when left-card-heading width = 0 and execute changeText function
 		const leftCardHeading = document.querySelector('.left-card-heading');
-		
+
 		if (leftCardHeading) {
 			const observer = new IntersectionObserver(
 				(entries) => {
@@ -130,7 +130,7 @@
 					});
 				},
 				{
-					threshold: 0.5,
+					threshold: 0.5
 				}
 			);
 			observer.observe(leftCardHeading);
@@ -144,7 +144,7 @@
 				'Feel free to explore my GitHub',
 				'Feel free to explore my LinkedIn',
 				'Feel free to explore my Twitter',
-				'Have a nice day!',
+				'Have a nice day!'
 			];
 			// Choose randomly a text from the array
 			const randomText = text[Math.floor(Math.random() * text.length)];
@@ -155,9 +155,6 @@
 				title.textContent = randomText;
 			}
 		};
-
-
-
 	});
 </script>
 
@@ -370,7 +367,7 @@
 
 			.scrollspy {
 				// width: 100%;
-				background: rgba(14, 14, 14, 0.7);
+				background: rgba(14, 14, 14, 0.8);
 				border-radius: 15px;
 				padding: 20px;
 				display: flex;
@@ -427,20 +424,10 @@
 		}
 
 		.display-time {
-			// width: 100%;
 			font-family: $font-code;
-			// font-size: inherit;
-			// font-weight: bold;
-			// // border: 2px solid #ffd868;
 			padding: 10px 10px;
 			border-radius: 10px;
-			// transition: ease-in-out 0.1s;
-			// transition-property: background, box-shadow, color;
-			// margin: 20px;
-
-			background: rgba(14, 14, 14, 0.7);
-			// border-radius: 15px;
-			// padding: 100%;
+			background: rgba(14, 14, 14, 0.8);
 
 			.display-time:hover {
 				background: #ffd868;
@@ -463,7 +450,6 @@
 				width: min-content;
 				transform: rotate(90deg);
 			}
-
 		}
 	}
 </style>
