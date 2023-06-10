@@ -3,6 +3,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import Contact from './Contact.svelte';
+	import Timeline from './Timeline.svelte';
 
 	// console.log('\nContent component NOT-loaded\n');
 
@@ -192,6 +193,7 @@
 				<div class="section-wrapper">
 					<h1>2. Timeline</h1>
 					<p>Lorem ipsum dolor sit amet consectetur adipi sicing elit. Quisquam, quod.</p>
+					<Timeline />
 				</div>
 			</div>
 

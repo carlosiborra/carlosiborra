@@ -5,14 +5,19 @@
 	import Welcome from './components/Welcome.svelte';
 </script>
 
+<!-- ! ------------------------------------>
+
 <Welcome />
 <Navbar />
 <body>
+	<div id="background-wrapper"></div>
 	<main>
 		<slot />
 	</main>
 </body>
 <Footer />
+
+<!-- ! ------------------------------------>
 
 <style lang="scss">
 	@import './global.scss';
@@ -24,20 +29,18 @@
 
 	body {
 		margin: 0;
-
-		// background-color: $color-primary;
+		background-color: $color-primary;
 		background-image: url('waves2.gif');
-		// background-repeat: no-repeat;
+		background-repeat: no-repeat;
 		background-size: cover;
-		// background-position: center;
-		background-attachment: fixed;
-
+		background-position: center;
 		scroll-behavior: smooth;
 		behavior: smooth;
 
 		/* Make the scroll bar invisible */
 		-ms-overflow-style: none; /* IE and Edge */
 		scrollbar-width: none; /* Firefox */
+
 		&::-webkit-scrollbar {
 			width: 0px;
 			background: transparent; /* make scrollbar transparent */
@@ -49,7 +52,18 @@
 		margin-bottom: 0px;
 	}
 
-	#background-wrapper {
-		background-color: rgba(0, 0, 0, 0.75);
-	}
+	// #background-wrapper {
+	// 	position: fixed;
+	// 	top: 0;
+	// 	left: 0;
+	// 	width: 100vw;
+	// 	height: 100vh;
+	// 	background-image: url('waves2.gif');
+	// 	background-repeat: no-repeat;
+	// 	background-size: cover;
+	// 	z-index: 0;
+	// 	// make transition fron waves to $color-primary smooth
+	// 	transition: background-image 0.5s ease-in-out;
+		
+	// }
 </style>
