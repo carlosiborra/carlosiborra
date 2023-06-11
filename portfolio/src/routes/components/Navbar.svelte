@@ -1,5 +1,21 @@
 <!-- ! NAVBAR -->
 
+<script lang="ts">
+	// // Add a class to hide the navbar when scrolling down
+	// var prevScrollPos = window.pageYOffset;
+	// window.onscroll = function() {
+	//   var currentScrollPos = window.pageYOffset;
+	//   var navbar = document.querySelector('.Navbar');
+	//   if (prevScrollPos > currentScrollPos) {
+	// 	navbar.classList.remove('navbar-hidden');
+	//   } else {
+	// 	navbar.classList.add('navbar-hidden');
+	//   }
+	//   prevScrollPos = currentScrollPos;
+	// };
+
+</script>
+
 <nav class="Navbar">
 	<div class="navbar-brand">
 		<a href="/" class="logo-navbar-container">

@@ -10,3 +10,4 @@
 - [ ] Fix goto in scrollspy
 - [ ] Fix background
 - [ ] Make it so that if the screen is very wide, the content is centered
+- [ ] hide navbar when scrolling down

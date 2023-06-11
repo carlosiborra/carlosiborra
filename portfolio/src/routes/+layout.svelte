@@ -30,7 +30,7 @@
 	body {
 		margin: 0;
 		background-color: $color-primary;
-		background-image: url('waves2.gif');
+		// background-image: url('waves2.gif');
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
@@ -52,18 +52,4 @@
 		margin-bottom: 0px;
 	}
 
-	// #background-wrapper {
-	// 	position: fixed;
-	// 	top: 0;
-	// 	left: 0;
-	// 	width: 100vw;
-	// 	height: 100vh;
-	// 	background-image: url('waves2.gif');
-	// 	background-repeat: no-repeat;
-	// 	background-size: cover;
-	// 	z-index: 0;
-	// 	// make transition fron waves to $color-primary smooth
-	// 	transition: background-image 0.5s ease-in-out;
-		
-	// }
 </style>

@@ -11,7 +11,7 @@
 	let scrollspy: HTMLElement[] = []; // Initialize an empty array to store the sections
 	let activeSection: string | null = null; // Variable to store the active section ID
 
-	onMount(() => {
+	onMount(() => { 
 		// Move the code inside onMount
 		// console.log('Content component mounted');
 
@@ -119,43 +119,38 @@
 		showTime();
 
 		// * Check when left-card-heading width = 0 and execute changeText function
-		const leftCardHeading = document.querySelector('.left-card-heading');
+		const title = document.querySelector('.title');
 
-		if (leftCardHeading) {
-			const observer = new IntersectionObserver(
-				(entries) => {
-					entries.forEach((entry) => {
-						if (entry.intersectionRatio > 0) {
-							changeText();
-						}
-					});
-				},
-				{
-					threshold: 0.5
+		const resizeObserver = new ResizeObserver((entries) => {
+			for (const entry of entries) {
+				if (entry.target === title && entry.contentRect.width === 0) {
+					changeText();
+					break;
 				}
-			);
-			observer.observe(leftCardHeading);
-		}
+			}
+		});
 
-		// * Function to change text in the left card h1
-		const changeText = () => {
+		resizeObserver.observe(title);
+
+		function changeText() {
 			const text = [
 				'Hi, I am Carlos Iborra',
-				'Welcome to my Portfolio',
-				'Feel free to explore my GitHub',
-				'Feel free to explore my LinkedIn',
-				'Feel free to explore my Twitter',
-				'Have a nice day!'
+				'Welcome to my Portfolio!',
+				'Happy coding!',
+				'Have a nice day!',
+				'Hello World!',
+				'¡Hola Mundo!',
+				'你好世界!',
+				'「こんにちは世界」',
+				'Saluton mondo!',
+				'Привет, мир!',
+				'Hallo Welt!',
+				'Salut monde!'
 			];
-			// Choose randomly a text from the array
+
 			const randomText = text[Math.floor(Math.random() * text.length)];
-			// Get the title element
-			const title = document.querySelector('.title');
-			// Change the text
-			if (title) {
-				title.textContent = randomText;
-			}
-		};
+			title.textContent = randomText;
+		}
 	});
 </script>
 
@@ -200,7 +195,7 @@
 			<div id="section4" class="section">
 				<div class="section-wrapper">
 					<h1>3. Social Media</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipi sicing elit. Quisquam, quod.</p>
+					<!-- <p>Lorem ipsum dolor sit amet consectetur adipi sicing elit. Quisquam, quod.</p> -->
 					<Contact />
 				</div>
 			</div>
@@ -211,10 +206,10 @@
 				<!-- add the different sections as scrollspy -->
 				<nav class="scrollspy">
 					<!-- On load change the child of each a to the text in the section h1 -->
-					<a href="#section1" class="scrollspy-link" />
-					<a href="#section2" class="scrollspy-link" />
-					<a href="#section3" class="scrollspy-link" />
-					<a href="#section4" class="scrollspy-link" />
+					<a href="#section1" class="scrollspy-link"> </a>
+					<a href="#section2" class="scrollspy-link"> </a>
+					<a href="#section3" class="scrollspy-link"> </a>
+					<a href="#section4" class="scrollspy-link"> </a>
 				</nav>
 			</div>
 
@@ -244,6 +239,10 @@
 		gap: 0px;
 		width: 100%;
 
+		@media screen and (max-width: 550px) {
+			margin-top: 120px;
+		}
+
 		.left-card-heading {
 			width: calc(80% - 30px);
 			background-color: rgba(14, 14, 14, 1);
@@ -256,48 +255,70 @@
 			.title-holder {
 				width: min-content;
 				height: min-content;
+				font-size: 100%;
 
 				.title {
 					padding: 0px 40px;
-					font-family: $font-primary;
-					font-size: 2vw;
-					color: $color-text-cream;
-					width: 0;
+					font-family: $font-code;
+					font-size: 1.8em;
+					color: $color-primary-light;
+					width: min-content;
 					max-width: min-content;
 					height: min-content;
 					overflow: hidden;
 					white-space: nowrap;
-					border-right: 2px solid $color-text-cream;
+					border-right: 3px solid $color-primary-light;
 					animation: typewriter 5s steps(7) infinite, blinking-cursor 0.8s infinite;
 					animation-fill-mode: forwards;
+
+					@media screen and (max-width: 1000px) {
+						font-size: 1.5em;
+					}
+
+					@media screen and (max-width: 550px) {
+						font-size: 1.2em;
+					}
+
+					@media screen and (max-width: 500px) {
+						font-size: 0.8em;
+					}
+
+					@media screen and (max-width: 400px) {
+						font-size: 0.7em;
+					}
 				}
 			}
+
+			@media screen and (max-width: 550px) {
+				width: calc(100% - 40px);
+			}
+
 		}
 
 		@keyframes typewriter {
 			0% {
-				width: 0;
+				width: 0%;
 			}
 			25% {
-				width: 70%;
+				width: 60%;
 			}
 			48% {
-				width: 100%;
+				width: 70%;
 			}
 			50% {
-				width: 100%;
+				width: 70%;
 			}
 			55% {
-				width: 100%;
+				width: 70%;
 			}
 			75% {
-				width: 70%;
+				width: 60%;
 			}
 			85% {
 				width: 30%;
 			}
 			100% {
-				width: 0;
+				width: 0%;
 			}
 		}
 
@@ -306,7 +327,7 @@
 				border-color: transparent;
 			}
 			to {
-				border-color: $color-text-cream;
+				border-color: $color-primary-light;
 			}
 		}
 
@@ -346,6 +367,10 @@
 						font-family: $font-secondary;
 					}
 				}
+			}
+
+			@media screen and (max-width: 550px) {
+				width: calc(100% - 40px);
 			}
 		}
 
@@ -414,13 +439,25 @@
 					// On click, same effect as hover
 					&:focus {
 						color: $color-text-active;
-						// color: #FFD84C;
-						// background-color: rgba(13, 13, 13, 1);
-						// // scrollspyLink.style.border = '0.5px solid rgba(255, 255, 255, 0.05)';
-						// border-radius: 10px;
 					}
 
 					behavior: smooth;
+				}
+
+				@media screen and (max-width: 550px) {
+					position: fixed;
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					justify-content: center;
+					border-radius: 10px;					
+					left: 20px;
+					right: 0;
+					width: calc(100% - 180px);
+					height: min-content;
+					margin: 0;
+					padding: 0px;
+					background: rgba(0, 0, 0, 0.9);
 				}
 			}
 		}
@@ -430,27 +467,35 @@
 			padding: 10px 10px;
 			border-radius: 10px;
 			background: rgba(14, 14, 14, 0.8);
-
+			
 			.display-time:hover {
 				background: #ffd868;
 				box-shadow: 0 0 30px#ffd868;
 				color: #272727;
 				cursor: pointer;
 			}
-
+			
 			// On media query < 550px, spin the clock 90deg
-			@media screen and (max-width: 550px) {
-				text-align: center;
-				margin: 40px 0px 0px 0px;
-				width: min-content;
-				transform: rotate(90deg);
-			}
-
+			
 			@media screen and (max-width: 799px) {
 				text-align: center;
 				margin: 40px 0px 0px 0px;
 				width: min-content;
 				transform: rotate(90deg);
+			}
+			
+			@media screen and (max-width: 550px) {
+				position: absolute;
+				position: fixed;
+				// left: 20px;
+				right: 20px;
+				top: 40px;
+				text-align: center;
+				margin: 40px 0px 0px 0px;
+				width: 100px;
+				height: calc(20px);
+				transform: rotate(0deg);
+				background: rgba(0, 0, 0, 0.9);
 			}
 		}
 	}

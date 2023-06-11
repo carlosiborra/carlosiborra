@@ -1,282 +1,379 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-
-	onMount(() => {
-		// Check the location of each element
-		document.querySelectorAll('.content').forEach((element) => {
-			const bottom_of_object = element.offsetTop + element.offsetHeight;
-			const bottom_of_window = window.innerHeight;
-
-			if (bottom_of_object > bottom_of_window) {
-				element.classList.add('hidden');
-			}
-		});
-
-		window.addEventListener('scroll', () => {
-			// Check the location of each hidden element
-			document.querySelectorAll('.hidden').forEach((element) => {
-				const bottom_of_object = element.offsetTop + element.offsetHeight;
-				const bottom_of_window = window.scrollY + window.innerHeight;
-
-				// If the object is completely visible in the window, fadeIn it
-				if (bottom_of_window > bottom_of_object) {
-					element.style.opacity = '1';
-				}
-			});
-		});
-	});
 </script>
 
 <!-- ! ------------------------------------>
 
-<section class="timeline">
-	<ul>
-		<li>
-			<div class="content">
-				<h2>
-					<time>2016</time>
-				</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias debitis praesentium itaque
-					veniam dolorum cupiditate asperiores optio beatae, qui perferendis ipsam odit modi nemo
-					natus corrupti neque quos distinctio facilis?
-				</p>
+<section id="cd-timeline" class="cd-container">
+	<div class="cd-timeline-block">
+		<div class="cd-timeline-img cd-picture" />
+		<div class="cd-timeline-content">
+			<h2>Penta Consulting</h2>
+			<div class="timeline-content-info">
+				<span class="timeline-content-info-title">
+					<i class="fa fa-certificate" aria-hidden="true" />
+					Front End Developer
+				</span>
+				<span class="timeline-content-info-date">
+					<i class="fa fa-calendar-o" aria-hidden="true" />
+					June 2016 - Present
+				</span>
 			</div>
-		</li>
-		<li>
-			<div class="content">
-				<h2>
-					<time>2015</time>
-				</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quas, reiciendis quis
-					sequi voluptatem consectetur adipisci accusamus hic vel vero ea ad iure! Natus, ipsum,
-					enim aspernatur fugit voluptatibus similique?
-				</p>
-			</div>
-		</li>
-		<li>
-			<div class="content">
-				<h2>
-					<time>2012</time>
-				</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, expedita. Dolorem
-					blanditiis, delectus omnis eos accusamus mollitia et cupiditate officia maxime vel,
-					nesciunt alias eius, quibusdam in ea eveniet ut!
-				</p>
-			</div>
-		</li>
-		<li>
-			<div class="content">
-				<h2>
-					<time>2010</time>
-				</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis voluptas voluptatum
-					dolorum, quibusdam dignissimos animi pariatur laboriosam quis explicabo similique aperiam
-					debitis quam velit quod, reprehenderit harum ratione. Iste, unde?
-				</p>
-			</div>
-		</li>
-		<li>
-			<div class="content">
-				<h2>
-					<time>2008</time>
-				</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet inventore odit placeat in
-					laboriosam dolore ducimus vero, sapiente ipsam veritatis, numquam libero itaque dolores
-					natus ex aliquam nam nihil cumque.
-				</p>
-			</div>
-		</li>
-		<li>
-			<div class="content">
-				<h2>
-					<time>2007</time>
-				</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit sequi nobis, blanditiis
-					quae dolorem quasi reiciendis odio qui fugit? Officiis quos aspernatur mollitia dolorum
-					pariatur repellendus quaerat dolorem magnam quo.
-				</p>
-			</div>
-		</li>
-		<li>
-			<div class="content">
-				<h2>
-					<time>2004</time>
-				</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel corporis sunt nostrum velit
-					quibusdam neque porro ratione quos dolor libero. Tempore consequatur natus nostrum
-					delectus provident fugiat corporis error ipsa.
-				</p>
-			</div>
-		</li>
-	</ul>
+			<p>
+				Working alongside the design team implementing the designs, also developing custom solutions
+				to address team necessities.
+			</p>
+			<ul class="content-skills">
+				<li>HTML5</li>
+				<li>CSS3</li>
+				<li>JavaScript</li>
+				<li>jQuery</li>
+				<li>WordPress</li>
+			</ul>
+		</div>
+		<!-- .cd-timeline-content -->
+	</div>
+	<!-- .cd-timeline-block -->
+
+	<div class="cd-timeline-block">
+		<div class="cd-timeline-img cd-movie" />
+		<!-- .cd-timeline-img -->
+		<div class="cd-timeline-content">
+			<h2>Title of section 2</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident
+				rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?
+			</p>
+			<span class="cd-date">Jan 18</span>
+		</div>
+		<!-- .cd-timeline-content -->
+	</div>
+	<!-- .cd-timeline-block -->
+
+	<div class="cd-timeline-block">
+		<div class="cd-timeline-img cd-picture" />
+		<!-- .cd-timeline-img -->
+		<div class="cd-timeline-content">
+			<h2>Title of section 3</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id
+				molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique
+				earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis
+				vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat
+				consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus
+				rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.
+			</p>
+			<span class="cd-date">Jan 24</span>
+		</div>
+		<!-- .cd-timeline-content -->
+	</div>
+	<!-- .cd-timeline-block -->
+
+	<div class="cd-timeline-block">
+		<div class="cd-timeline-img cd-location" />
+		<!-- .cd-timeline-img -->
+		<div class="cd-timeline-content">
+			<h2>Title of section 4</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident
+				rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus
+				minus veritatis qui ut.
+			</p>
+			<span class="cd-date">Feb 14</span>
+		</div>
+		<!-- .cd-timeline-content -->
+	</div>
+	<!-- .cd-timeline-block -->
 </section>
+
+<!-- .cd-timeline -->
 
 <!-- ! ------------------------------------>
 
 <style lang="scss">
-    @import '../global.scss';
+	@import '../global.scss';
 
-	$title-background: #3d9e67;
-	$content-background-color: #67cc8e;
-	$content-background-gradient: #56bc83;
-	$content-width: 450px;
-
-	*,
-	*::before,
-	*::after {
-		margin: 0;
-		padding: 0;
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		box-sizing: border-box;
+	.cd-container {
+		width: 90%;
+		max-width: 1080px;
+		margin: 0 auto;
+		background: none;
+		padding: 0 10%;
+		border-radius: 2px;
+	}
+	.cd-container::after {
+		content: '';
+		display: table;
+		clear: both;
 	}
 
-	body {
-		font-size: 10px;
-		font-family: $font-secondary;
+	#cd-timeline {
+		position: relative;
+		padding: 2em 0;
+		margin-top: 2em;
+		margin-bottom: 2em;
 	}
-
-	.timeline {
-		color: $color-primary-light;
-
-		ul li .content h2 {
-			// text-shadow: 1px 1px 1px rgba(56, 56, 56, 0.5);
+	#cd-timeline::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 25px;
+		height: 100%;
+		width: 4px;
+		background: $color-tertiary;
+	}
+	@media only screen and (min-width: 1170px) {
+		#cd-timeline {
+			margin-top: 3em;
+			margin-bottom: 3em;
 		}
+		#cd-timeline::before {
+			left: 50%;
+			margin-left: -2px;
+		}
+	}
 
-		ul {
-			padding: 50px 0;
+	.cd-timeline-block {
+		position: relative;
+		margin: 2em 0;
+	}
+	.cd-timeline-block:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+	.cd-timeline-block:first-child {
+		margin-top: 0;
+	}
+	.cd-timeline-block:last-child {
+		margin-bottom: 0;
+	}
+	@media only screen and (min-width: 1170px) {
+		.cd-timeline-block {
+			margin: 4em 0;
+		}
+		.cd-timeline-block:first-child {
+			margin-top: 0;
+		}
+		.cd-timeline-block:last-child {
+			margin-bottom: 0;
+		}
+	}
 
+	.cd-timeline-img {
+		position: absolute;
+		top: 8px;
+		left: 12px;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		box-shadow: 0 0 0 4px $color-tertiary, inset 0 2px 0 rgba(0, 0, 0, 0.08),
+			0 3px 0 4px rgba(0, 0, 0, 0.05);
+	}
+	.cd-timeline-img {
+		background: $color-primary;
+	}
+	@media only screen and (min-width: 1170px) {
+		.cd-timeline-img {
+			width: 30px;
+			height: 30px;
+			left: 50%;
+			margin-left: -15px;
+			margin-top: 15px;
+			/* Force Hardware Acceleration in WebKit */
+			-webkit-transform: translateZ(0);
+			-webkit-backface-visibility: hidden;
+		}
+	}
+
+	.cd-timeline-content {
+		position: relative;
+		margin-left: 60px;
+		margin-right: 30px;
+		background: $color-tertiary;
+		border-radius: 2px;
+		padding: 1em;
+		border-radius: 15px;
+
+		.timeline-content-info {
+			background: $color-primary;
+			padding: 5px 10px;
+			margin-top: 15px;
+			color: $color-secondary-light;
+			font-size: 12px;
+			box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.08);
+			border-radius: 2px;
+			i {
+				margin-right: 5px;
+			}
+			.timeline-content-info-title,
+			.timeline-content-info-date {
+				width: calc(50% - 2px);
+				display: inline-block;
+			}
+			@media (max-width: 500px) {
+				.timeline-content-info-title,
+				.timeline-content-info-date {
+					display: block;
+					width: 100%;
+				}
+			}
+		}
+		.content-skills {
+			font-size: 12px;
+			padding: 0;
+			margin-bottom: 0;
+			// margin-top: 5px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
 			li {
-				background: $color-tertiary;
-				position: relative;
-				margin: 0 auto;
-				width: 5px;
-				padding-bottom: 40px;
-				list-style-type: none;
-
-				&:last-child {
-					padding-bottom: 7px;
-				}
-
-				&:before {
-					content: '';
-					background: $color-primary;
-					position: absolute;
-					left: 50%;
-					top: 0;
-					transform: translateX(-50%);
-					-webkit-transform: translateX(-50%);
-					width: 20px;
-					height: 20px;
-					border: 3px solid $color-tertiary;
-					-webkit-border-radius: 50%;
-					-moz-border-radius: 50%;
-					border-radius: 50%;
-				}
-
-				.hidden {
-					opacity: 0;
-				}
-
-				.content {
-					background: $color-tertiary;
-					position: relative;
-					top: 7px;
-					width: $content-width;
-					padding: 20px;
-
-					h2 {
-						color: $color-primary-light;
-						padding-bottom: 10px;
-						text-align: center;
-					}
-
-					p {
-						text-align: center;
-					}
-
-					&:before {
-						content: '';
-						background: $color-tertiary;
-						position: absolute;
-						top: 0px;
-						width: 38px;
-						height: 5px;
-					}
-				}
-
-                // ! Right Leaves
-
-				&:nth-child(odd) .content {
-					left: 50px;
-					background: $color-tertiary;
-					border-radius: 0 15px 15px 15px;
-				}
-				&:nth-child(odd) .content:before {
-					left: -38px;
-				}
-
-                // ! Left Leaves
-
-				&:nth-child(even) .content {
-					left: calc(-#{$content-width} - 45px);
-					background: $color-tertiary;
-                    border-radius: 15px 0px 15px 15px;
-                }
-				&:nth-child(even) .content:before {
-					right: -38px;
-				}
+				background: $color-primary;
+				border-radius: 2px;
+				display: inline-block;
+				padding: 2px 10px;
+				color: $color-secondary-light;
+				margin: 3px 2px;
+				text-align: center;
+				flex-grow: 1;
 			}
 		}
 	}
+	.cd-timeline-content:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+	.cd-timeline-content h2 {
+		font-family: $font-primary;
+		color: $color-primary-light;
+		margin-top: 0;
+		margin-bottom: 5px;
+	}
+	.cd-timeline-content p,
+	.cd-timeline-content .cd-date {
+		color: $color-primary-light;
+		font-size: 13px;
+		font-size: 0.8125rem;
+	}
+	.cd-timeline-content .cd-date {
+		display: inline-block;
+	}
+	.cd-timeline-content p {
+		font-family: $font-secondary;
+		margin: 1em 0;
+		line-height: 1.6;
+	}
 
+	.cd-timeline-content::before {
+		content: '';
+		position: absolute;
+		top: 17px;
+		right: 100%;
+		height: 0;
+		width: 0;
+		border: 7px solid transparent;
+		border-right: 7px solid $color-tertiary;
+	}
 
-	@media screen and (max-width: 1020px) {
-		.timeline ul li .content {
-			width: 41vw;
+	@media only screen and (min-width: 1170px) {
+		.cd-timeline-content {
+			color: white;
+			margin-left: 0;
+			padding: 1.6em;
+			width: 36%;
+			margin: 0 5%;
 		}
-		.timeline ul li:nth-child(even) .content {
-			left: calc(-41vw - 45px);
+		.cd-timeline-content::before {
+			top: 30px;
+			left: 100%;
+			border-color: transparent;
+			border-left-color: $color-tertiary;
+		}
+		.cd-timeline-content .cd-date {
+			position: absolute;
+			width: 100%;
+			left: 122%;
+			top: 6px;
+			font-size: 16px;
+			font-size: 1rem;
+		}
+		.cd-timeline-block:nth-child(even) .cd-timeline-content {
+			float: right;
+		}
+		.cd-timeline-block:nth-child(even) .cd-timeline-content::before {
+			top: 32px;
+			left: auto;
+			right: 100%;
+			border-color: transparent;
+			border-right-color: $color-tertiary;
+		}
+		.cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
+			float: right;
+		}
+		.cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
+			left: auto;
+			right: 122%;
+			text-align: right;
 		}
 	}
 
-	@media screen and (max-width: 700px) {
-		.timeline ul li {
-			margin-left: 20px;
-
-			.content {
-				width: calc(100vw - 100px);
-
-				h2 {
-					text-align: initial;
-				}
-			}
-
-			&:nth-child(even) .content {
-				left: 45px;
-				background: $content-background-color;
-				background: -webkit-linear-gradient(
-					-45deg,
-					$content-background-gradient,
-					$content-background-color
-				);
-				background: linear-gradient(
-					-45deg,
-					$content-background-gradient,
-					$content-background-color
-				);
-			}
-
-			&:nth-child(even) .content:before {
-				left: -33px;
-			}
+  @media only screen and (min-width: 768px) {
+		.cd-timeline-content h2 {
+			font-size: 1.25rem;
+		}
+		.cd-timeline-content p {
+			font-size: 16px;
+			font-size: 1rem;
+		}
+		.cd-timeline-content .cd-read-more,
+		.cd-timeline-content .cd-date {
+			font-size: 14px;
+			font-size: 0.875rem;
 		}
 	}
+
+  // @media only screen and (max-width: 550px) {
+
+  //   #cd-timeline {
+
+  //     position: relative;
+  //     display: flex;
+  //     flex-direction: column;
+  //     flex-wrap: wrap;
+  //     justify-content: center;
+  //     align-items: center;
+  //     margin: 0;
+  //     padding: 1em 0;
+
+  //   }
+
+	// 	.cd-timeline-content h2 {
+	// 		font-size: 1.2rem;
+	// 	}
+	// 	.cd-timeline-content p {
+	// 		font-size: .8rem;
+	// 	}
+	// 	.cd-timeline-content .cd-read-more,
+	// 	.cd-timeline-content .cd-date {
+	// 		font-size: 14px;
+	// 		font-size: 0.875rem;
+	// 	}
+	
+  //   #cd-timeline::before {
+  //     display: none;
+  //     }
+  //   .cd-timeline-img {
+  //     display: none;
+  //   }
+  //   .cd-timeline-content {
+  //     margin: 0;
+  //     width: 100%;
+  //     padding: 1.6em;
+  //   }
+  //   .cd-timeline-content::before {
+  //     display: none;
+  //   }
+
+	// }    
+
 </style>
