@@ -11,7 +11,7 @@
 	let scrollspy: HTMLElement[] = []; // Initialize an empty array to store the sections
 	let activeSection: string | null = null; // Variable to store the active section ID
 
-	onMount(() => { 
+	onMount(() => {
 		// Move the code inside onMount
 		// console.log('Content component mounted');
 
@@ -206,10 +206,10 @@
 				<!-- add the different sections as scrollspy -->
 				<nav class="scrollspy">
 					<!-- On load change the child of each a to the text in the section h1 -->
-					<a href="#section1" class="scrollspy-link"> </a>
-					<a href="#section2" class="scrollspy-link"> </a>
-					<a href="#section3" class="scrollspy-link"> </a>
-					<a href="#section4" class="scrollspy-link"> </a>
+					<a href="#section1" class="scrollspy-link" />
+					<a href="#section2" class="scrollspy-link" />
+					<a href="#section3" class="scrollspy-link" />
+					<a href="#section4" class="scrollspy-link" />
 				</nav>
 			</div>
 
@@ -244,7 +244,7 @@
 		}
 
 		.left-card-heading {
-			width: calc(80% - 30px);
+			width: calc(80% - 20px);
 			background-color: rgba(14, 14, 14, 1);
 			margin: 20px 10px 20px 20px;
 			gap: 20px;
@@ -292,7 +292,6 @@
 			@media screen and (max-width: 550px) {
 				width: calc(100% - 40px);
 			}
-
 		}
 
 		@keyframes typewriter {
@@ -332,7 +331,7 @@
 		}
 
 		.left-card-body {
-			width: calc(80% - 30px);
+			width: calc(80% - 20px);
 			background-color: rgba(14, 14, 14, 1);
 			margin: 20px 10px 20px 20px;
 			display: flex;
@@ -450,7 +449,7 @@
 					flex-direction: row;
 					align-items: center;
 					justify-content: center;
-					border-radius: 10px;					
+					border-radius: 10px;
 					left: 20px;
 					right: 0;
 					width: calc(100% - 180px);
@@ -467,23 +466,23 @@
 			padding: 10px 10px;
 			border-radius: 10px;
 			background: rgba(14, 14, 14, 0.8);
-			
+
 			.display-time:hover {
 				background: #ffd868;
 				box-shadow: 0 0 30px#ffd868;
 				color: #272727;
 				cursor: pointer;
 			}
-			
+
 			// On media query < 550px, spin the clock 90deg
-			
+
 			@media screen and (max-width: 799px) {
 				text-align: center;
 				margin: 40px 0px 0px 0px;
 				width: min-content;
 				transform: rotate(90deg);
 			}
-			
+
 			@media screen and (max-width: 550px) {
 				position: absolute;
 				position: fixed;
