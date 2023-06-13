@@ -45,7 +45,6 @@
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
 		grid-gap: 20px;
-		margin-top: 20px;
 	}
 
 	.social-button {

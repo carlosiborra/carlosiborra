@@ -8,12 +8,8 @@
 <!-- ! ------------------------------------>
 
 <Welcome />
-<Navbar />
 <body>
-	<div id="background-wrapper"></div>
-	<main>
-		<slot />
-	</main>
+	<slot />
 </body>
 <Footer />
 
@@ -25,17 +21,22 @@
 	html {
 		scroll-behavior: smooth;
 		margin: 0;
+		background-color: rgb(255, 255, 255);
 	}
 
 	body {
-		margin: 0;
-		background-color: $color-primary;
-		// background-image: url('waves2.gif');
+		margin: 0 0 0 0;
+		background-color: rgb(255, 255, 255);
+		background-image: url('wireframe-top.jpg');
 		background-repeat: no-repeat;
+		//background width max 100% of the screen
+		background-size: 100vw;
+		// // background to bottom
+		// background-position: bottom;
 		background-size: cover;
-		background-position: center;
+		// // background-position: center;
+		// scroll-behavior: smooth;
 		scroll-behavior: smooth;
-		behavior: smooth;
 
 		/* Make the scroll bar invisible */
 		-ms-overflow-style: none; /* IE and Edge */
@@ -47,9 +48,25 @@
 		}
 	}
 
-	main {
-		margin-top: $navbar-height;
-		margin-bottom: 0px;
+	slot {
+		display: none;
 	}
 
+	// #background-image-top {
+	// 	position: fixed;
+	// 	top: 0;
+	// 	left: 0;
+	// 	width: 100vw;
+	// 	height: 50vh;
+	// 	z-index: 10;
+	// }
+
+	// #background-image-bottom {
+	// 	position: fixed;
+	// 	bottom: 0;
+	// 	left: 0;
+	// 	width: 100vw;
+	// 	height: 50vh;
+	// 	z-index: 10;
+	// }
 </style>

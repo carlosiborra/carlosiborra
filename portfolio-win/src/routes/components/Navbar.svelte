@@ -1,19 +1,7 @@
 <!-- ! NAVBAR -->
 
 <script lang="ts">
-	// // Add a class to hide the navbar when scrolling down
-	// var prevScrollPos = window.pageYOffset;
-	// window.onscroll = function() {
-	//   var currentScrollPos = window.pageYOffset;
-	//   var navbar = document.querySelector('.Navbar');
-	//   if (prevScrollPos > currentScrollPos) {
-	// 	navbar.classList.remove('navbar-hidden');
-	//   } else {
-	// 	navbar.classList.add('navbar-hidden');
-	//   }
-	//   prevScrollPos = currentScrollPos;
-	// };
-
+ 
 </script>
 
 <nav class="Navbar">
@@ -45,23 +33,23 @@
 	}
 
 	.Navbar {
+		@include glass-morph-styles;
+
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 
+		position: fixed;
 		top: 0;
 		left: 0;
 		z-index: 10;
-		position: fixed;
 
 		height: $navbar-height;
 		width: calc(100% - ($navbar-padding-left + $navbar-padding-right));
 		padding: 0 $navbar-padding-right 0 $navbar-padding-left;
 
-		@include glass-morph-styles;
-
 		// add a shadow only at the bottom color white to make it look like a glass
-		box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.05);
+		box-shadow: 0px 2px 10px -2px rgba(255, 255, 255, 1);
 
 		.logo-navbar-container {
 			top: 0;

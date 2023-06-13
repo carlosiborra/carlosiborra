@@ -4,6 +4,7 @@
 	import { onMount } from 'svelte';
 	import Contact from './Contact.svelte';
 	import Timeline from './Timeline.svelte';
+	import Navbar from './Navbar.svelte';
 
 	// console.log('\nContent component NOT-loaded\n');
 
@@ -140,8 +141,6 @@
 				'Have a nice day!',
 				'Hello World!',
 				'¡Hola Mundo!',
-				'你好世界!',
-				'「こんにちは世界」',
 				'Saluton mondo!',
 				'Привет, мир!',
 				'Hallo Welt!',
@@ -156,65 +155,69 @@
 
 <!-- ! ------------------------------------>
 
-<div class="container">
-	<div class="left-card">
-		<div class="left-card-heading">
-			<span class="title-holder">
-				<h1 class="title">Hi, I am Carlos Iborra</h1>
-			</span>
-		</div>
+<div class="home-page">
+	<Navbar />
+	<div class="container">
+		<div class="card-wrapper">
+			<div class="left-card">
+				<div class="left-card-heading">
+					<span class="title-holder">
+						<h1 class="title">Hi, I am Carlos Iborra</h1>
+					</span>
+				</div>
 
-		<div class="left-card-body">
-			<div id="section1" class="section">
-				<div class="section-wrapper">
-					<h1>0. Introduction</h1>
-					<p>
-						I am an Spanish student currently studying Computer Science Engineering at Universidad
-						Carlos III de Madrid. I've been passionate for programming since I was 8, always looking
-						for new challenges thereby improving my skills. If you want to learn more about my
-						present and future career, feel free to visit my LinkedIn profile.
-					</p>
+				<div class="left-card-body">
+					<div id="section1" class="section">
+						<div class="section-wrapper">
+							<h1>0. Introduction</h1>
+							<p>
+								I am an Spanish student currently studying Computer Science Engineering at
+								Universidad Carlos III de Madrid. I've been passionate for programming since I was
+								8, always looking for new challenges thereby improving my skills. If you want to
+								learn more about my present and future career, feel free to visit my LinkedIn
+								profile.
+							</p>
+						</div>
+					</div>
+
+					<div id="section2" class="section">
+						<div class="section-wrapper">
+							<h1>1. Roadmap</h1>
+							<p>Lorem ipsum dolor sit amet consectetur adipi sicing elit. Quisquam, quod.</p>
+						</div>
+					</div>
+
+					<div id="section3" class="section">
+						<div class="section-wrapper">
+							<h1>2. Timeline</h1>
+							<p>Lorem ipsum dolor sit amet consectetur adipi sicing elit. Quisquam, quod.</p>
+							<Timeline />
+						</div>
+					</div>
+
+					<div id="section4" class="section">
+						<div class="section-wrapper">
+							<h1>3. Social Media</h1>
+							<!-- <p>Lorem ipsum dolor sit amet consectetur adipi sicing elit. Quisquam, quod.</p> -->
+							<Contact />
+						</div>
+					</div>
 				</div>
 			</div>
-
-			<div id="section2" class="section">
-				<div class="section-wrapper">
-					<h1>1. Roadmap</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipi sicing elit. Quisquam, quod.</p>
+			<div class="right-card">
+				<div class="card">
+					<!-- add the different sections as scrollspy -->
+					<nav class="scrollspy">
+						<!-- On load change the child of each a to the text in the section h1 -->
+						<a href="#section1" class="scrollspy-link" />
+						<a href="#section2" class="scrollspy-link" />
+						<a href="#section3" class="scrollspy-link" />
+						<a href="#section4" class="scrollspy-link" />
+					</nav>
 				</div>
-			</div>
-
-			<div id="section3" class="section">
-				<div class="section-wrapper">
-					<h1>2. Timeline</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipi sicing elit. Quisquam, quod.</p>
-					<Timeline />
+				<div class="container-time">
+					<div class="display-time" />
 				</div>
-			</div>
-
-			<div id="section4" class="section">
-				<div class="section-wrapper">
-					<h1>3. Social Media</h1>
-					<!-- <p>Lorem ipsum dolor sit amet consectetur adipi sicing elit. Quisquam, quod.</p> -->
-					<Contact />
-				</div>
-			</div>
-		</div>
-
-		<div class="right-card">
-			<div class="card">
-				<!-- add the different sections as scrollspy -->
-				<nav class="scrollspy">
-					<!-- On load change the child of each a to the text in the section h1 -->
-					<a href="#section1" class="scrollspy-link" />
-					<a href="#section2" class="scrollspy-link" />
-					<a href="#section3" class="scrollspy-link" />
-					<a href="#section4" class="scrollspy-link" />
-				</nav>
-			</div>
-
-			<div class="container-time">
-				<div class="display-time" />
 			</div>
 		</div>
 	</div>
@@ -228,173 +231,214 @@
 	// @import changeText;
 
 	// Acquire the glass morph effect from the global.scss file as a callable mixin
-	@mixin glass-morph-styles {
-		@each $property, $value in $color-primary-glass-morph {
+	@mixin glass-morph-background {
+		@each $property, $value in $color-primary-glass-morph-content {
 			#{$property}: $value;
 		}
 	}
 
+	.home-page {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		// width: 100%;
+		// height: 100vh;
+	}
+
 	.container {
 		display: flex;
-		gap: 0px;
 		width: 100%;
 
 		@media screen and (max-width: 550px) {
-			margin-top: 120px;
-		}
-
-		.left-card-heading {
-			width: calc(80% - 20px);
-			background-color: rgba(14, 14, 14, 1);
-			margin: 20px 10px 20px 20px;
-			gap: 20px;
-			border-radius: 15px;
-			z-index: 1;
-			padding: 20px 0px;
-
-			.title-holder {
-				width: min-content;
-				height: min-content;
-				font-size: 100%;
-
-				.title {
-					padding: 0px 40px;
-					font-family: $font-code;
-					font-size: 1.8em;
-					color: $color-primary-light;
-					width: min-content;
-					max-width: min-content;
-					height: min-content;
-					overflow: hidden;
-					white-space: nowrap;
-					border-right: 3px solid $color-primary-light;
-					animation: typewriter 5s steps(7) infinite, blinking-cursor 0.8s infinite;
-					animation-fill-mode: forwards;
-
-					@media screen and (max-width: 1000px) {
-						font-size: 1.5em;
-					}
-
-					@media screen and (max-width: 550px) {
-						font-size: 1.2em;
-					}
-
-					@media screen and (max-width: 500px) {
-						font-size: 0.8em;
-					}
-
-					@media screen and (max-width: 400px) {
-						font-size: 0.7em;
-					}
-				}
-			}
-
-			@media screen and (max-width: 550px) {
-				width: calc(100% - 40px);
-			}
-		}
-
-		@keyframes typewriter {
-			0% {
-				width: 0%;
-			}
-			25% {
-				width: 60%;
-			}
-			48% {
-				width: 70%;
-			}
-			50% {
-				width: 70%;
-			}
-			55% {
-				width: 70%;
-			}
-			75% {
-				width: 60%;
-			}
-			85% {
-				width: 30%;
-			}
-			100% {
-				width: 0%;
-			}
-		}
-
-		@keyframes blinking-cursor {
-			from {
-				border-color: transparent;
-			}
-			to {
-				border-color: $color-primary-light;
-			}
-		}
-
-		.left-card-body {
-			width: calc(80% - 20px);
-			background-color: rgba(14, 14, 14, 1);
-			margin: 20px 10px 20px 20px;
-			display: flex;
 			flex-direction: column;
-			gap: 20px; /* Add a gap between sections */
-			border-radius: 15px;
-			z-index: 1;
+			align-items: center;
+		}
 
-			.section {
-				@include glass-morph-styles;
-				background: rgba(14, 14, 14, 1);
-				height: min-content;
+		@media screen and (min-width: 2000px) {
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		// Make the wrapper to extend the right and left card to max 2000px of width
+		.card-wrapper {
+			display: flex;
+			gap: 20px;
+			width: 100%;
+			justify-content: space-between; /* Add this line to place cards side by side */
+
+			@media screen and (max-width: 550px) {
+				margin-top: 60px;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			@media screen and (min-width: 2000px) {
+				justify-content: center;
+				max-width: 2000px;
+			}
+		}
+
+		.left-card {
+			background-color: none;
+			margin: $navbar-height 0 20px 0;
+
+			@media screen and (max-width: 550px) {
+				flex-direction: column;
+				align-items: center;
+				margin-top: 60px;
+			}
+
+			.left-card-heading {
+				@include glass-morph-background;
+				margin: 20px 0 20px 20px;
+				gap: 20px;
 				border-radius: 15px;
-				// border: 1px solid $color-tertiary;
+				z-index: 1;
+				padding: 20px 0px;
 
-				.section-wrapper {
-					color: $color-primary-light;
-					font-family: $font-primary;
-					padding: 40px 40px 40px 40px;
-					display: flex;
-					flex-direction: column;
+				.title-holder {
+					width: min-content;
+					height: max-content;
+					font-size: 100%;
 
-					h1 {
-						font-size: 2rem;
-						font-weight: 600;
-						margin-bottom: 5px;
-						margin-top: 0px;
-						color: #ffd84c;
+					.title {
+						padding: 0px 40px;
+						font-family: $font-code;
+						font-size: 1.8em;
+						color: $color-primary-light;
+						width: min-content;
+						max-width: min-content;
+						height: min-content;
+						overflow: hidden;
+						white-space: nowrap;
+						border-right: 3px solid $color-primary-light;
+						animation: typewriter 5s steps(7) infinite, blinking-cursor 0.8s infinite;
+						animation-fill-mode: forwards;
+
+						@media screen and (max-width: 1000px) {
+							font-size: 1.5em;
+						}
+
+						@media screen and (max-width: 550px) {
+							font-size: 1.2em;
+						}
+
+						@media screen and (max-width: 500px) {
+							font-size: 0.8em;
+						}
+
+						@media screen and (max-width: 400px) {
+							font-size: 0.7em;
+						}
 					}
+				}
 
-					p {
-						font-family: $font-secondary;
-					}
+				@media screen and (max-width: 550px) {
+					width: calc(100% - 40px);
 				}
 			}
 
-			@media screen and (max-width: 550px) {
-				width: calc(100% - 40px);
+			@keyframes typewriter {
+				0% {
+					width: 0%;
+				}
+				25% {
+					width: 60%;
+				}
+				48% {
+					width: 70%;
+				}
+				50% {
+					width: 70%;
+				}
+				55% {
+					width: 70%;
+				}
+				75% {
+					width: 60%;
+				}
+				85% {
+					width: 30%;
+				}
+				100% {
+					width: 0%;
+				}
+			}
+
+			@keyframes blinking-cursor {
+				from {
+					border-color: transparent;
+				}
+				to {
+					border-color: $color-primary-light;
+				}
+			}
+
+			.left-card-body {
+				// width: calc(80% - 20px);
+				background-color: none;
+				display: flex;
+				margin: 20px 0 20px 20px;
+				flex-direction: column;
+				gap: 20px; /* Add a gap between sections */
+				border-radius: 15px;
+				z-index: 1;
+
+				.section {
+					@include glass-morph-background;
+					height: min-content;
+					border-radius: 15px;
+					// border: 1px solid $color-tertiary;
+
+					.section-wrapper {
+						color: $color-primary-light;
+						font-family: $font-primary;
+						padding: 40px 40px 40px 40px;
+						margin: 20px 0 20px 0;
+						display: flex;
+						flex-direction: column;
+
+						h1 {
+							font-size: 2rem;
+							font-weight: 600;
+							margin-bottom: 20px;
+							margin-top: 0px;
+							color: #ffd84c;
+						}
+
+						p {
+							font-family: $font-secondary;
+							margin: 0;
+						}
+					}
+				}
+
+				@media screen and (max-width: 550px) {
+					width: calc(100% - 40px);
+				}
 			}
 		}
 
 		// make right card occupy 1/5 of the container
 		.right-card {
-			position: fixed;
+			position: sticky;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			// justify-content: flex-start;
 			gap: 15px;
-			width: calc(20% - 30px);
-			// Get the height of scrollspy
+			// width: calc(20% - 30px);
 			height: min-content;
 			right: 0;
 			top: 0;
-			bottom: 0;
-			margin: calc($navbar-height + 20px) 20px 20px 10px;
+			margin: 0 20px 20px 0;
 			color: $color-primary-light;
 			z-index: 1;
 
 			.scrollspy {
-				// width: 100%;
-				background: rgba(14, 14, 14, 0.8);
-				border-radius: 15px;
+				@include glass-morph-background;
+				margin-top: 80px;
 				padding: 20px;
 				display: flex;
 				flex-direction: column;
@@ -446,6 +490,7 @@
 				@media screen and (max-width: 550px) {
 					position: fixed;
 					display: flex;
+					top: 80px;
 					flex-direction: row;
 					align-items: center;
 					justify-content: center;
@@ -453,19 +498,19 @@
 					left: 20px;
 					right: 0;
 					width: calc(100% - 180px);
-					height: min-content;
+					height: 40px;
 					margin: 0;
 					padding: 0px;
-					background: rgba(0, 0, 0, 0.9);
+					background: rgba(255, 255, 255, 0.9);
 				}
 			}
 		}
 
 		.display-time {
+			@include glass-morph-background;
 			font-family: $font-code;
 			padding: 10px 10px;
 			border-radius: 10px;
-			background: rgba(14, 14, 14, 0.8);
 
 			.display-time:hover {
 				background: #ffd868;
@@ -494,7 +539,7 @@
 				width: 100px;
 				height: calc(20px);
 				transform: rotate(0deg);
-				background: rgba(0, 0, 0, 0.9);
+				background: rgba(255, 255, 255, 0.9);
 			}
 		}
 	}

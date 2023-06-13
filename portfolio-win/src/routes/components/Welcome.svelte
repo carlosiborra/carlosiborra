@@ -34,11 +34,11 @@
 	<div class="ball-loader"></div>
 	<div class="ball-loader"></div>
 	<div class="ball-loader"></div> -->
-	<div class="view-square" id="view-square-main">
+	<!-- <div class="view-square" id="view-square-main">
 		<div class="view-square" id="view-square-inner">
 			<div class="view-square" id="view-square-inner-inner" />
 		</div>
-	</div>
+	</div> -->
 	<div class="loader">
 		<img src="icon-white-cream.png" alt="logo" class="loader-image" />
 	</div>
@@ -56,106 +56,103 @@
 <style lang="scss">
 	@import '../global.scss';
 
-	.view-square {
-		position: fixed;
-		top: $welcome-square-border * 2;
-		left: $welcome-square-border * 2;
-		height: calc(100vh - ($welcome-square-border * 4));
-		width: calc(100vw - ($welcome-square-border * 4));
-		border: $welcome-square-border solid $color-primary-light-trans;
-		background-color: none;
-		z-index: 102;
-		border-radius: 10px;
-		/* Just two rotations to make it look like it's spinning */
-		-webkit-animation: spin-cc 3s linear;
-		-moz-animation: spin-cc 3s linear;
-		animation: spin-cc 3s linear, dissappear 3s normal;
+	// .view-square {
+	// 	position: fixed;
+	// 	border: $welcome-square-border solid $color-primary-light-trans;
+	// 	background-color: none;
+	// 	z-index: 102;
+	// 	border-radius: 10px;
+	// 	// -webkit-animation: spin-cc 3s linear;
+	// 	// -moz-animation: spin-cc 3s linear;
+	// 	animation: spin-cc 3s linear, dissappear 3s normal;
+	// 	top: $welcome-square-border;
+	// 	left: $welcome-square-border;
+	// 	height: calc(100vh - 32px);
+	// 	width: calc(100vw - 32px);
 
-		#view-square-inner {
-			position: fixed;
-			top: $welcome-square-border * 2 + 2;
-			left: $welcome-square-border * 2 + 2;
-			height: calc(100vh - ($welcome-square-border * 4) - $welcome-square-border * 2 - 8px);
-			width: calc(100vw - ($welcome-square-border * 4) - $welcome-square-border * 2 - 8px);
+	// 	#view-square-inner {
+	// 		top: $welcome-square-border * 3;
+	// 		left: $welcome-square-border * 3;
+	// 		height: calc(100vh - 64px);
+	// 		width: calc(100vw - 64px);
 
-			#view-square-inner-inner {
-				position: fixed;
-				top: $welcome-square-border * 2 + 4;
-				left: $welcome-square-border * 2 + 4;
-				height: calc(100vh - ($welcome-square-border * 4) - $welcome-square-border * 4 - 16px);
-				width: calc(100vw - ($welcome-square-border * 4) - $welcome-square-border * 4 - 16px);
-			}
-		}
+	// 		#view-square-inner-inner {
+	// 			top: $welcome-square-border * 5;
+	// 			left: $welcome-square-border * 5;
+	// 			height: calc(100vh - 96px);
+	// 			width: calc(100vw - 96px);
+	// 		}
+	// 	}
 
-		@-moz-keyframes spin-cc {
-			0% {
-				-moz-transform: rotate(0deg);
-			}
-			100% {
-				-moz-transform: rotate(-360deg);
-				transform: rotate(-360deg);
-			}
-		}
+	// 	@-moz-keyframes spin-cc {
+	// 		0% {
+	// 			-moz-transform: rotate(0deg);
+	// 		}
+	// 		100% {
+	// 			-moz-transform: rotate(-360deg);
+	// 			transform: rotate(-360deg);
+	// 		}
+	// 	}
 
-		@-webkit-keyframes spin-cc {
-			0% {
-				-webkit-transform: rotate(0deg);
-			}
-			100% {
-				-moz-transform: rotate(-360deg);
-				transform: rotate(-360deg);
-			}
-		}
+	// 	@-webkit-keyframes spin-cc {
+	// 		0% {
+	// 			-webkit-transform: rotate(0deg);
+	// 		}
+	// 		100% {
+	// 			-moz-transform: rotate(-360deg);
+	// 			transform: rotate(-360deg);
+	// 		}
+	// 	}
 
-		@keyframes spin-cc {
-			0% {
-				-webkit-transform: rotate(0deg);
-				transform: rotate(0deg);
-				border: $welcome-square-border solid $color-primary-light-trans;
-			}
-			100% {
-				-moz-transform: rotate(-360deg);
-				transform: rotate(-360deg);
-			}
-		}
+	// 	@keyframes spin-cc {
+	// 		0% {
+	// 			-webkit-transform: rotate(0deg);
+	// 			transform: rotate(0deg);
+	// 			border: $welcome-square-border solid $color-primary-light-trans;
+	// 		}
+	// 		100% {
+	// 			-moz-transform: rotate(-360deg);
+	// 			transform: rotate(-360deg);
+	// 		}
+	// 	}
 
-		@keyframes dissappear {
-			0% {
-				border-color: rgba(251, 251, 251, 0.05);
-			}
-			100% {
-				border-color: rgba(251, 251, 251, 0);
-			}
-		}
+	// 	@keyframes dissappear {
+	// 		0% {
+	// 			border-color: rgba(251, 251, 251, 0.05);
+	// 		}
+	// 		100% {
+	// 			border-color: rgba(251, 251, 251, 0);
+	// 		}
+	// 	}
 
-		border-color: rgba(251, 251, 251, 0);
+	// 	border-color: rgba(251, 251, 251, 0);
 
-		#view-square-inner {
-			border: $welcome-square-border solid $color-tertiary;
-		}
-	}
+	// 	#view-square-inner {
+	// 		border: $welcome-square-border solid $color-tertiary;
+	// 	}
+	// }
 
-	.ball-loader {
-		position: fixed;
-		width: 100px;
-		height: 100px;
-		border-radius: 50%;
-		filter: blur(200px);
-		z-index: 101;
-		background-color: none;
-	}
+	// .ball-loader {
+	// 	position: fixed;
+	// 	width: 100px;
+	// 	height: 100px;
+	// 	border-radius: 50%;
+	// 	filter: blur(200px);
+	// 	z-index: 101;
+	// 	background-color: none;
+	// }
 
-	@keyframes move-slow {
-		0% {
-			transform: translate(0, 0);
-		}
-		50% {
-			transform: translate(10vw, 10vh);
-		}
-		100% {
-			transform: translate(0, 0);
-		}
-	}
+	// @keyframes move-slow {
+	// 	0% {
+	// 		transform: translate(0, 0);
+	// 	}
+	// 	50% {
+	// 		transform: translate(10vw, 10vh);
+	// 	}
+	// 	100% {
+	// 		transform: translate(0, 0);
+	// 	}
+	// }
 
 	.welcome-container {
 		position: fixed;
@@ -246,7 +243,9 @@
 		position: fixed;
 		top: 50%; /* Position the image at the vertical middle of the loader container */
 		height: 60px;
-		left: calc(50vw - 13px); /* Position the image at the horizontal middle of the loader container */
+		left: calc(
+			50vw - 13px
+		); /* Position the image at the horizontal middle of the loader container */
 		-webkit-animation: spin 3s linear infinite;
 		-moz-animation: spin 3s linear infinite;
 		animation: spin 3s linear infinite, pulse 0.8s ease-in-out infinite;

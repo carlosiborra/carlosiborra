@@ -120,6 +120,7 @@
 		height: 100%;
 		width: 4px;
 		background: $color-tertiary;
+		// border-left-color: $color-tertiary;
 	}
 	@media only screen and (min-width: 1170px) {
 		#cd-timeline {
@@ -129,6 +130,7 @@
 		#cd-timeline::before {
 			left: 50%;
 			margin-left: -2px;
+			// border-left-color: $color-tertiary;
 		}
 	}
 
@@ -273,11 +275,13 @@
 		width: 0;
 		border: 7px solid transparent;
 		border-right: 7px solid $color-tertiary;
+		// border-color: transparent;
+		// background-color: red;
 	}
 
 	@media only screen and (min-width: 1170px) {
 		.cd-timeline-content {
-			color: white;
+			color: $color-primary-light;
 			margin-left: 0;
 			padding: 1.6em;
 			width: 36%;
@@ -288,6 +292,7 @@
 			left: 100%;
 			border-color: transparent;
 			border-left-color: $color-tertiary;
+			// background-color: red;
 		}
 		.cd-timeline-content .cd-date {
 			position: absolute;
@@ -306,6 +311,7 @@
 			right: 100%;
 			border-color: transparent;
 			border-right-color: $color-tertiary;
+			// background-color: red;
 		}
 		.cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
 			float: right;
@@ -317,7 +323,7 @@
 		}
 	}
 
-  @media only screen and (min-width: 768px) {
+	@media only screen and (min-width: 768px) {
 		.cd-timeline-content h2 {
 			font-size: 1.25rem;
 		}
@@ -332,48 +338,43 @@
 		}
 	}
 
-  // @media only screen and (max-width: 550px) {
-
-  //   #cd-timeline {
-
-  //     position: relative;
-  //     display: flex;
-  //     flex-direction: column;
-  //     flex-wrap: wrap;
-  //     justify-content: center;
-  //     align-items: center;
-  //     margin: 0;
-  //     padding: 1em 0;
-
-  //   }
+	// @media only screen and (max-width: 550px) {
+	// 	#cd-timeline {
+	// 		position: relative;
+	// 		display: flex;
+	// 		flex-direction: column;
+	// 		flex-wrap: wrap;
+	// 		justify-content: center;
+	// 		align-items: center;
+	// 		margin: 0;
+	// 		padding: 1em 0;
+	// 	}
 
 	// 	.cd-timeline-content h2 {
 	// 		font-size: 1.2rem;
 	// 	}
 	// 	.cd-timeline-content p {
-	// 		font-size: .8rem;
+	// 		font-size: 0.8rem;
 	// 	}
 	// 	.cd-timeline-content .cd-read-more,
 	// 	.cd-timeline-content .cd-date {
 	// 		font-size: 14px;
 	// 		font-size: 0.875rem;
 	// 	}
-	
-  //   #cd-timeline::before {
-  //     display: none;
-  //     }
-  //   .cd-timeline-img {
-  //     display: none;
-  //   }
-  //   .cd-timeline-content {
-  //     margin: 0;
-  //     width: 100%;
-  //     padding: 1.6em;
-  //   }
-  //   .cd-timeline-content::before {
-  //     display: none;
-  //   }
 
-	// }    
-
+	// 	#cd-timeline::before {
+	// 		display: none;
+	// 	}
+	// 	.cd-timeline-img {
+	// 		display: none;
+	// 	}
+	// 	.cd-timeline-content {
+	// 		margin: 0;
+	// 		width: 100%;
+	// 		padding: 1.6em;
+	// 	}
+	// 	.cd-timeline-content::before {
+	// 		display: none;
+	// 	}
+	// }
 </style>

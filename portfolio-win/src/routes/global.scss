@@ -15,8 +15,16 @@ $color-text-cream: #ffd84c;
 $color-primary-glass-morph: (
 	background: rgba(14, 14, 14, 0.8),
 	box-shadow: 4 4px 30px rgba(0, 0, 0, 1),
-	backdrop-filter: blur(12px),
+	backdrop-filter: blur(10px),
 	-webkit-backdrop-filter: blur(12px)
+);
+
+$color-primary-glass-morph-content: (
+	background: rgba(14, 14, 14, 0.95),
+	box-shadow: 4 4px 30px rgba(255, 255, 255, 1),
+	backdrop-filter: blur(6px),
+	-webkit-backdrop-filter: blur(6px),
+	border-radius: 15px
 );
 
 // ! Fonts
@@ -35,6 +43,7 @@ $navbar-padding-left: 60px;
 $navbar-padding-top-bottom: 10px;
 $navbar-height: 60px;
 
-$welcome-height-square: 1vh;
-$welcome-width-square: 1vw;
 $welcome-square-border: 8px;
+$welcome-square-width: $navbar-height * 2;
+$welcome-square-width-2: $welcome-square-width * 2 - 2;
+$welcome-square-width-4: $welcome-square-width * 2 - 4;
