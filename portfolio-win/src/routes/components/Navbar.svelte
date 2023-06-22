@@ -32,6 +32,11 @@
 		}
 	}
 
+	html,
+	body {
+		border-color: #FFF;
+	}
+
 	.Navbar {
 		@include glass-morph-styles;
 

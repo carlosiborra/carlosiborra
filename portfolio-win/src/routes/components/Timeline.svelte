@@ -120,7 +120,6 @@
 		height: 100%;
 		width: 4px;
 		background: $color-tertiary;
-		// border-left-color: $color-tertiary;
 	}
 	@media only screen and (min-width: 1170px) {
 		#cd-timeline {
@@ -130,7 +129,6 @@
 		#cd-timeline::before {
 			left: 50%;
 			margin-left: -2px;
-			// border-left-color: $color-tertiary;
 		}
 	}
 
@@ -192,7 +190,6 @@
 		margin-left: 60px;
 		margin-right: 30px;
 		background: $color-tertiary;
-		border-radius: 2px;
 		padding: 1em;
 		border-radius: 15px;
 
@@ -273,10 +270,9 @@
 		right: 100%;
 		height: 0;
 		width: 0;
+
 		border: 7px solid transparent;
-		border-right: 7px solid $color-tertiary;
-		// border-color: transparent;
-		// background-color: red;
+		border-right: 7px solid $color-text-cream;
 	}
 
 	@media only screen and (min-width: 1170px) {
@@ -290,9 +286,9 @@
 		.cd-timeline-content::before {
 			top: 30px;
 			left: 100%;
-			border-color: transparent;
-			border-left-color: $color-tertiary;
-			// background-color: red;
+
+			border: 7px solid transparent;
+			border-left: 7px solid $color-text-cream;
 		}
 		.cd-timeline-content .cd-date {
 			position: absolute;
@@ -309,9 +305,9 @@
 			top: 32px;
 			left: auto;
 			right: 100%;
-			border-color: transparent;
-			border-right-color: $color-tertiary;
-			// background-color: red;
+
+			border: 7px solid transparent;
+			border-right: 7px solid $color-text-cream;
 		}
 		.cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
 			float: right;

@@ -1,17 +1,18 @@
 <script lang="ts">
-	import Navbar from './components/Navbar.svelte';
-	import Footer from './components/Footer.svelte';
-	import Balls from './components/Balls.svelte';
+	// import Balls from './components/Balls.svelte';
 	import Welcome from './components/Welcome.svelte';
 </script>
 
 <!-- ! ------------------------------------>
 
-<Welcome />
 <body>
-	<slot />
+	<div class="background-image">
+		<div class="background-color"></div>
+		<div class="content">
+			<slot />
+		</div>
+	</div>
 </body>
-<Footer />
 
 <!-- ! ------------------------------------>
 
@@ -25,17 +26,8 @@
 	}
 
 	body {
-		margin: 0 0 0 0;
+		margin: 0;
 		background-color: rgb(255, 255, 255);
-		background-image: url('wireframe-top.jpg');
-		background-repeat: no-repeat;
-		//background width max 100% of the screen
-		background-size: 100vw;
-		// // background to bottom
-		// background-position: bottom;
-		background-size: cover;
-		// // background-position: center;
-		// scroll-behavior: smooth;
 		scroll-behavior: smooth;
 
 		/* Make the scroll bar invisible */
@@ -46,27 +38,51 @@
 			width: 0px;
 			background: transparent; /* make scrollbar transparent */
 		}
+
+		border-color: #fff;
+	}
+
+	.background-image {
+		position: relative;
+		overflow: hidden;
+	}
+
+	.background-color {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 100%;
+		height: 1px;
+		background-color: rgb(255, 255, 255); /* Set your desired background color */
+		transform: translateY(-50%);
+	}
+
+	.content {
+		position: relative;
+		z-index: 1; /* Ensure content is positioned above the background images */
+	}
+
+	.background-image::before,
+	.background-image::after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 50%;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.background-image::before {
+		top: 0;
+		background-image: url('wireframe-top.jpg');
+	}
+
+	.background-image::after {
+		bottom: 0;
+		background-image: url('wireframe-bottom.jpg');
 	}
 
 	slot {
 		display: none;
 	}
-
-	// #background-image-top {
-	// 	position: fixed;
-	// 	top: 0;
-	// 	left: 0;
-	// 	width: 100vw;
-	// 	height: 50vh;
-	// 	z-index: 10;
-	// }
-
-	// #background-image-bottom {
-	// 	position: fixed;
-	// 	bottom: 0;
-	// 	left: 0;
-	// 	width: 100vw;
-	// 	height: 50vh;
-	// 	z-index: 10;
-	// }
 </style>

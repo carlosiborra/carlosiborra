@@ -5,6 +5,7 @@
 	import Contact from './Contact.svelte';
 	import Timeline from './Timeline.svelte';
 	import Navbar from './Navbar.svelte';
+	import Footer from './Footer.svelte';
 
 	// console.log('\nContent component NOT-loaded\n');
 
@@ -197,7 +198,35 @@
 
 					<div id="section4" class="section">
 						<div class="section-wrapper">
-							<h1>3. Social Media</h1>
+							<h1>3. Stats</h1>
+							<p>
+								This are my overall stats in the VS Code editor (Arch Linux + Windows). Looking
+								foward adding compatibility with Neovim, Konsole and Terminal.
+							</p>
+							<p>
+								For better up-to date stats, visit my <a href="https://github.com/carlosiborra"
+									>GitHub</a
+								> profile.
+							</p>
+							<!-- This better GitHub stats were provided by https://github.com/jstrieb/github-stats -->
+							<div class="github-stats">
+								<img
+									class="img-fluid"
+									src="https://github-readme-stats.vercel.app/api/?username=carlosiborra&count_private=true&theme=dark&show_icons=true&title_color=00d612&show_owner&icon_color=00d612"
+									alt="Carlos Iborra GitHub Stats"
+								/>
+								<img
+									class="img-fluid"
+									src="https://github-readme-stats.vercel.app/api/top-langs/?username=carlosiborra&count_private=true&theme=dark&show_icons=true&title_color=00d612&show_owner&icon_color=00d612"
+									alt="Carlos Iborra Most Used Languages"
+								/>
+							</div>
+						</div>
+					</div>
+
+					<div id="section5" class="section">
+						<div class="section-wrapper">
+							<h1>4. Social Media</h1>
 							<!-- <p>Lorem ipsum dolor sit amet consectetur adipi sicing elit. Quisquam, quod.</p> -->
 							<Contact />
 						</div>
@@ -222,6 +251,7 @@
 		</div>
 	</div>
 </div>
+<Footer />
 
 <!-- ! ------------------------------------>
 
@@ -380,7 +410,7 @@
 				// width: calc(80% - 20px);
 				background-color: none;
 				display: flex;
-				margin: 20px 0 20px 20px;
+				margin: 20px 0 0 20px;
 				flex-direction: column;
 				gap: 20px; /* Add a gap between sections */
 				border-radius: 15px;
@@ -396,7 +426,7 @@
 						color: $color-primary-light;
 						font-family: $font-primary;
 						padding: 40px 40px 40px 40px;
-						margin: 20px 0 20px 0;
+						margin: 20px 0 25px 0;
 						display: flex;
 						flex-direction: column;
 
@@ -413,17 +443,43 @@
 							margin: 0;
 						}
 					}
+
+					.github-stats {
+						display: flex;
+						flex-direction: column;
+						justify-content: space-between;
+						align-items: left;
+						flex-wrap: wrap;
+
+						.img-fluid {
+							// set max width of the image to the one on the div it is inside
+							max-width: 100%;
+							margin: 40px 0 0 0;
+						}
+					}
 				}
 
 				@media screen and (max-width: 550px) {
 					width: calc(100% - 40px);
 				}
 			}
+
+			@media screen and (max-width: 799px) {
+				margin-right: 140px;
+			}
+
+			@media screen and (max-width: 550px) {
+				margin-right: 0px;
+			}
+
+			// Else
+			margin-right: calc(190px);
+
 		}
 
 		// make right card occupy 1/5 of the container
 		.right-card {
-			position: sticky;
+			position: fixed;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -441,6 +497,7 @@
 				margin-top: 80px;
 				padding: 20px;
 				display: flex;
+				position: sticky;
 				flex-direction: column;
 				gap: 20px;
 				height: 100%;
@@ -503,6 +560,11 @@
 					padding: 0px;
 					background: rgba(255, 255, 255, 0.9);
 				}
+
+				// @media screen and (min-width: 2000px) {
+				// 	position: sticky;
+				// }
+
 			}
 		}
 
