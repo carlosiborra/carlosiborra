@@ -24,7 +24,7 @@
 		scrollspy = Array.from(document.querySelectorAll('.scrollspy-link'));
 
 		window.addEventListener('scroll', scrollHandler);
-
+		
 		// Function to update the scrollspy links based on window width
 		const updateScrollspyLinks = () => {
 			scrollspy.forEach((link, index) => {
@@ -61,7 +61,7 @@
 
 		function scrollHandler() {
 			// Get the current scroll position
-			const scrollPosition = window.pageYOffset;
+			const scrollPosition = window.pageYOffset + 60;
 			// console.log('scrollPosition: ', scrollPosition);
 
 			// Loop through the sections
@@ -156,6 +156,7 @@
 
 <!-- ! ------------------------------------>
 
+<title>Carlos Iborra | Portfolio</title>
 <div class="home-page">
 	<Navbar />
 	<div class="container">
@@ -238,10 +239,11 @@
 					<!-- add the different sections as scrollspy -->
 					<nav class="scrollspy">
 						<!-- On load change the child of each a to the text in the section h1 -->
-						<a href="#section1" class="scrollspy-link" />
-						<a href="#section2" class="scrollspy-link" />
-						<a href="#section3" class="scrollspy-link" />
-						<a href="#section4" class="scrollspy-link" />
+						<a href="#section1" class="scrollspy-link" > </a>
+						<a href="#section2" class="scrollspy-link" > </a>
+						<a href="#section3" class="scrollspy-link" > </a>
+						<a href="#section4" class="scrollspy-link" > </a>
+						<a href="#section5" class="scrollspy-link" > </a>
 					</nav>
 				</div>
 				<div class="container-time">
@@ -317,7 +319,7 @@
 			@media screen and (max-width: 550px) {
 				flex-direction: column;
 				align-items: center;
-				margin-top: 60px;
+				margin-top: 90px;
 			}
 
 			.left-card-heading {
@@ -426,7 +428,7 @@
 						color: $color-primary-light;
 						font-family: $font-primary;
 						padding: 40px 40px 40px 40px;
-						margin: 20px 0 25px 0;
+						margin: 5px 0 20px 0;
 						display: flex;
 						flex-direction: column;
 
@@ -474,7 +476,6 @@
 
 			// Else
 			margin-right: calc(190px);
-
 		}
 
 		// make right card occupy 1/5 of the container
@@ -494,7 +495,7 @@
 
 			.scrollspy {
 				@include glass-morph-background;
-				margin-top: 80px;
+				margin-top: $navbar-height + 20px;
 				padding: 20px;
 				display: flex;
 				position: sticky;
@@ -547,7 +548,7 @@
 				@media screen and (max-width: 550px) {
 					position: fixed;
 					display: flex;
-					top: 80px;
+					top: 100px;
 					flex-direction: row;
 					align-items: center;
 					justify-content: center;
@@ -560,11 +561,11 @@
 					padding: 0px;
 					background: rgba(255, 255, 255, 0.9);
 				}
+			}
 
-				// @media screen and (min-width: 2000px) {
-				// 	position: sticky;
-				// }
-
+			@media screen and (min-width: 2000px) {
+				position: fixed;
+				left: 1830px;
 			}
 		}
 
@@ -595,7 +596,7 @@
 				position: fixed;
 				// left: 20px;
 				right: 20px;
-				top: 40px;
+				top: 60px;
 				text-align: center;
 				margin: 40px 0px 0px 0px;
 				width: 100px;

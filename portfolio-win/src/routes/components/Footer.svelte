@@ -4,13 +4,13 @@
 
 <footer class="footer">
 	<div class="social-links">
-		<a class="social-img" onclick="window.open('https://github.com/carlosiborra')">
+		<a class="social-img" onclick="window.open('https://github.com/carlosiborra')" href='https://github.com/carlosiborra'>
 			<img src="github.png" alt="github" /></a
 		>
-		<a class="social-img" onclick="window.open('https://www.linkedin.com/in/carlos-iborra')">
+		<a class="social-img" onclick="window.open('https://www.linkedin.com/in/carlos-iborra')" href='https://github.com/carlosiborra'>
 			<img src="linkedin.png" alt="linkedin" /></a
 		>
-		<a class="social-img" onclick="window.open('https://twitter.com/iboorraa')">
+		<a class="social-img" onclick="window.open('https://twitter.com/iboorraa')" href='https://github.com/carlosiborra'>
 			<img src="twitter.png" alt="twitter" /></a
 		>
 	</div>
@@ -36,7 +36,7 @@
 		@include glass-morph-styles;
 		color: $color-primary-light;
 		// top: auto;
-		margin-top: auto;
+		margin-top: 30px;
 		position: relative;
 		width: 100vw;
 		height: 70px;

@@ -12,4 +12,4 @@
 - [ ] Make it so that if the screen is very wide, the content is centered
 - [ ] hide navbar when scrolling down
 - [ ] Parallax effect on background
-- [ ] Scrollspy needs fix when > 2000px
+- [X] Scrollspy needs fix when > 2000px

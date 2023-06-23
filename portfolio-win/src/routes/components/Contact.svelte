@@ -43,7 +43,7 @@
 	@import '../global.scss';
 	.social-wrapper {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(80px, 2fr));
 		grid-gap: 20px;
 	}
 
@@ -60,10 +60,6 @@
 		&:hover {
 			filter: brightness(1.2);
 			transform: scale(1.01);
-
-			a {
-				filter: brightness(1.2);
-			}
 		}
 
 		&:active {

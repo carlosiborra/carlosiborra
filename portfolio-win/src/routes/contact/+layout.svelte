@@ -1,15 +1,27 @@
 <script>
 	// console.log('page.svelte');
+	import Navbar from '../components/Navbar.svelte';
+	import Footer from '../components/Footer.svelte';
 </script>
 
-<p class="loading-portfolio">Contact</p>
+<div id="projects-container">
+	<Navbar />
+	<p class="loading-portfolio">Projects</p>
+</div>
+<Footer />
 
 <style lang="scss">
 	@import '../global.scss';
 
-	main {
-		margin-top: $navbar-height;
-		margin-bottom: 10px;
+	.body {
+		
+	}
+
+	#projects-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 
 </style>

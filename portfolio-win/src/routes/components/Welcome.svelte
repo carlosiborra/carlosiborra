@@ -166,17 +166,20 @@
 		font-family: Arial, sans-serif;
 		color: $color-primary-light;
 		background-color: $color-primary;
+
 		z-index: 100;
 
 		font-family: $font-primary;
 
 		// Do not permit the user to scroll the page while the loading screen is active
 		overflow: hidden;
+
+		animation: preloadImage 0.01s forwards; // Start loading the background image immediately
 	}
 
-	.loading {
-		animation: pulse 1s infinite;
-	}
+	// .loading {
+	// 	animation: pulse 1s infinite;
+	// }
 
 	@keyframes pulse {
 		0% {
