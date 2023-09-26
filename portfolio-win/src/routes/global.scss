@@ -1,16 +1,18 @@
 // !  Color
-$color-primary: #181818;
-$color-secondary: #0e0e0e;
-$color-tertiary: #282828;
+$color-primary: rgb(25, 25, 25);
+$color-primary-trans: rgba(25, 25, 25, 0.8);
+$color-secondary: rgb(14, 14, 14);
+$color-tertiary: rgb(40, 40, 40);
 
-$color-primary-light: #fbfbfb;
+$color-primary-light: rgb(251, 251, 251);
 $color-primary-light-trans: rgba(251, 251, 251, 0.5);
 $color-primary-light-trans-trans: rgba(251, 251, 251, 0.1);
-$color-secondary-light: #e9e9e9;
+$color-secondary-light: rgb(233, 233, 233);
 
-$color-text-active: #b3b3b3;
-$color-text-blue: #00bfff;
-$color-text-cream: #ffd84c;
+$color-text-active: rgb(179, 179, 179);
+$color-text-blue: rgb(0, 191, 255);
+$color-text-cream: rgb(255, 216, 76);
+$color-text-yellow: rgb(255, 216, 76);
 
 $color-primary-glass-morph: (
 	background: rgba(14, 14, 14, 0.8),
@@ -20,12 +22,40 @@ $color-primary-glass-morph: (
 );
 
 $color-primary-glass-morph-content: (
-	background: rgba(14, 14, 14, 0.95),
+	background: $color-primary-trans,
 	box-shadow: 4 4px 30px rgba(255, 255, 255, 1),
-	backdrop-filter: blur(6px),
-	-webkit-backdrop-filter: blur(6px),
+	backdrop-filter: blur(10px),
+	-webkit-backdrop-filter: blur(10px),
 	border-radius: 15px
 );
+
+$color-secondary-glass-morph-content: (
+	background: $color-secondary,
+	box-shadow: 4 4px 30px rgba(255, 255, 255, 1),
+	backdrop-filter: blur(10px),
+	-webkit-backdrop-filter: blur(10px),
+	border-radius: 15px
+);
+
+// $light-background: (
+// 	background-image: radial-gradient(at 10% 61%, hsla(121, 78%, 71%, 1) 0px, transparent 50%)
+// 	radial-gradient(at 90% 8%, hsla(161, 87%, 75%, 1) 0px, transparent 50%),
+// 	radial-gradient(at 92% 12%, hsla(285, 88%, 66%, 1) 0px, transparent 50%),
+// 	radial-gradient(at 31% 74%, hsla(322, 86%, 62%, 1) 0px, transparent 50%),
+// 	radial-gradient(at 31% 16%, hsla(212, 82%, 60%, 1) 0px, transparent 50%),
+// 	radial-gradient(at 88% 12%, hsla(45, 60%, 70%, 1) 0px, transparent 50%),
+// 	radial-gradient(at 95% 45%, hsla(99, 73%, 69%, 1) 0px, transparent 50%),
+// );
+
+// $dark-background: (
+// 	background-image: radial-gradient(at 10% 61%, hsla(121, 78%, 71%, 1) 0px, transparent 30%),
+// 	radial-gradient(at 1% 8%, rgb(199, 128, 128) 0px, transparent 70%),
+// 	radial-gradient(at 92% 12%, rgb(147, 60, 175) 0px, transparent 30%),
+// 	radial-gradient(at 31% 74%, rgb(212, 58, 155) 0px, transparent 40%),
+// 	radial-gradient(at 31% 16%, rgb(72, 138, 213) 0px, transparent 40%),
+// 	radial-gradient(at 88% 12%, rgb(125, 109, 63) 0px, transparent 50%),
+// 	radial-gradient(at 95% 90%, rgb(111, 164, 83) 0px, transparent 40%),
+// );
 
 // ! Fonts
 @import url('https://fonts.googleapis.com/css2?family=Lora');
@@ -34,14 +64,13 @@ $color-primary-glass-morph-content: (
 
 $font-primary: 'Lora', serif;
 $font-secondary: 'Lato', sans-serif;
-// A coding font
 $font-code: 'Fira Code', monospace;
 
 // ! Size
 $navbar-padding-right: 45px;
 $navbar-padding-left: 60px;
 $navbar-padding-top-bottom: 10px;
-$navbar-height: 70px;
+$navbar-height: 80px;
 
 $welcome-square-border: 8px;
 $welcome-square-width: $navbar-height * 2;

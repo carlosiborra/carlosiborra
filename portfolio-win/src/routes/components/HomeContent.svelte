@@ -263,8 +263,14 @@
 	// @import changeText;
 
 	// Acquire the glass morph effect from the global.scss file as a callable mixin
-	@mixin glass-morph-background {
+	@mixin glass-time-morph-background {
 		@each $property, $value in $color-primary-glass-morph-content {
+			#{$property}: $value;
+		}
+	}
+	
+	@mixin glass-content-morph-background {
+		@each $property, $value in $color-secondary-glass-morph-content {
 			#{$property}: $value;
 		}
 	}
@@ -323,7 +329,7 @@
 			}
 
 			.left-card-heading {
-				@include glass-morph-background;
+				@include glass-content-morph-background;
 				margin: 20px 0 20px 20px;
 				gap: 20px;
 				border-radius: 15px;
@@ -419,7 +425,7 @@
 				z-index: 1;
 
 				.section {
-					@include glass-morph-background;
+					@include glass-content-morph-background;
 					height: min-content;
 					border-radius: 15px;
 					// border: 1px solid $color-tertiary;
@@ -494,7 +500,7 @@
 			z-index: 1;
 
 			.scrollspy {
-				@include glass-morph-background;
+				@include glass-time-morph-background;
 				margin-top: $navbar-height + 20px;
 				padding: 20px;
 				display: flex;
@@ -559,7 +565,7 @@
 					height: 40px;
 					margin: 0;
 					padding: 0px;
-					background: rgba(255, 255, 255, 0.9);
+					// background: rgba(255, 255, 255, 0.9);
 				}
 			}
 
@@ -570,7 +576,7 @@
 		}
 
 		.display-time {
-			@include glass-morph-background;
+			@include glass-time-morph-background;
 			font-family: $font-code;
 			padding: 10px 10px;
 			border-radius: 10px;
@@ -602,7 +608,7 @@
 				width: 100px;
 				height: calc(20px);
 				transform: rotate(0deg);
-				background: rgba(255, 255, 255, 0.9);
+				// background: rgba(255, 255, 255, 0.9);
 			}
 		}
 	}

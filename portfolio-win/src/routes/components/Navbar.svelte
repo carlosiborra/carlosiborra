@@ -1,8 +1,10 @@
-<!-- ! NAVBAR -->
+<!-- ! SCRIPT ------------------------------------------------------------------------------------->
 
 <script lang="ts">
  
 </script>
+
+<!-- ! STRUCT ------------------------------------------------------------------------------------->
 
 <nav class="Navbar">
 	<div class="navbar-brand">
@@ -21,6 +23,8 @@
 	</div>
 </nav>
 
+<!-- ! STYLE -------------------------------------------------------------------------------------->
+
 <style lang="scss">
 	// Import global styles
 	@import '../global.scss';
@@ -38,18 +42,18 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		z-index: 1;
 
-		position: fixed;
 		top: 0;
-		left: 0;
-		z-index: 10;
+		position: fixed;
+		margin: 20px 20px 0 20px;
 
-		height: $navbar-height;
-		width: calc(100% - ($navbar-padding-left + $navbar-padding-right));
-		padding: 0 $navbar-padding-right 0 $navbar-padding-left;
+		height: $navbar-height - 20px;
+		width: calc(100% - 40px - 30px);
+		padding: 0 15px;
 
-		// add a shadow only at the bottom color white to make it look like a glass
-		box-shadow: 0px 2px 10px -2px rgba(255, 255, 255, 1);
+		background-color: $color-primary-trans;
+		border-radius: 15px;
 
 		.logo-navbar-container {
 			top: 0;
@@ -63,7 +67,7 @@
 			text-decoration: none;
 
 			.logo-navbar {
-				height: calc($navbar-height - 30px);
+				height: calc($navbar-height - 30px - 20px);
 				margin: 0 20px 0 0;
 			}
 
@@ -127,7 +131,6 @@
 		}
 
 		@media (max-width: 400px) {
-			padding: 0 $navbar-padding-right + 7.5px 0 $navbar-padding-right + 7.5px;
       .navbar-menu {
         // font-size: 10px;
       }

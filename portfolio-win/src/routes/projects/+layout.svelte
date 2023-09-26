@@ -415,11 +415,10 @@
 				z-index: 1;
 
 				.section {
-					@include glass-morph-background;
+					// @include glass-morph-background;
 					height: min-content;
 					border-radius: 15px;
-					// border: 1px solid $color-tertiary;
-
+										
 					.section-wrapper {
 						color: $color-primary-light;
 						font-family: $font-primary;

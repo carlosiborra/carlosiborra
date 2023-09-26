@@ -200,7 +200,7 @@
 			color: $color-secondary-light;
 			font-size: 12px;
 			box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.08);
-			border-radius: 2px;
+			border-radius: 5px;
 			i {
 				margin-right: 5px;
 			}
@@ -227,13 +227,13 @@
 			justify-content: center;
 			li {
 				background: $color-primary;
-				border-radius: 2px;
 				display: inline-block;
 				padding: 2px 10px;
 				color: $color-secondary-light;
 				margin: 3px 2px;
 				text-align: center;
 				flex-grow: 1;
+				border-radius: 5px;
 			}
 		}
 	}
