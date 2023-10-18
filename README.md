@@ -36,18 +36,18 @@ If you really want to read an extended biography, you have my portfolio at the f
 <!--START_SECTION:waka-->
 
 ```txt
-Total Time: 223 hrs 58 mins
+Total Time: 227 hrs 11 mins
 
-Svelte           50 hrs 55 mins  ⠿⠿⠿⠿⠿⠛⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   22.74 %
-SCSS             49 hrs 52 mins  ⠿⠿⠿⠿⠿⠛⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   22.27 %
-TeX              23 hrs 35 mins  ⠿⠿⠛⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   10.53 %
-Python           23 hrs 27 mins  ⠿⠿⠛⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   10.48 %
-Other            19 hrs 42 mins  ⠿⠿⠉⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   08.80 %
-TypeScript       16 hrs 21 mins  ⠿⠛⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   07.30 %
-HTML             11 hrs 55 mins  ⠿⠉⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   05.32 %
-C                11 hrs 52 mins  ⠿⠉⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   05.30 %
-JSON             5 hrs 47 mins   ⠛⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   02.59 %
-Markdown         2 hrs 34 mins   ⠉⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   01.15 %
+SCSS             51 hrs 21 mins  ⠿⠿⠿⠿⠿⠛⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   22.61 %
+Svelte           50 hrs 55 mins  ⠿⠿⠿⠿⠿⠛⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   22.42 %
+Python           24 hrs 49 mins  ⠿⠿⠛⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   10.93 %
+TeX              23 hrs 35 mins  ⠿⠿⠛⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   10.38 %
+Other            19 hrs 45 mins  ⠿⠿⠉⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   08.69 %
+TypeScript       16 hrs 21 mins  ⠿⠛⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   07.20 %
+HTML             11 hrs 59 mins  ⠿⠉⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   05.28 %
+C                11 hrs 52 mins  ⠿⠉⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   05.22 %
+JSON             6 hrs           ⠛⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   02.64 %
+Markdown         2 hrs 34 mins   ⠉⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   01.13 %
 ```
 
 <!--END_SECTION:waka-->
