@@ -1,7 +1,6 @@
 <!-- ! SCRIPT ------------------------------------------------------------------------------------->
 
 <script lang="ts">
- 
 </script>
 
 <!-- ! STRUCT ------------------------------------------------------------------------------------->
@@ -10,15 +9,18 @@
 	<div class="navbar-brand">
 		<a href="/" class="logo-navbar-container">
 			<img class="logo-navbar" src="icon-white-cream.png" alt="Logo" />
-			<span class="logo-navbar-text">Carlos Iborra</span>
+			<span class="logo-navbar-text"
+				><span class="cream">C</span>arlos <span class="cream">I</span>borra</span
+			>
 		</a>
 	</div>
 
 	<div class="navbar-menu">
 		<ul>
 			<li><a href="/">Home</a></li>
+			<li><a href="/notes">Notes</a></li>
 			<li><a href="/projects">Projects</a></li>
-			<li><a href="/contact">Contact</a></li>
+			<!-- <li><a href="/contact">Contact</a></li> -->
 		</ul>
 	</div>
 </nav>
@@ -55,16 +57,20 @@
 		background-color: $color-primary-trans;
 		border-radius: 15px;
 
+		font-family: $font-code;
+
 		.logo-navbar-container {
+			display: flex;
+			align-items: center;
+			text-decoration: none;
+
+			height: 100%;
+			width: 100%;
+
 			top: 0;
 			left: 0;
 			margin: 0;
 			padding: 0;
-			height: 100%;
-			width: auto;
-			display: flex;
-			align-items: center;
-			text-decoration: none;
 
 			.logo-navbar {
 				height: calc($navbar-height - 30px - 20px);
@@ -72,11 +78,14 @@
 			}
 
 			.logo-navbar-text {
-				font-family: $font-primary;
-				font-size: 2rem;
 				margin: 0 20px 0 0;
+				font-size: 25px;
 				color: $color-primary-light;
 				white-space: nowrap;
+
+				.cream {
+					color: $color-text-cream;
+				}
 
 				&:hover {
 					color: $color-secondary-light;
@@ -85,9 +94,14 @@
 				&:active {
 					color: $color-text-active;
 				}
+			}
 
-				@media (max-width: 600px) {
+			@media (max-width: $breakpoint-mobile) {
+				.logo-navbar-text {
 					display: none;
+				}
+				.logo-navbar {
+					margin: 0;
 				}
 			}
 		}
@@ -107,7 +121,8 @@
 
 					a {
 						font-family: $font-primary;
-						font-size: 100%;
+						// font-size: 100%;
+						font-size: 15px;
 						color: $color-primary-light;
 						text-decoration: none;
 						padding: 0 10px;
@@ -131,9 +146,9 @@
 		}
 
 		@media (max-width: 400px) {
-      .navbar-menu {
-        // font-size: 10px;
-      }
+			.navbar-menu {
+				// font-size: 10px;
+			}
 		}
 	}
 </style>

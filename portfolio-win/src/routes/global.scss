@@ -1,4 +1,19 @@
-// !  Color
+// ! Fonts
+@import url('https://fonts.googleapis.com/css2?family=Play`fair+Display');
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code');
+
+$font-primary: 'Lato', sans-serif;
+$font-secondary: 'Roboto', sans-serif;
+$font-serif: 'Playfair Display', serif;  // Used for titles
+$font-code: 'Fira Code', monospace;  // Used for code pieces and identity
+
+// ! Media queries
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 769px;
+
+// ! Color
 $color-primary: rgb(25, 25, 25);
 $color-primary-trans: rgba(25, 25, 25, 0.8);
 $color-secondary: rgb(14, 14, 14);
@@ -17,15 +32,15 @@ $color-text-yellow: rgb(255, 216, 76);
 $color-primary-glass-morph: (
 	background: rgba(14, 14, 14, 0.8),
 	box-shadow: 4 4px 30px rgba(0, 0, 0, 1),
-	backdrop-filter: blur(10px),
-	-webkit-backdrop-filter: blur(12px)
+	backdrop-filter: blur(8px),
+	-webkit-backdrop-filter: blur(8px)
 );
 
 $color-primary-glass-morph-content: (
 	background: $color-primary-trans,
 	box-shadow: 4 4px 30px rgba(255, 255, 255, 1),
-	backdrop-filter: blur(10px),
-	-webkit-backdrop-filter: blur(10px),
+	backdrop-filter: blur(8px),
+	-webkit-backdrop-filter: blur(8px),
 	border-radius: 15px
 );
 
@@ -37,34 +52,6 @@ $color-secondary-glass-morph-content: (
 	border-radius: 15px
 );
 
-// $light-background: (
-// 	background-image: radial-gradient(at 10% 61%, hsla(121, 78%, 71%, 1) 0px, transparent 50%)
-// 	radial-gradient(at 90% 8%, hsla(161, 87%, 75%, 1) 0px, transparent 50%),
-// 	radial-gradient(at 92% 12%, hsla(285, 88%, 66%, 1) 0px, transparent 50%),
-// 	radial-gradient(at 31% 74%, hsla(322, 86%, 62%, 1) 0px, transparent 50%),
-// 	radial-gradient(at 31% 16%, hsla(212, 82%, 60%, 1) 0px, transparent 50%),
-// 	radial-gradient(at 88% 12%, hsla(45, 60%, 70%, 1) 0px, transparent 50%),
-// 	radial-gradient(at 95% 45%, hsla(99, 73%, 69%, 1) 0px, transparent 50%),
-// );
-
-// $dark-background: (
-// 	background-image: radial-gradient(at 10% 61%, hsla(121, 78%, 71%, 1) 0px, transparent 30%),
-// 	radial-gradient(at 1% 8%, rgb(199, 128, 128) 0px, transparent 70%),
-// 	radial-gradient(at 92% 12%, rgb(147, 60, 175) 0px, transparent 30%),
-// 	radial-gradient(at 31% 74%, rgb(212, 58, 155) 0px, transparent 40%),
-// 	radial-gradient(at 31% 16%, rgb(72, 138, 213) 0px, transparent 40%),
-// 	radial-gradient(at 88% 12%, rgb(125, 109, 63) 0px, transparent 50%),
-// 	radial-gradient(at 95% 90%, rgb(111, 164, 83) 0px, transparent 40%),
-// );
-
-// ! Fonts
-@import url('https://fonts.googleapis.com/css2?family=Lora');
-@import url('https://fonts.googleapis.com/css2?family=Lato');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code');
-
-$font-primary: 'Lora', serif;
-$font-secondary: 'Lato', sans-serif;
-$font-code: 'Fira Code', monospace;
 
 // ! Size
 $navbar-padding-right: 45px;
@@ -76,3 +63,5 @@ $welcome-square-border: 8px;
 $welcome-square-width: $navbar-height * 2;
 $welcome-square-width-2: $welcome-square-width * 2 - 2;
 $welcome-square-width-4: $welcome-square-width * 2 - 4;
+
+$width-scrollspy: 200px;

@@ -24,7 +24,7 @@
 		scrollspy = Array.from(document.querySelectorAll('.scrollspy-link'));
 
 		window.addEventListener('scroll', scrollHandler);
-		
+
 		// Function to update the scrollspy links based on window width
 		const updateScrollspyLinks = () => {
 			scrollspy.forEach((link, index) => {
@@ -108,7 +108,7 @@
 			});
 		}
 
-		const displayTime = document.querySelector('.display-time');
+		const displayTime = document.querySelector('.timer');
 		// Time
 		function showTime() {
 			let time = new Date();
@@ -159,96 +159,93 @@
 <title>Carlos Iborra | Portfolio</title>
 <div class="home-page">
 	<Navbar />
-	<div class="container">
-		<div class="card-wrapper">
-			<div class="left-card">
-				<div class="left-card-heading">
-					<span class="title-holder">
-						<h1 class="title">Hi, I am Carlos Iborra</h1>
-					</span>
+	<div id="container" class="card-wrapper">
+		<div class="left-card">
+			<div class="left-card-heading">
+				<span class="title-holder">
+					<h1 class="title">Hi, I am Carlos Iborra</h1>
+				</span>
+			</div>
+
+			<div class="left-card-body">
+				<div id="section1" class="section">
+					<div class="section-wrapper">
+						<h1>0. Introduction</h1>
+						<p>
+							I am an Spanish student currently studying Computer Science Engineering at Universidad
+							Carlos III de Madrid. I've been passionate for programming since I was 8, always
+							looking for new challenges thereby improving my skills. If you want to learn more
+							about my present and future career, feel free to visit my LinkedIn profile.
+						</p>
+					</div>
 				</div>
 
-				<div class="left-card-body">
-					<div id="section1" class="section">
-						<div class="section-wrapper">
-							<h1>0. Introduction</h1>
-							<p>
-								I am an Spanish student currently studying Computer Science Engineering at
-								Universidad Carlos III de Madrid. I've been passionate for programming since I was
-								8, always looking for new challenges thereby improving my skills. If you want to
-								learn more about my present and future career, feel free to visit my LinkedIn
-								profile.
-							</p>
+				<div id="section2" class="section">
+					<div class="section-wrapper">
+						<h1>1. Roadmap</h1>
+						<p>Lorem ipsum dolor sit amet consectetur adipi sicing elit. Quisquam, quod.</p>
+					</div>
+				</div>
+
+				<div id="section3" class="section">
+					<div class="section-wrapper">
+						<h1>2. Timeline</h1>
+						<p>Lorem ipsum dolor sit amet consectetur adipi sicing elit. Quisquam, quod.</p>
+						<Timeline />
+					</div>
+				</div>
+
+				<div id="section4" class="section">
+					<div class="section-wrapper">
+						<h1>3. Stats</h1>
+						<p>
+							This are my overall stats in the VS Code editor (Arch Linux + Windows). Looking foward
+							adding compatibility with Neovim, Konsole and Terminal.
+						</p>
+						<p>
+							For better up-to date stats, visit my <a href="https://github.com/carlosiborra"
+								>GitHub</a
+							> profile.
+						</p>
+						<!-- This better GitHub stats were provided by https://github.com/jstrieb/github-stats -->
+						<div class="github-stats">
+							<img
+								class="img-fluid"
+								src="https://github-readme-stats.vercel.app/api/?username=carlosiborra&count_private=true&theme=dark&show_icons=true&title_color=00d612&show_owner&icon_color=00d612"
+								alt="Carlos Iborra GitHub Stats"
+							/>
+							<img
+								class="img-fluid"
+								src="https://github-readme-stats.vercel.app/api/top-langs/?username=carlosiborra&count_private=true&theme=dark&show_icons=true&title_color=00d612&show_owner&icon_color=00d612"
+								alt="Carlos Iborra Most Used Languages"
+							/>
 						</div>
 					</div>
+				</div>
 
-					<div id="section2" class="section">
-						<div class="section-wrapper">
-							<h1>1. Roadmap</h1>
-							<p>Lorem ipsum dolor sit amet consectetur adipi sicing elit. Quisquam, quod.</p>
-						</div>
-					</div>
-
-					<div id="section3" class="section">
-						<div class="section-wrapper">
-							<h1>2. Timeline</h1>
-							<p>Lorem ipsum dolor sit amet consectetur adipi sicing elit. Quisquam, quod.</p>
-							<Timeline />
-						</div>
-					</div>
-
-					<div id="section4" class="section">
-						<div class="section-wrapper">
-							<h1>3. Stats</h1>
-							<p>
-								This are my overall stats in the VS Code editor (Arch Linux + Windows). Looking
-								foward adding compatibility with Neovim, Konsole and Terminal.
-							</p>
-							<p>
-								For better up-to date stats, visit my <a href="https://github.com/carlosiborra"
-									>GitHub</a
-								> profile.
-							</p>
-							<!-- This better GitHub stats were provided by https://github.com/jstrieb/github-stats -->
-							<div class="github-stats">
-								<img
-									class="img-fluid"
-									src="https://github-readme-stats.vercel.app/api/?username=carlosiborra&count_private=true&theme=dark&show_icons=true&title_color=00d612&show_owner&icon_color=00d612"
-									alt="Carlos Iborra GitHub Stats"
-								/>
-								<img
-									class="img-fluid"
-									src="https://github-readme-stats.vercel.app/api/top-langs/?username=carlosiborra&count_private=true&theme=dark&show_icons=true&title_color=00d612&show_owner&icon_color=00d612"
-									alt="Carlos Iborra Most Used Languages"
-								/>
-							</div>
-						</div>
-					</div>
-
-					<div id="section5" class="section">
-						<div class="section-wrapper">
-							<h1>4. Social Media</h1>
-							<!-- <p>Lorem ipsum dolor sit amet consectetur adipi sicing elit. Quisquam, quod.</p> -->
-							<Contact />
-						</div>
+				<div id="section5" class="section">
+					<div class="section-wrapper">
+						<h1>4. Social Media</h1>
+						<!-- <p>Lorem ipsum dolor sit amet consectetur adipi sicing elit. Quisquam, quod.</p> -->
+						<Contact />
 					</div>
 				</div>
 			</div>
-			<div class="right-card">
-				<div class="card">
-					<!-- add the different sections as scrollspy -->
-					<nav class="scrollspy">
-						<!-- On load change the child of each a to the text in the section h1 -->
-						<a href="#section1" class="scrollspy-link" > </a>
-						<a href="#section2" class="scrollspy-link" > </a>
-						<a href="#section3" class="scrollspy-link" > </a>
-						<a href="#section4" class="scrollspy-link" > </a>
-						<a href="#section5" class="scrollspy-link" > </a>
-					</nav>
-				</div>
-				<div class="container-time">
-					<div class="display-time" />
-				</div>
+		</div>
+		<div class="right-card">
+			<div class="card" id="container-scrollspy">
+				<!-- add the different sections as scrollspy -->
+				<nav class="scrollspy">
+					<!-- On load change the child of each a to the text in the section h1 -->
+					<a href="#section1" class="scrollspy-link"> </a>
+					<a href="#section2" class="scrollspy-link"> </a>
+					<a href="#section3" class="scrollspy-link"> </a>
+					<a href="#section4" class="scrollspy-link"> </a>
+					<a href="#section5" class="scrollspy-link"> </a>
+				</nav>
+			</div>
+			<div id="container-time">
+				<div class="display-time"><p class="timer" /></div>
 			</div>
 		</div>
 	</div>
@@ -268,7 +265,7 @@
 			#{$property}: $value;
 		}
 	}
-	
+
 	@mixin glass-content-morph-background {
 		@each $property, $value in $color-secondary-glass-morph-content {
 			#{$property}: $value;
@@ -284,9 +281,12 @@
 		// height: 100vh;
 	}
 
-	.container {
+	#container {
 		display: flex;
+		flex-direction: row;
+		flex: calc(100% - $width-scrollspy) $width-scrollspy;
 		width: 100%;
+		margin: calc($navbar-height + 20px * 2) 20px 20px 20px;
 
 		@media screen and (max-width: 550px) {
 			flex-direction: column;
@@ -299,28 +299,9 @@
 			flex-direction: column;
 		}
 
-		// Make the wrapper to extend the right and left card to max 2000px of width
-		.card-wrapper {
-			display: flex;
-			gap: 20px;
-			width: 100%;
-			justify-content: space-between; /* Add this line to place cards side by side */
-
-			@media screen and (max-width: 550px) {
-				margin-top: 60px;
-				flex-direction: column;
-				align-items: center;
-			}
-
-			@media screen and (min-width: 2000px) {
-				justify-content: center;
-				max-width: 2000px;
-			}
-		}
-
 		.left-card {
 			background-color: none;
-			margin: $navbar-height 0 20px 0;
+			width: calc(100% - $width-scrollspy);
 
 			@media screen and (max-width: 550px) {
 				flex-direction: column;
@@ -330,7 +311,7 @@
 
 			.left-card-heading {
 				@include glass-content-morph-background;
-				margin: 20px 0 20px 20px;
+				margin: 0 0 20px 20px;
 				gap: 20px;
 				border-radius: 15px;
 				z-index: 1;
@@ -352,23 +333,25 @@
 						overflow: hidden;
 						white-space: nowrap;
 						border-right: 3px solid $color-primary-light;
-						animation: typewriter 5s steps(7) infinite, blinking-cursor 0.8s infinite;
+						animation:
+							typewriter 5s steps(7) infinite,
+							blinking-cursor 0.8s infinite;
 						animation-fill-mode: forwards;
 
 						@media screen and (max-width: 1000px) {
-							font-size: 1.5em;
+							font-size: 20px;
 						}
 
 						@media screen and (max-width: 550px) {
-							font-size: 1.2em;
+							font-size: 20px;
 						}
 
 						@media screen and (max-width: 500px) {
-							font-size: 0.8em;
+							font-size: 15px;
 						}
 
 						@media screen and (max-width: 400px) {
-							font-size: 0.7em;
+							font-size: 15px;
 						}
 					}
 				}
@@ -433,21 +416,22 @@
 					.section-wrapper {
 						color: $color-primary-light;
 						font-family: $font-primary;
+						font-size: 14px;
 						padding: 40px 40px 40px 40px;
 						margin: 5px 0 20px 0;
 						display: flex;
 						flex-direction: column;
 
 						h1 {
-							font-size: 2rem;
-							font-weight: 600;
+							font-size: 30px;
+							font-weight: 500;
+							font-family: $font-serif;
 							margin-bottom: 20px;
 							margin-top: 0px;
 							color: #ffd84c;
 						}
 
 						p {
-							font-family: $font-secondary;
 							margin: 0;
 						}
 					}
@@ -472,114 +456,132 @@
 				}
 			}
 
-			@media screen and (max-width: 799px) {
-				margin-right: 140px;
-			}
+			// @media screen and (max-width: 799px) {
+			// 	margin-right: 140px;
+			// }
 
-			@media screen and (max-width: 550px) {
-				margin-right: 0px;
-			}
+			// @media screen and (max-width: 550px) {
+			// 	margin-right: 0px;
+			// }
 
-			// Else
-			margin-right: calc(190px);
+			// // Else
+			// margin-right: calc(190px);
 		}
 
 		// make right card occupy 1/5 of the container
 		.right-card {
 			position: fixed;
+			z-index: 1;
+			right: 0;
+			top: 0;
+
+			height: 100%;
+			width: 200px;
+			margin: calc($navbar-height + 20px) auto 0 auto;
+
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			gap: 15px;
-			// width: calc(20% - 30px);
-			height: min-content;
-			right: 0;
-			top: 0;
-			margin: 0 20px 20px 0;
+			gap: 50px;
+
 			color: $color-primary-light;
-			z-index: 1;
 
-			.scrollspy {
-				@include glass-time-morph-background;
-				margin-top: $navbar-height + 20px;
-				padding: 20px;
-				display: flex;
-				position: sticky;
-				flex-direction: column;
-				gap: 20px;
-				height: 100%;
+			#scrollspy-container {
+				height:min-content;  
+			}
 
-				@media screen and (max-width: 450px) {
-					padding: 10px;
-				}
-
-				@media screen and (max-width: 360px) {
-					padding: 1px;
-				}
-
-				.scrollspy-link {
-					color: $color-primary-light;
-					font-family: $font-secondary;
-
-					padding: 10px;
-
-					font-size: 1rem;
-					text-decoration: none;
-
-					// Position the scrollspy links to center
+			// #scrollspy-container {
+				.scrollspy {
+					position: relative;
+					@include glass-time-morph-background;
+					padding: 20px;
 					display: flex;
-					justify-content: center;
 
-					overflow: hidden;
-					text-overflow: ellipsis;
-					white-space: nowrap;
+					justify-content: space-between;
 
-					&:hover {
-						color: $color-secondary-light;
-						font-weight: bold;
+					flex-direction: column;
+					gap: 20px;
+					height: 100%;
+					width: min-content;
+
+					@media screen and (max-width: 450px) {
+						padding: 10px;
 					}
 
-					&:active {
-						color: $color-text-active;
+					@media screen and (max-width: 360px) {
+						padding: 1px;
 					}
 
-					// On click, same effect as hover
-					&:focus {
-						color: $color-text-active;
+					.scrollspy-link {
+						color: $color-primary-light;
+						font-family: $font-secondary;
+
+						padding: 10px;
+
+						font-size: 1rem;
+						text-decoration: none;
+
+						// Position the scrollspy links to center
+						display: flex;
+						justify-content: center;
+
+						overflow: hidden;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+
+						&:hover {
+							color: $color-secondary-light;
+							font-weight: bold;
+						}
+
+						&:active {
+							color: $color-text-active;
+						}
+
+						// On click, same effect as hover
+						&:focus {
+							color: $color-text-active;
+						}
+
+						behavior: smooth;
 					}
 
-					behavior: smooth;
+					@media screen and (max-width: 550px) {
+						position: fixed;
+						display: flex;
+						top: 100px;
+						flex-direction: row;
+						align-items: center;
+						justify-content: center;
+						border-radius: 10px;
+						left: 20px;
+						right: 0;
+						width: calc(100% - 180px);
+						height: 40px;
+						margin: 0;
+						padding: 0px;
+						// background: rgba(255, 255, 255, 0.9);
+					}
 				}
 
-				@media screen and (max-width: 550px) {
+				@media screen and (min-width: 2000px) {
 					position: fixed;
-					display: flex;
-					top: 100px;
-					flex-direction: row;
-					align-items: center;
-					justify-content: center;
-					border-radius: 10px;
-					left: 20px;
-					right: 0;
-					width: calc(100% - 180px);
-					height: 40px;
-					margin: 0;
-					padding: 0px;
-					// background: rgba(255, 255, 255, 0.9);
+					left: 1830px;
 				}
-			}
-
-			@media screen and (min-width: 2000px) {
-				position: fixed;
-				left: 1830px;
-			}
+			// }
 		}
 
-		.display-time {
+		#container-time {
+			position: relative;
 			@include glass-time-morph-background;
 			font-family: $font-code;
-			padding: 10px 10px;
+			// padding: 10px 10px;
 			border-radius: 10px;
+
+			.timer {
+				margin: 0;
+				padding: 20px;
+			}
 
 			.display-time:hover {
 				background: #ffd868;
@@ -590,11 +592,17 @@
 
 			// On media query < 550px, spin the clock 90deg
 
-			@media screen and (max-width: 799px) {
+			@media screen and (max-width: $breakpoint-tablet) {
 				text-align: center;
-				margin: 40px 0px 0px 0px;
 				width: min-content;
+				height: min-content;
+				padding: 0;
 				transform: rotate(90deg);
+
+				.timer {
+					margin: 0;
+					padding: 20px;
+				}
 			}
 
 			@media screen and (max-width: 550px) {

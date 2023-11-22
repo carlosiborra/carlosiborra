@@ -436,7 +436,6 @@
 						}
 
 						p {
-							font-family: $font-secondary;
 							margin: 0;
 						}
 					}
