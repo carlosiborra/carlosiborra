@@ -1,8 +1,6 @@
 <script lang="ts">
 	// import Balls from './components/Balls.svelte';
 	import Welcome from './components/Welcome.svelte';
-
-	const src = 'waves2.gif';
 </script>
 
 <!-- ! ------------------------------------>

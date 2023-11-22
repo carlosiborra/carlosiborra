@@ -2,8 +2,8 @@
 
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import Navbar from '../components/Navbar.svelte';
-	import Footer from '../components/Footer.svelte';
+	import Navbar from '../components/common/Navbar.svelte';
+	import Footer from '../components/common/Footer.svelte';
 
 	// console.log('\nContent component NOT-loaded\n');
 
@@ -291,9 +291,12 @@
 
 		// Make the wrapper to extend the right and left card to max 2000px of width
 		.card-wrapper {
+			margin-top: 60px;
+
+			height: min-content;
+			width: 100%;
 			display: flex;
 			gap: 20px;
-			width: 100%;
 			justify-content: space-between; /* Add this line to place cards side by side */
 
 			@media screen and (max-width: 550px) {

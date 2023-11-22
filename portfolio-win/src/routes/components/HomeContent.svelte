@@ -4,10 +4,8 @@
 	import { onMount } from 'svelte';
 	import Contact from './Contact.svelte';
 	import Timeline from './Timeline.svelte';
-	import Navbar from './Navbar.svelte';
-	import Footer from './Footer.svelte';
-
-	// console.log('\nContent component NOT-loaded\n');
+	import Navbar from './common/Navbar.svelte';
+	import Footer from './common/Footer.svelte';
 
 	let sections: HTMLElement[] = []; // Initialize an empty array to store the sections
 	let scrollspy: HTMLElement[] = []; // Initialize an empty array to store the sections
@@ -487,87 +485,87 @@
 			color: $color-primary-light;
 
 			#scrollspy-container {
-				height:min-content;  
+				height: min-content;
 			}
 
 			// #scrollspy-container {
-				.scrollspy {
-					position: relative;
-					@include glass-time-morph-background;
-					padding: 20px;
+			.scrollspy {
+				position: relative;
+				@include glass-time-morph-background;
+				padding: 20px;
+				display: flex;
+
+				justify-content: space-between;
+
+				flex-direction: column;
+				gap: 20px;
+				height: 100%;
+				width: min-content;
+
+				@media screen and (max-width: 450px) {
+					padding: 10px;
+				}
+
+				@media screen and (max-width: 360px) {
+					padding: 1px;
+				}
+
+				.scrollspy-link {
+					color: $color-primary-light;
+					font-family: $font-secondary;
+
+					padding: 10px;
+
+					font-size: 1rem;
+					text-decoration: none;
+
+					// Position the scrollspy links to center
 					display: flex;
+					justify-content: center;
 
-					justify-content: space-between;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
 
-					flex-direction: column;
-					gap: 20px;
-					height: 100%;
-					width: min-content;
-
-					@media screen and (max-width: 450px) {
-						padding: 10px;
+					&:hover {
+						color: $color-secondary-light;
+						font-weight: bold;
 					}
 
-					@media screen and (max-width: 360px) {
-						padding: 1px;
+					&:active {
+						color: $color-text-active;
 					}
 
-					.scrollspy-link {
-						color: $color-primary-light;
-						font-family: $font-secondary;
-
-						padding: 10px;
-
-						font-size: 1rem;
-						text-decoration: none;
-
-						// Position the scrollspy links to center
-						display: flex;
-						justify-content: center;
-
-						overflow: hidden;
-						text-overflow: ellipsis;
-						white-space: nowrap;
-
-						&:hover {
-							color: $color-secondary-light;
-							font-weight: bold;
-						}
-
-						&:active {
-							color: $color-text-active;
-						}
-
-						// On click, same effect as hover
-						&:focus {
-							color: $color-text-active;
-						}
-
-						behavior: smooth;
+					// On click, same effect as hover
+					&:focus {
+						color: $color-text-active;
 					}
 
-					@media screen and (max-width: 550px) {
-						position: fixed;
-						display: flex;
-						top: 100px;
-						flex-direction: row;
-						align-items: center;
-						justify-content: center;
-						border-radius: 10px;
-						left: 20px;
-						right: 0;
-						width: calc(100% - 180px);
-						height: 40px;
-						margin: 0;
-						padding: 0px;
-						// background: rgba(255, 255, 255, 0.9);
-					}
+					behavior: smooth;
 				}
 
-				@media screen and (min-width: 2000px) {
+				@media screen and (max-width: 550px) {
 					position: fixed;
-					left: 1830px;
+					display: flex;
+					top: 100px;
+					flex-direction: row;
+					align-items: center;
+					justify-content: center;
+					border-radius: 10px;
+					left: 20px;
+					right: 0;
+					width: calc(100% - 180px);
+					height: 40px;
+					margin: 0;
+					padding: 0px;
+					// background: rgba(255, 255, 255, 0.9);
 				}
+			}
+
+			@media screen and (min-width: 2000px) {
+				position: fixed;
+				left: 1830px;
+			}
 			// }
 		}
 
@@ -584,10 +582,10 @@
 			}
 
 			.display-time:hover {
-				background: #ffd868;
-				box-shadow: 0 0 30px#ffd868;
-				color: #272727;
-				cursor: pointer;
+				cursor: pointer;	 
+				filter: brightness(1.2);
+				transform: scale(1.1);
+				transition: all 0.2s ease-in-out;
 			}
 
 			// On media query < 550px, spin the clock 90deg
