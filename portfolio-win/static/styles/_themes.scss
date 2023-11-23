@@ -1,0 +1,118 @@
+// ! THEMES
+
+// Note: Although there are color vars that contain the colors, use the -- vars for themes to work
+
+
+$color-difficulty-expert: rgb(216, 0, 0);
+$color-difficulty-hard: rgb(255, 114, 114);
+$color-difficulty-medium: rgb(255, 217, 114);
+$color-difficulty-easy: rgb(90, 255, 90);
+$color-difficulty-begginer: rgb(182, 255, 158);
+
+
+.theme-light {
+  /* Colors */
+  --color-background-primary: rgb(240, 240, 240);
+  --color-background-secondary: rgb(255, 255, 255);
+  --color-background-tertiary: rgb(230, 230, 230);
+
+  /* Font colors */
+  --color-font-primary: rgb(0, 0, 0);
+  --color-font-secondary: rgb(75, 75, 75);
+  --color-font-tertiary: rgb(120, 120, 120);
+
+  /* Difficulty colors */
+  --color-difficulty-expert: rgb(220, 100, 100);
+  --color-difficulty-hard: rgb(255, 100, 100);
+  --color-difficulty-medium: rgb(220, 210, 70);
+  --color-difficulty-easy: rgb(70, 220, 70);
+  --color-difficulty-beginner: rgb(120, 240, 130);
+  --color-difficulty-font: rgb(20, 20, 20);
+
+  /* Glassmorphism colors */
+  --color-glassmorphism-background-trans: rgba(255, 255, 255, 0.2);
+  --color-glassmorphism-background: rgba(255, 255, 255, 0.8);
+  --color-glassmorphism-box-shadow: 1px 3px 3px 1px rgba(230, 230, 230, 0.5);
+  --color-glassmorphism-backdrop-filter: blur(8px);
+}
+
+.theme-reader {
+  /* Colors */
+  --color-background-primary: rgb(240, 240, 220);
+  --color-background-secondary: rgb(255, 255, 235);
+  --color-background-tertiary: rgb(230, 230, 210);
+
+  /* Font colors */
+  --color-font-primary: rgb(0, 0, 0);
+  --color-font-secondary: rgb(75, 75, 75);
+  --color-font-tertiary: rgb(120, 120, 120);
+
+  /* Difficulty colors */
+  --color-difficulty-expert: rgb(220, 100, 100);
+  --color-difficulty-hard: rgb(255, 100, 100);
+  --color-difficulty-medium: rgb(220, 210, 70);
+  --color-difficulty-easy: rgb(70, 220, 70);
+  --color-difficulty-beginner: rgb(120, 240, 130);
+  --color-difficulty-font: rgb(20, 20, 15);
+
+  /* Glassmorphism colors */
+  --color-glassmorphism-background-trans: rgba(255, 255, 235, 0.2);
+  --color-glassmorphism-background: rgba(255, 255, 235, 0.8);
+  --color-glassmorphism-box-shadow: 1px 3px 3px 1px rgba(230, 230, 210, 0.5);
+  --color-glassmorphism-backdrop-filter: blur(8px);
+
+}
+
+.theme-dark {
+  /* Colors */
+  --color-background-primary: rgb(30, 30, 30);
+  --color-background-secondary: rgb(16, 16, 16);
+  --color-background-tertiary: rgb(10, 10, 10);
+
+  /* Font colors */
+  --color-font-primary: rgb(255, 255, 255);
+  --color-font-secondary: rgb(223, 223, 223);
+  --color-font-tertiary: rgb(85, 85, 85);
+
+  /* Difficulty colors */
+  --color-difficulty-expert: rgb(220, 70, 70);
+  --color-difficulty-hard: rgb(255, 100, 100);
+  --color-difficulty-medium: rgb(255, 245, 100);
+  --color-difficulty-easy: rgb(150, 229, 108);
+  --color-difficulty-beginner: rgb(182, 255, 158);
+  --color-difficulty-font: rgb(10, 10, 10);
+
+  /* Glassmorphism colors */
+  --color-glassmorphism-background-trans: rgba(16, 16, 16, 0.2);
+  --color-glassmorphism-background: rgba(16, 16, 16, 0.8);
+  --color-glassmorphism-box-shadow: 1px 3px 3px 1px rgba(10, 10, 10, 0.5);
+  --color-glassmorphism-backdrop-filter: blur(8px);
+
+}
+
+.theme-dracula {
+  /* Colors */
+  --color-background-primary: rgb(40, 42, 54);
+  --color-background-secondary: rgb(27, 30, 48);
+  --color-background-tertiary: rgb(20, 22, 34);
+
+  /* Font colors */
+  --color-font-primary: rgb(255, 255, 255);
+  --color-font-secondary: rgb(200, 200, 200);
+  --color-font-tertiary: rgb(100, 100, 100);
+
+  /* Difficulty colors */
+  --color-difficulty-expert: rgb(220, 70, 70);
+  --color-difficulty-hard: rgb(255, 100, 100);
+  --color-difficulty-medium: rgb(255, 245, 100);
+  --color-difficulty-easy: rgb(150, 229, 108);
+  --color-difficulty-beginner: rgb(182, 255, 158);
+  --color-difficulty-font: rgb(20, 22, 34);
+
+  /* Glassmorphism colors */
+  --color-glassmorphism-background-trans: rgba(27, 30, 48, 0.2);
+  --color-glassmorphism-background: rgba(27, 30, 48, 0.8);
+  --color-glassmorphism-box-shadow: 1px 3px 3px 1px rgba(20, 22, 34, 0.5);
+  --color-glassmorphism-backdrop-filter: blur(8px);
+
+}

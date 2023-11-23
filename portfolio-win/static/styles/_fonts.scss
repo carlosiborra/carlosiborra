@@ -1,0 +1,117 @@
+// ! FONTS FILES
+
+// ! Font sizes
+$font-size-h1: 4em;
+$font-size-h2: 32px;
+$font-size-h3: 16px;
+$font-size-h4: 14px;
+$font-size-text: 12px;
+
+// ! Font families
+$font-family-serif: "Playfair Display", serif; // Used for titles
+$font-family-primary: "PT Sans", sans-serif;  // Used for titles & Subtitles
+$font-family-secondary: "Roboto", sans-serif; // Used for text
+// $font-family-primary: "Lato", sans-serif;  // Used for titles
+
+// ! HEADINGS
+
+h1 {
+  font-size: $font-size-h1;
+  font-family: $font-family-serif;
+  color: var(--color-font-ser);
+  font-style: normal;
+  line-height: normal;
+  font-weight: 550;
+}
+
+h2 {
+  font-size: $font-size-h2;
+  font-family: $font-family-serif;
+  color: var(--color-font-primary);
+  font-style: normal;
+  line-height: normal;
+  font-weight: 550;
+}
+
+h3 {
+  font-size: $font-size-h3;
+  font-family: $font-family-primary;
+  color: var(--color-font-primary);
+  font-style: normal;
+  line-height: normal;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: $font-size-h4;
+  font-family: $font-family-secondary;
+  color: var(--color-font-primary);
+  font-style: normal;
+  line-height: normal;
+  font-weight: 550;
+}
+
+p {
+  font-size: $font-size-text;
+  font-family: $font-family-secondary;
+  color: var(--color-font-primary);
+  font-style: normal;
+  line-height: normal;
+  font-weight: 350;
+}
+
+// ! MIXINS
+
+@mixin font-h1 {
+  font-size: $font-size-h1;
+  font-family: $font-family-serif;
+  color: var(--color-font-ser);
+  font-style: normal;
+  line-height: normal;
+  font-weight: 550;
+}
+
+@mixin font-h2 {
+  font-size: $font-size-h2;
+  font-family: $font-family-serif;
+  color: var(--color-font-primary);
+  font-style: normal;
+  line-height: normal;
+  font-weight: 550;
+}
+
+@mixin font-h3 {
+  font-size: $font-size-h3;
+  font-family: $font-family-primary;
+  color: var(--color-font-primary);
+  font-style: normal;
+  line-height: normal;
+  font-weight: 600;
+}
+
+@mixin font-h4 {
+  font-size: $font-size-h4;
+  font-family: $font-family-secondary;
+  color: var(--color-font-primary);
+  font-style: normal;
+  line-height: normal;
+  font-weight: 550;
+}
+
+@mixin font-text { // Paragraph
+  font-size: $font-size-text;
+  font-family: $font-family-secondary;
+  color: var(--color-font-primary);
+  font-style: normal;
+  line-height: normal;
+  font-weight: 350;
+}
+
+// ! Font size limit
+
+@mixin font-size-limit {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}

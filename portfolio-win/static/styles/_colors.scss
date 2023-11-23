@@ -1,0 +1,74 @@
+// ! COLORS
+
+// Primary Hues for the app
+$color-primary-50: #ebffe4;
+$color-primary-100: #d3ffc5;
+$color-primary-200: #a9ff92;
+$color-primary-300: #73ff53;
+$color-primary-400: #42fb20;
+$color-primary-500: #20e700;  // Main
+$color-primary-550: #1ac000;
+$color-primary-600: #14b500;
+$color-primary-650: #0f9a00;
+$color-primary-700: #108902;
+$color-primary-800: #116c08;
+$color-primary-900: #125b0c;
+$color-primary-950: #023300;
+
+
+$mustard-50: rgb(255 251 235);
+$mustard-100: rgb(255 245 198);
+$mustard-200: rgb(255 233 136);
+$mustard-300: rgb(255 216 76);
+$mustard-400: rgb(255 197 32);
+$mustard-500: rgb(249 163 7);
+$mustard-600: rgb(221 123 2);
+$mustard-700: rgb(183 86 6);
+$mustard-800: rgb(148 65 12);
+$mustard-900: rgb(122 55 13);
+$mustard-950: rgb(70 27 2);
+
+
+// ! Glassmorphism
+
+// glassmorphism light
+$color-glassmorphism-light: (
+  background: rgba(244, 244, 244, 0.85),
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+  backdrop-filter: blur(4px)
+);
+
+// glassmorphism dark
+$color-glassmorphism-dark: (
+  background: rgba(51, 51, 51, 0.85),
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+  backdrop-filter: blur(4px)
+);
+
+
+// ! Themes used for settings
+
+// Note: do not use this variables, use the ones inside _themes.scss file
+// light theme
+$color-background-light: rgb(221, 221, 221);
+$color-primary-light: rgb(244, 244, 244);
+$color-font-light-primary: rgb(0, 0, 0);
+$color-font-light-secondary: rgb(51, 51, 51);
+
+// Reader mode theme
+$color-background-reader: rgb(235, 235, 220);
+$color-primary-reader: rgb(255, 255, 235);
+$color-font-reader-primary: rgb(0, 0, 0);
+$color-font-reader-secondary: rgb(75, 75, 75);
+
+// dark theme
+$color-background-dark: rgb(30, 30, 30);
+$color-primary-dark: rgb(16, 16, 16);
+$color-font-dark-primary: rgb(255, 255, 255);
+$color-font-dark-secondary: rgb(220, 220, 220);
+
+// dracula theme
+$color-background-dracula: rgb(40, 42, 54);
+$color-primary-dracula: rgb(27, 30, 48);
+$color-font-dracula-primary: rgb(255, 255, 255);
+$color-font-dracula-secondary: rgb(200, 200, 200);
