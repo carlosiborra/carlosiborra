@@ -1,10 +1,10 @@
 <script lang="ts">
     // console.log('page.svelte');
-    import Content from '../components/HomeContent.svelte';
+    import Home from '../components/HomeContent.svelte';
 </script>
 
 <!-- ! ------------------------------------>
 
 <div>
-    <Content />
+    <Home />
 </div>

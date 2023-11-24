@@ -12,7 +12,7 @@ $breakpoint-desktop: 769px;
 // ! Color
 $color-primary: rgb(25, 25, 25);
 $color-primary-trans: rgba(25, 25, 25, 0.8);
-$color-secondary: rgb(14, 14, 14);
+$color-secondary: rgba(14, 14, 14, 0.8);
 $color-tertiary: rgb(40, 40, 40);
 
 $color-primary-light: rgb(251, 251, 251);
@@ -42,7 +42,7 @@ $color-primary-glass-morph-content: (
 
 $color-secondary-glass-morph-content: (
 	background: $color-secondary,
-	box-shadow: 4 4px 30px rgba(255, 255, 255, 1),
+	box-shadow: 4 4px 30px rgb(0, 0, 0),
 	backdrop-filter: blur(10px),
 	-webkit-backdrop-filter: blur(10px),
 	border-radius: 15px
@@ -67,6 +67,8 @@ body {
 	margin: 0;
 	padding: 0;
 
+	background: $color-primary;
+
 	scroll-behavior: smooth !important;
 
 	img {
@@ -82,8 +84,8 @@ body {
 
 body {
 	// Scrollbar
-	overflow-y: scroll;
-	overflow-x: hidden;
+	// overflow-y: scroll;
+	// overflow-x: hidden;
 
 	//Make the scroll bar invisible
 	-ms-overflow-style: none;

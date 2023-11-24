@@ -4,6 +4,7 @@
 $breakpoint-mobile: 480px;
 $breakpoint-tablet: 768px;
 $breakpoint-desktop: 769px;
+$breakpoint-ultrawide: 2000px;
 
 // Icons size
 $icon-size: 44px;
@@ -27,11 +28,6 @@ $width-sidebar-tablet: 60px;
 $width-sidebar-mobile: 0px;
 // var(--width-sidebar-mobile-var): $width-sidebar-mobile;
 $width-searchbar: 60vw;
-
-// Cards
-$width-card-mobile: 350px;
-$width-card-tablet: 550px;
-$width-card-desktop: 600px;
 
 // ! Border radius
 $border-radius-biggest: 20px;

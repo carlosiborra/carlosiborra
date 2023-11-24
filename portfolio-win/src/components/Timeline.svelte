@@ -121,7 +121,7 @@
 		width: 4px;
 		background: $color-tertiary;
 	}
-	@media only screen and (min-width: 1170px) {
+	@media only screen and (min-width: $breakpoint-desktop) {
 		#cd-timeline {
 			margin-top: 3em;
 			margin-bottom: 3em;
@@ -147,7 +147,7 @@
 	.cd-timeline-block:last-child {
 		margin-bottom: 0;
 	}
-	@media only screen and (min-width: 1170px) {
+	@media only screen and (min-width: $breakpoint-desktop) {
 		.cd-timeline-block {
 			margin: 4em 0;
 		}
@@ -172,7 +172,7 @@
 	.cd-timeline-img {
 		background: $color-primary;
 	}
-	@media only screen and (min-width: 1170px) {
+	@media only screen and (min-width: $breakpoint-desktop) {
 		.cd-timeline-img {
 			width: 30px;
 			height: 30px;
@@ -209,7 +209,7 @@
 				width: calc(50% - 2px);
 				display: inline-block;
 			}
-			@media (max-width: 500px) {
+			@media (max-width: $breakpoint-tablet) {
 				.timeline-content-info-title,
 				.timeline-content-info-date {
 					display: block;
@@ -275,7 +275,7 @@
 		border-right: 7px solid $color-text-cream;
 	}
 
-	@media only screen and (min-width: 1170px) {
+	@media only screen and (min-width: $breakpoint-desktop) {
 		.cd-timeline-content {
 			color: $color-primary-light;
 			margin-left: 0;
@@ -318,7 +318,7 @@
 		}
 	}
 
-	@media only screen and (min-width: 768px) {
+	@media only screen and (min-width: $breakpoint-desktop) {
 		.cd-timeline-content h2 {
 			font-size: 1.25rem;
 		}
@@ -332,44 +332,4 @@
 			font-size: 0.875rem;
 		}
 	}
-
-	// @media only screen and (max-width: 550px) {
-	// 	#cd-timeline {
-	// 		position: relative;
-	// 		display: flex;
-	// 		flex-direction: column;
-	// 		flex-wrap: wrap;
-	// 		justify-content: center;
-	// 		align-items: center;
-	// 		margin: 0;
-	// 		padding: 1em 0;
-	// 	}
-
-	// 	.cd-timeline-content h2 {
-	// 		font-size: 1.2rem;
-	// 	}
-	// 	.cd-timeline-content p {
-	// 		font-size: 0.8rem;
-	// 	}
-	// 	.cd-timeline-content .cd-read-more,
-	// 	.cd-timeline-content .cd-date {
-	// 		font-size: 14px;
-	// 		font-size: 0.875rem;
-	// 	}
-
-	// 	#cd-timeline::before {
-	// 		display: none;
-	// 	}
-	// 	.cd-timeline-img {
-	// 		display: none;
-	// 	}
-	// 	.cd-timeline-content {
-	// 		margin: 0;
-	// 		width: 100%;
-	// 		padding: 1.6em;
-	// 	}
-	// 	.cd-timeline-content::before {
-	// 		display: none;
-	// 	}
-	// }
 </style>

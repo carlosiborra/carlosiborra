@@ -47,6 +47,7 @@
 
 		background-color: $color-primary-trans;
 		border-radius: $border-radius-big;
+		box-shadow: rgba(255, 255, 255, 1);
 
 		font-family: $font-family-mono;
 
