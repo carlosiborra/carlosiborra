@@ -1,5 +1,9 @@
 // ! FONTS FILES
 
+@import url('https://fonts.googleapis.com/css2?family=Play`fair+Display');
+@import url('https://fonts.googleapis.com/css2?family=Inter');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code');
+
 // ! Font sizes
 $font-size-h1: 4em;
 $font-size-h2: 32px;
@@ -7,18 +11,19 @@ $font-size-h3: 16px;
 $font-size-h4: 14px;
 $font-size-text: 12px;
 
+
 // ! Font families
-$font-family-serif: "Playfair Display", serif; // Used for titles
-$font-family-primary: "PT Sans", sans-serif;  // Used for titles & Subtitles
-$font-family-secondary: "Roboto", sans-serif; // Used for text
-// $font-family-primary: "Lato", sans-serif;  // Used for titles
+$font-family-sans: "Inter", sans-serif;
+$font-family-serif: "Playfair Display", serif;
+$font-family-mono: "Fira Code", monospace;
+
 
 // ! HEADINGS
 
 h1 {
   font-size: $font-size-h1;
   font-family: $font-family-serif;
-  color: var(--color-font-ser);
+  // color: var(--color-font-ser);
   font-style: normal;
   line-height: normal;
   font-weight: 550;
@@ -27,16 +32,16 @@ h1 {
 h2 {
   font-size: $font-size-h2;
   font-family: $font-family-serif;
-  color: var(--color-font-primary);
+  // color: var(--color-font-primary);
   font-style: normal;
   line-height: normal;
-  font-weight: 550;
+  font-weight: 500;
 }
 
 h3 {
   font-size: $font-size-h3;
-  font-family: $font-family-primary;
-  color: var(--color-font-primary);
+  font-family: $font-family-sans;
+  // color: var(--color-font-primary);
   font-style: normal;
   line-height: normal;
   font-weight: 600;
@@ -44,8 +49,8 @@ h3 {
 
 h4 {
   font-size: $font-size-h4;
-  font-family: $font-family-secondary;
-  color: var(--color-font-primary);
+  font-family: $font-family-sans;
+  // color: var(--color-font-primary);
   font-style: normal;
   line-height: normal;
   font-weight: 550;
@@ -53,65 +58,65 @@ h4 {
 
 p {
   font-size: $font-size-text;
-  font-family: $font-family-secondary;
-  color: var(--color-font-primary);
+  font-family: $font-family-sans;
+  // color: var(--color-font-primary);
   font-style: normal;
   line-height: normal;
   font-weight: 350;
 }
 
-// ! MIXINS
+// // ! MIXINS
 
-@mixin font-h1 {
-  font-size: $font-size-h1;
-  font-family: $font-family-serif;
-  color: var(--color-font-ser);
-  font-style: normal;
-  line-height: normal;
-  font-weight: 550;
-}
+// @mixin font-h1 {
+//   font-size: $font-size-h1;
+//   font-family: $font-family-serif;
+//   color: var(--color-font-ser);
+//   font-style: normal;
+//   line-height: normal;
+//   font-weight: 550;
+// }
 
-@mixin font-h2 {
-  font-size: $font-size-h2;
-  font-family: $font-family-serif;
-  color: var(--color-font-primary);
-  font-style: normal;
-  line-height: normal;
-  font-weight: 550;
-}
+// @mixin font-h2 {
+//   font-size: $font-size-h2;
+//   font-family: $font-family-serif;
+//   color: var(--color-font-primary);
+//   font-style: normal;
+//   line-height: normal;
+//   font-weight: 550;
+// }
 
-@mixin font-h3 {
-  font-size: $font-size-h3;
-  font-family: $font-family-primary;
-  color: var(--color-font-primary);
-  font-style: normal;
-  line-height: normal;
-  font-weight: 600;
-}
+// @mixin font-h3 {
+//   font-size: $font-size-h3;
+//   font-family: $font-family-sans;
+//   color: var(--color-font-primary);
+//   font-style: normal;
+//   line-height: normal;
+//   font-weight: 600;
+// }
 
-@mixin font-h4 {
-  font-size: $font-size-h4;
-  font-family: $font-family-secondary;
-  color: var(--color-font-primary);
-  font-style: normal;
-  line-height: normal;
-  font-weight: 550;
-}
+// @mixin font-h4 {
+//   font-size: $font-size-h4;
+//   font-family: $font-family-secondary;
+//   color: var(--color-font-primary);
+//   font-style: normal;
+//   line-height: normal;
+//   font-weight: 550;
+// }
 
-@mixin font-text { // Paragraph
-  font-size: $font-size-text;
-  font-family: $font-family-secondary;
-  color: var(--color-font-primary);
-  font-style: normal;
-  line-height: normal;
-  font-weight: 350;
-}
+// @mixin font-text { // Paragraph
+//   font-size: $font-size-text;
+//   font-family: $font-family-secondary;
+//   color: var(--color-font-primary);
+//   font-style: normal;
+//   line-height: normal;
+//   font-weight: 350;
+// }
 
-// ! Font size limit
+// // ! Font size limit
 
-@mixin font-size-limit {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-}
+// @mixin font-size-limit {
+//   text-overflow: ellipsis;
+//   overflow: hidden;
+//   display: -webkit-box;
+//   -webkit-box-orient: vertical;
+// }

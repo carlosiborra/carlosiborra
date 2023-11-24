@@ -1,33 +1,58 @@
+<!-- ! SCRIPTS ------------------------------------------------------------------------------------>
+
 <script lang="ts">
 	// import Balls from './components/Balls.svelte';
-	import Welcome from './components/Welcome.svelte';
+	import Welcome from '../components/Welcome.svelte';
+	import Footer from '../components/common/Footer.svelte';
+	import Navbar from '../components/common/Navbar.svelte';
 </script>
 
-<!-- ! ------------------------------------>
+<!-- ! STRUCTURE ---------------------------------------------------------------------------------->
 
 <Welcome />
-<body>
-	<!-- <div id="header-gif">
-		<img {src} alt="header" />
-	</div> -->
-	<div class="background-image">
-		<div class="content background-trans">
-			<slot />
+<body id="body-content">
+	<div id="navbar">
+		<Navbar />
+	</div>
+
+	<div id="content">
+		<slot />
+
+		<div id="footer">
+			<Footer />
 		</div>
 	</div>
 </body>
 
-<!-- ! ------------------------------------>
+<!-- ! STYLE -------------------------------------------------------------------------------------->
 
 <style lang="scss">
-	@import './global.scss';
+	@import 'static/styles/styles.scss';
 
-	body {
+	#navbar {
+		position: fixed;
+		width: 100%;
+		z-index: 10;
+	}
+
+	#content {
+		margin-top: $height-navbar + $separation-big;
+
+		#footer {
+			margin-top: $separation-big;
+		}
+	}
+
+	#body-content {
+		padding: $separation-big;
 		margin: 0;
-		scroll-behavior: smooth;
-		background-color: $color-primary;
 
-		.background-image {
+		position: relative;
+
+		scroll-behavior: smooth;
+		background-color: #fff;
+
+		&::before {
 			background: radial-gradient(at 10% 61%, rgb(145, 236, 147) 0px, transparent 30%),
 				radial-gradient(at 1% 8%, rgb(176, 193, 45) 0px, transparent 40%),
 				radial-gradient(at 92% 12%, rgb(113, 97, 219) 0px, transparent 30%),
@@ -103,31 +128,5 @@
 				background-position: 0% 50%;
 			}
 		}
-
-		/* Make the scroll bar invisible */
-		-ms-overflow-style: none; /* IE and Edge */
-		scrollbar-width: none; /* Firefox */
-
-		&::-webkit-scrollbar {
-			width: 0px;
-			background: transparent; /* make scrollbar transparent */
-		}
-
-		border-color: #fff;
-	}
-
-	.background-trans {
-		background: rgba(71, 71, 71, 0.3);
-		position: relative;
-		z-index: 0;
-	}
-
-	.content {
-		position: relative;
-		z-index: 1; /* Ensure content is positioned above the background images */
-	}
-
-	slot {
-		display: none;
 	}
 </style>

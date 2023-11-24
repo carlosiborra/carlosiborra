@@ -2,8 +2,6 @@
 
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import Navbar from '../components/common/Navbar.svelte';
-	import Footer from '../components/common/Footer.svelte';
 
 	// console.log('\nContent component NOT-loaded\n');
 
@@ -156,7 +154,6 @@
 
 <title>Carlos Iborra | Portfolio</title>
 <div class="home-page">
-	<Navbar />
 	<div class="container">
 		<div class="card-wrapper">
 			<div class="left-card">
@@ -249,13 +246,12 @@
 		</div>
 	</div>
 </div>
-<Footer />
 
 <!-- ! ------------------------------------>
 
 <style lang="scss">
 	// Import global styles
-	@import '../global.scss';
+	@import "static/styles/styles.scss";
 	// @import changeText;
 
 	// Acquire the glass morph effect from the global.scss file as a callable mixin
@@ -291,16 +287,16 @@
 
 		// Make the wrapper to extend the right and left card to max 2000px of width
 		.card-wrapper {
-			margin-top: 60px;
+			// margin-top: 60px;
 
-			height: min-content;
+			// height: min-content;
 			width: 100%;
 			display: flex;
 			gap: 20px;
 			justify-content: space-between; /* Add this line to place cards side by side */
 
 			@media screen and (max-width: 550px) {
-				margin-top: 60px;
+				// margin-top: 60px;
 				flex-direction: column;
 				align-items: center;
 			}
@@ -313,7 +309,7 @@
 
 		.left-card {
 			background-color: none;
-			margin: $navbar-height 0 20px 0;
+			margin: $height-navbar 0 20px 0;
 
 			@media screen and (max-width: 550px) {
 				flex-direction: column;
@@ -336,7 +332,7 @@
 
 					.title {
 						padding: 0px 40px;
-						font-family: $font-code;
+						font-family: $font-family-mono;
 						font-size: 1.8em;
 						color: $color-primary-light;
 						width: min-content;
@@ -424,7 +420,7 @@
 										
 					.section-wrapper {
 						color: $color-primary-light;
-						font-family: $font-primary;
+						font-family: $font-family-sans;
 						padding: 40px 40px 40px 40px;
 						margin: 5px 0 20px 0;
 						display: flex;
@@ -492,7 +488,7 @@
 
 			.scrollspy {
 				@include glass-morph-background;
-				margin-top: $navbar-height + 20px;
+				margin-top: $height-navbar + 20px;
 				padding: 20px;
 				display: flex;
 				position: sticky;
@@ -510,7 +506,7 @@
 
 				.scrollspy-link {
 					color: $color-primary-light;
-					font-family: $font-secondary;
+					font-family: $font-family-sans;
 
 					padding: 10px;
 
@@ -568,7 +564,7 @@
 
 		.display-time {
 			@include glass-morph-background;
-			font-family: $font-code;
+			font-family: $font-family-mono;
 			padding: 10px 10px;
 			border-radius: 10px;
 
