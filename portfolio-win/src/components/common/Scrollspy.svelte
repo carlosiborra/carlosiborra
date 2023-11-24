@@ -30,11 +30,11 @@
 
 		function scrollHandler() {
 			/* Function to update the scrollspy links based on window width */
-			const scrollPosition = window.pageYOffset + 60;
+			const scrollPosition = window.pageYOffset + 100;
 
 			sections.forEach((section, index) => {
 				const sectionHeight = section.offsetHeight + 20;
-				const sectionTop = section.offsetTop - 20;
+				const sectionTop = section.offsetTop;
 				const sectionId = section.getAttribute('id');
 
 				// Get the scrollspy link for the section
@@ -91,18 +91,16 @@
 <!-- ! STRUCT ------------------------------------------------------------------------------------->
 
 <div class="right-card">
-	<div class="card" id="container-scrollspy">
-		<!-- add the different sections as scrollspy -->
-		<nav class="scrollspy">
-			<!-- On load change the child of each a to the text in the section h1 -->
-			<a href="#section1" class="scrollspy-link"> </a>
-			<a href="#section2" class="scrollspy-link"> </a>
-			<a href="#section3" class="scrollspy-link"> </a>
-			<a href="#section4" class="scrollspy-link"> </a>
-			<a href="#section5" class="scrollspy-link"> </a>
-			<a href="#section6" class="scrollspy-link"> </a>
-		</nav>
-	</div>
+	<!-- add the different sections as scrollspy -->
+	<nav class="scrollspy">
+		<!-- On load change the child of each a to the text in the section h1 -->
+		<a href="#section1" class="scrollspy-link"> </a>
+		<a href="#section2" class="scrollspy-link"> </a>
+		<a href="#section3" class="scrollspy-link"> </a>
+		<a href="#section4" class="scrollspy-link"> </a>
+		<a href="#section5" class="scrollspy-link"> </a>
+		<a href="#section6" class="scrollspy-link"> </a>
+	</nav>
 	<div id="container-time">
 		<div class="display-time"><p class="timer" /></div>
 	</div>
@@ -142,7 +140,7 @@
 			flex-direction: column;
 			gap: $separation-small;
 
-			padding: $separation-small $separation-big;
+			padding: $separation-medium-small;
 
 			@media screen and (max-width: $breakpoint-tablet) {
 				padding: $separation-big;
@@ -190,7 +188,7 @@
 
 			.timer {
 				margin: 0;
-				padding: $separation-small $separation-big;
+				padding: $separation-medium-small;
 				font-family: $font-family-mono;
 			}
 
