@@ -1,6 +1,6 @@
 // ! FONTS FILES
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css2?family=Lora');
 @import url('https://fonts.googleapis.com/css2?family=Inter');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code');
 
@@ -14,7 +14,7 @@ $font-size-text: 12px;
 
 // ! Font families
 $font-family-sans: "Inter", sans-serif;
-$font-family-serif: "Playfair Display", serif;
+$font-family-serif: "Lora", serif;
 $font-family-mono: "Fira Code", monospace;
 
 
@@ -23,7 +23,7 @@ $font-family-mono: "Fira Code", monospace;
 h1 {
   font-size: $font-size-h1;
   font-family: $font-family-serif;
-  // color: var(--color-font-ser);
+  // color: rgb(250, 240, 229);
   font-style: normal;
   line-height: normal;
   font-weight: 550;
@@ -60,6 +60,7 @@ p {
   font-size: $font-size-text;
   font-family: $font-family-sans;
   // color: var(--color-font-primary);
+  color: rgb(250, 240, 229);
   font-style: normal;
   line-height: normal;
   font-weight: 350;

@@ -1,13 +1,23 @@
-<!-- ! Content -->
+<!-- ! SCRIPTS ------------------------------------------------------------------------------------>
 
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import Contact from './Contact.svelte';
 	import Timeline from './Timeline.svelte';
+	import gsap from 'gsap';
 
 	onMount(() => {
 		let document = window.document;
 		const title = document.querySelector('.title');
+		const sections = document.querySelectorAll('.section');
+
+		const tl = gsap.timeline({
+			scrollTrigger: { trigger: '#container', start: 'top top', end: 'bottom top', scrub: 1 }
+		});
+
+		tl.to({}, 1, {}); // This empty tween acts as a delay
+
+		tl.fromTo(sections, { y: '+=100', opacity: 0 }, { y: 0, opacity: 1, stagger: 0.2 });
 
 		const resizeObserver = new ResizeObserver((entries) => {
 			for (const entry of entries) {
@@ -35,12 +45,12 @@
 			];
 
 			const randomText = text[Math.floor(Math.random() * text.length)];
-			title.textContent = randomText;
+			title!.textContent = randomText;
 		}
 	});
 </script>
 
-<!-- ! ------------------------------------>
+<!-- ! STRUCTURE ---------------------------------------------------------------------------------->
 
 <title>Carlos Iborra | Portfolio</title>
 <div id="container" class="home-page card-wrapper">
@@ -51,84 +61,87 @@
 			</span>
 		</div>
 
-		<div class="left-card-body">
-			<div id="section1" class="section">
-				<div class="section-wrapper">
-					<h2>0. Introduction</h2>
-					<div class="section-content">
-						<p>
-							I am an Spanish student currently studying Computer Science Engineering at Universidad
-							Carlos III de Madrid. I've been passionate for programming since I was 8, always
-							looking for new challenges thereby improving my skills. If you want to learn more
-							about my present and future career, feel free to visit my LinkedIn profile.
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div id="section2" class="section">
-				<div class="section-wrapper">
-					<h2>1. Roadmap</h2>
-					<div class="section-content">
-						<p>Lorem ipsum dolor sit amet consectetur adipi sicing elit. Quisquam, quod.</p>
-					</div>
-				</div>
-			</div>
-
-			<div id="section3" class="section">
-				<div class="section-wrapper">
-					<h2>2. Proyects</h2>
-					<div class="section-content">
-						<p>Lorem ipsum dolor sit amet consectetur adipi sicing elit. Quisquam, quod.</p>
-					</div>
-				</div>
-			</div>
-
-			<div id="section4" class="section">
-				<div class="section-wrapper">
-					<h2>3. Timeline</h2>
-					<div class="section-content">
-						<p>Lorem ipsum dolor sit amet consectetur adipi sicing elit. Quisquam, quod.</p>
-						<Timeline />
-					</div>
-				</div>
-			</div>
-
-			<div id="section5" class="section">
-				<div class="section-wrapper">
-					<h2>4. Stats</h2>
-					<div class="section-content">
-						<p>
-							This are my overall stats in the VS Code editor (Arch Linux + Windows). Looking foward
-							adding compatibility with Neovim, Konsole and Terminal.
-						</p>
-						<p>
-							For better up-to date stats, visit my <a href="https://github.com/carlosiborra"
-								>GitHub</a
-							> profile.
-						</p>
-						<!-- This better GitHub stats were provided by https://github.com/jstrieb/github-stats -->
-						<div class="github-stats">
-							<img
-								class="img-fluid"
-								src="https://github-readme-stats.vercel.app/api/?username=carlosiborra&count_private=true&theme=dark&show_icons=true&title_color=00d612&show_owner&icon_color=00d612"
-								alt="Carlos Iborra GitHub Stats"
-							/>
-							<img
-								class="img-fluid"
-								src="https://github-readme-stats.vercel.app/api/top-langs/?username=carlosiborra&count_private=true&theme=dark&show_icons=true&title_color=00d612&show_owner&icon_color=00d612"
-								alt="Carlos Iborra Most Used Languages"
-							/>
+		<div id="wrapper">
+			<div id="content">
+				<div id="section1" class="section">
+					<div class="section-wrapper">
+						<h2>0. Who am I?</h2>
+						<div class="section-content">
+							<p>
+								I am an Spanish student currently studying Computer Science Engineering at
+								Universidad Carlos III de Madrid. I've been passionate for programming since I was
+								8, always looking for new challenges thereby improving my skills. If you want to
+								learn more about my present and future career, feel free to visit my LinkedIn
+								profile.
+							</p>
 						</div>
 					</div>
 				</div>
-			</div>
 
-			<div id="section6" class="section">
-				<div class="section-wrapper">
-					<h2>5. Social Media</h2>
-					<div class="section-content">
-						<Contact />
+				<div id="section2" class="section">
+					<div class="section-wrapper">
+						<h2>1. Roadmap</h2>
+						<div class="section-content">
+							<p>Lorem ipsum dolor sit amet consectetur adipi sicing elit. Quisquam, quod.</p>
+						</div>
+					</div>
+				</div>
+
+				<div id="section3" class="section">
+					<div class="section-wrapper">
+						<h2>2. Proyects</h2>
+						<div class="section-content">
+							<p>Lorem ipsum dolor sit amet consectetur adipi sicing elit. Quisquam, quod.</p>
+						</div>
+					</div>
+				</div>
+
+				<div id="section4" class="section">
+					<div class="section-wrapper">
+						<h2>3. Timeline</h2>
+						<div class="section-content">
+							<p>Lorem ipsum dolor sit amet consectetur adipi sicing elit. Quisquam, quod.</p>
+							<Timeline />
+						</div>
+					</div>
+				</div>
+
+				<div id="section5" class="section">
+					<div class="section-wrapper">
+						<h2>4. Stats</h2>
+						<div class="section-content">
+							<p>
+								This are my overall stats in the VS Code editor (Arch Linux + Windows). Looking
+								foward adding compatibility with Neovim, Konsole and Terminal.
+							</p>
+							<p>
+								For better up-to date stats, visit my <a href="https://github.com/carlosiborra"
+									>GitHub</a
+								> profile.
+							</p>
+							<!-- This better GitHub stats were provided by https://github.com/jstrieb/github-stats -->
+							<div class="github-stats">
+								<img
+									class="img-fluid"
+									src="https://github-readme-stats.vercel.app/api/?username=carlosiborra&count_private=true&theme=dark&show_icons=true&title_color=00d612&show_owner&icon_color=00d612"
+									alt="Carlos Iborra GitHub Stats"
+								/>
+								<img
+									class="img-fluid"
+									src="https://github-readme-stats.vercel.app/api/top-langs/?username=carlosiborra&count_private=true&theme=dark&show_icons=true&title_color=00d612&show_owner&icon_color=00d612"
+									alt="Carlos Iborra Most Used Languages"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="section6" class="section">
+					<div class="section-wrapper">
+						<h2>5. Get in touch!</h2>
+						<div class="section-content">
+							<Contact />
+						</div>
 					</div>
 				</div>
 			</div>
@@ -136,7 +149,7 @@
 	</div>
 </div>
 
-<!-- ! ------------------------------------>
+<!-- ! STYLE -------------------------------------------------------------------------------------->
 
 <style lang="scss">
 	@import 'static/styles/styles.scss';
@@ -209,7 +222,7 @@
 				}
 			}
 
-			.left-card-body {
+			#content {
 				background-color: none;
 				display: flex;
 				flex-direction: column;
@@ -231,14 +244,12 @@
 						padding: $separation-big;
 
 						.section-content {
-							@include glass-content-morph-background;
+							// @include glass-content-morph-background;
 							margin: 0;
 							padding: $separation-big;
 						}
 
 						h2 {
-							font-family: $font-family-mono;
-							letter-spacing: -2px; /* Adjust the value to make the font more tight */
 							margin: 0 0 $separation-big 0;
 							color: #ffd84c;
 						}

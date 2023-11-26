@@ -12,7 +12,7 @@ $breakpoint-desktop: 769px;
 // ! Color
 $color-primary: rgb(25, 25, 25);
 $color-primary-trans: rgba(25, 25, 25, 0.8);
-$color-secondary: rgba(14, 14, 14, 0.8);
+$color-secondary: rgba(14, 14, 14, 0.6);
 $color-tertiary: rgb(40, 40, 40);
 
 $color-primary-light: rgb(251, 251, 251);
@@ -28,23 +28,23 @@ $color-text-yellow: rgb(255, 216, 76);
 $color-primary-glass-morph: (
 	background: rgba(14, 14, 14, 0.8),
 	box-shadow: 4 4px 30px rgba(0, 0, 0, 1),
-	backdrop-filter: blur(8px),
-	-webkit-backdrop-filter: blur(8px)
+	backdrop-filter: blur(6px),
+	-webkit-backdrop-filter: blur(6px)
 );
 
 $color-primary-glass-morph-content: (
 	background: $color-primary-trans,
 	box-shadow: 4 4px 30px rgba(255, 255, 255, 1),
-	backdrop-filter: blur(8px),
-	-webkit-backdrop-filter: blur(8px),
+	backdrop-filter: blur(6px),
+	-webkit-backdrop-filter: blur(6px),
 	border-radius: 15px
 );
 
 $color-secondary-glass-morph-content: (
 	background: $color-secondary,
 	box-shadow: 4 4px 30px rgb(0, 0, 0),
-	backdrop-filter: blur(10px),
-	-webkit-backdrop-filter: blur(10px),
+	backdrop-filter: blur(6px),
+	-webkit-backdrop-filter: blur(6px),
 	border-radius: 15px
 );
 

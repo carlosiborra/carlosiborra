@@ -1,6 +1,12 @@
-<!-- ! Contact elements of Home -->
+<!-- ! SCRIPTS ------------------------------------------------------------------------------------>
 
-<!-- ! ------------------------------------>
+<script lang="ts">
+
+	
+
+</script>
+
+<!-- ! STRUCTURE ---------------------------------------------------------------------------------->
 
 <div class="social-wrapper">
 	<div
@@ -11,36 +17,24 @@
 		<img src="img/linkedin.png" alt="linkedin" />
 		<span>LinkedIn</span>
 	</div>
-	<div
-		class="social-button"
-		id="github"
-		onclick="window.open('https://github.com/carlosiborra')"
-	>
+	<div class="social-button" id="github" onclick="window.open('https://github.com/carlosiborra')">
 		<img src="img/github.png" alt="github" />
 		<span>GitHub</span>
 	</div>
-	<div
-		class="social-button"
-		id="twitter"
-		onclick="window.open('https://twitter.com/iboorraa')"
-	>
+	<div class="social-button" id="twitter" onclick="window.open('https://twitter.com/iboorraa')">
 		<img src="img/twitter.png" alt="twitter" />
 		<span>Twitter</span>
 	</div>
-	<div
-		class="social-button"
-		id="Email"
-		onclick="window.open('mailto:charlie.iborra@gmail.com')"
-	>
+	<div class="social-button" id="Email" onclick="window.open('mailto:charlie.iborra@gmail.com')">
 		<img src="img/email.png" alt="email" />
 		<span>Email</span>
 	</div>
 </div>
 
-<!-- ! ------------------------------------>
+<!-- ! STRUCTURE ---------------------------------------------------------------------------------->
 
 <style lang="scss">
-	@import "static/styles/styles.scss";
+	@import 'static/styles/styles.scss';
 	.social-wrapper {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(80px, 2fr));
@@ -60,6 +54,12 @@
 		&:hover {
 			filter: brightness(1.2);
 			transform: scale(1.01);
+			
+			// rotate
+			transform: rotate(5deg);
+			transition: all 0.2s ease-in-out;
+
+
 		}
 
 		&:active {
