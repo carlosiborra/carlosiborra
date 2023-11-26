@@ -58,10 +58,10 @@
 
 					// Apply parallax effect using GSAP
 					gsap.to(svgElement, {
-						x: getRandomNumber(-20, 20),
-						y: getRandomNumber(-20, 20),
+						x: getRandomNumber(-100, 100),
+						y: getRandomNumber(-100, 100),
 						rotation: getRandomNumber(-20, 20),
-						duration: 2,
+						duration: 5,
 						repeat: -1,
 						yoyo: true
 					});
