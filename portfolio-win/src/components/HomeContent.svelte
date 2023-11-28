@@ -62,7 +62,7 @@
 	<div class="left-card">
 		<div class="left-card-heading">
 			<span class="title-holder">
-				<h2 class="title">Hi, I am Carlos Iborra</h2>
+				<h1 class="title">Hi, I am Carlos Iborra</h1>
 			</span>
 		</div>
 
@@ -203,9 +203,9 @@
 					font-size: 100%;
 
 					.title {
-						font-family: $font-family-mono;
+						// font-family: $font-family-mono;
 						color: $color-primary-light;
-						font-size: 15px;
+						font-size: 32px;
 
 						width: min-content;
 						max-width: min-content;
