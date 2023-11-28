@@ -68,6 +68,7 @@
 						// ! y makes the SVGs restart position when scrolling
 						rotation: getRandomNumber(-30, 30),
 						duration: getRandomNumber(3, 6),
+						scale: getRandomNumber(0.95, 1.05),
 						repeat: -1,
 						yoyo: true,
 						ease: 'power2.inOut'

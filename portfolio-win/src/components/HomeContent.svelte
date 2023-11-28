@@ -7,17 +7,22 @@
 	import gsap from 'gsap';
 
 	onMount(() => {
-		let document = window.document;
+		const document = window.document;
 		const title = document.querySelector('.title');
 		const sections = document.querySelectorAll('.section');
+		const sectionContents = document.querySelectorAll('.section-content');
 
-		const tl = gsap.timeline({
+		const gsap_appearance = gsap.timeline({
 			scrollTrigger: { trigger: '#container', start: 'top top', end: 'bottom top', scrub: 1 }
 		});
 
-		tl.to({}, 1, {}); // This empty tween acts as a delay
+		gsap_appearance.to({}, 1, {}); // This empty tween acts as a delay
 
-		tl.fromTo(sections, { y: '+=100', opacity: 0 }, { y: 0, opacity: 1, stagger: 0.2 });
+		gsap_appearance.fromTo(
+			sections,
+			{ y: '+=100', opacity: 0 },
+			{ y: 0, opacity: 1, stagger: 0.2 }
+		);
 
 		const resizeObserver = new ResizeObserver((entries) => {
 			for (const entry of entries) {
@@ -28,7 +33,7 @@
 			}
 		});
 
-		resizeObserver.observe(title);
+		resizeObserver.observe(title!);
 
 		function changeText() {
 			const text = [
