@@ -11,10 +11,19 @@
 		const svgContainer = document.getElementById('svg-container');
 		const svgPath = '/img/bg_icons';
 
-		// Function to get a random number between min and max (inclusive)
-		function getRandomNumber(min: number, max: number): number {
-			return Math.floor(Math.random() * (max - min + 1)) + min;
+		// Function to calculate parallax effect based on scroll position
+		function calculateParallax(scrollY: number, element: HTMLElement): void {
+			const speed = 0.1;
+			const yPos = -(scrollY * speed);
+			gsap.to(element, {
+				y: yPos,
+				ease: 'power2.out'
+			});
 		}
+
+		const getRandomNumber = (min: number, max: number): number => {
+			return Math.floor(Math.random() * (max - min + 1)) + min;
+		};
 
 		// Function to load and add SVGs to the svgContainer
 		async function loadAndAddSVGs() {
@@ -30,42 +39,41 @@
 					const svgDoc = parser.parseFromString(svgText, 'image/svg+xml');
 					const svgElement = svgDoc.documentElement;
 
-					// set the size of the svg
 					const svgSize = getRandomNumber(10, 40);
+					const svgRotation = getRandomNumber(-20, 20);
+					const svgOpacity = getRandomNumber(30, 100);
+					const svgPositionY = getRandomNumber(0, 100);
+					const svgPositionX = getRandomNumber(0, 100);
+
+					svgElement.setAttribute('class', 'svg-icon');
+					svgElement.style.position = 'fixed';
+
 					svgElement.setAttribute('width', svgSize + 'px');
 					svgElement.setAttribute('height', svgSize + 'px');
 
-					// set angle of rotation
-					const svgRotation = getRandomNumber(-45, 45);
 					svgElement.setAttribute('transform', `rotate(${svgRotation})`);
-
-					// set class of svg
-					svgElement.setAttribute('class', 'svg-icon');
-					
-					// set random opacity
-					const svgOpacity = getRandomNumber(30, 100);
 					svgElement.setAttribute('opacity', `${svgOpacity}%`);
 
-					// Randomly set the position of the svg
-					const svgPositionX = getRandomNumber(0, 100);
-					const svgPositionY = getRandomNumber(0, 100);
 					svgElement.style.top = `${svgPositionY}dvh`;
 					svgElement.style.left = `${svgPositionX}dvw`;
 
-					svgElement.style.position = 'fixed';
-
-					svgContainer!.appendChild(svgElement);
-
-					// Apply parallax effect using GSAP
-					gsap.to(svgElement, {
-						x: getRandomNumber(-100, 100),
-						y: getRandomNumber(-100, 100),
-						rotation: getRandomNumber(-20, 20),
-						duration: 5,
-						repeat: -1,
-						yoyo: true
+					//call the function to calculate parallax effect
+					window.addEventListener('scroll', () => {
+						calculateParallax(window.scrollY, svgElement);
 					});
 
+					// Apply rotation animation using GSAP
+					gsap.to(svgElement, {
+						x: getRandomNumber(-50, 50),
+						// ! y makes the SVGs restart position when scrolling
+						rotation: getRandomNumber(-30, 30),
+						duration: getRandomNumber(3, 6),
+						repeat: -1,
+						yoyo: true,
+						ease: 'power2.inOut'
+					});
+
+					svgContainer!.appendChild(svgElement);
 				} catch (error) {
 					console.error(`Failed to load SVG: ${svgURL}`, error);
 				}
@@ -74,8 +82,6 @@
 
 		loadAndAddSVGs();
 	});
-
-
 </script>
 
 <!-- ! STRUCTURE ---------------------------------------------------------------------------------->
@@ -83,8 +89,6 @@
 <div id="welcome-container">
 	<Welcome />
 </div>
-
-<!-- <Scrollspy /> -->
 <body id="body-content">
 	<div id="svg-container"></div>
 	<div id="navbar">
@@ -115,7 +119,7 @@
 		left: 0;
 		width: 100vw;
 		height: 100vh;
-		position: fixed;
+		position: absolute;
 		background-color: none;
 		pointer-events: none;
 		z-index: 0;
@@ -144,6 +148,7 @@
 		display: grid;
 		grid-template-columns: auto auto;
 		gap: $separation-big;
+		min-height: 100vh;
 
 		@media screen and (max-width: $breakpoint-mobile) {
 			grid-template-columns: auto;
@@ -163,18 +168,19 @@
 
 		// https://colorhunt.co/palette/352f445c5470b9b4c7faf0e6
 
-		background: radial-gradient(at 5% 40%, rgb(54, 48, 69) 0px, transparent 50%),
-			radial-gradient(at 1% 8%, rgb(184, 179, 199) 0px, transparent 50%),
-			radial-gradient(at 31% 74%, rgb(91, 83, 110) 0px, transparent 50%),
-			radial-gradient(at 31% 74%, rgb(92, 84, 112) 0px, transparent 50%),
-			radial-gradient(at 88% 12%, rgb(54, 48, 69) 0px, transparent 50%),
-			radial-gradient(at 95% 90%, rgb(92, 84, 112) 0px, transparent 50%);
+		background: radial-gradient(at 10% 90%, rgb(54, 48, 69) 0px, transparent 80%),
+			radial-gradient(at 5% 15%, rgb(184, 179, 199) 0px, transparent 20%),
+			radial-gradient(at 40% 80%, rgb(91, 83, 110) 0px, transparent 60%),
+			radial-gradient(at 30% 20%, rgb(92, 84, 112) 0px, transparent 80%),
+			radial-gradient(at 90% 20%, rgb(54, 48, 69) 0px, transparent 60%),
+			radial-gradient(at 98% 95%, rgb(92, 84, 112) 0px, transparent 60%),
+			radial-gradient(at 100% 0%, rgb(54, 48, 69) 0px, transparent 60%);
 		background-size: 130% 130%;
 
-		-webkit-animation: background-image-animation 5s cubic-bezier(0.65, 0.05, 0.36, 1) infinite;
-		-moz-animation: background-image-animation 5s cubic-bezier(0.65, 0.05, 0.36, 1) infinite;
-		-o-animation: background-image-animation 5s cubic-bezier(0.65, 0.05, 0.36, 1) infinite;
-		animation: background-image-animation 5s cubic-bezier(0.65, 0.05, 0.36, 1) infinite;
+		-webkit-animation: background-image-animation 10s cubic-bezier(0.65, 0.05, 0.36, 1) infinite;
+		-moz-animation: background-image-animation 10s cubic-bezier(0.65, 0.05, 0.36, 1) infinite;
+		-o-animation: background-image-animation 10s cubic-bezier(0.65, 0.05, 0.36, 1) infinite;
+		animation: background-image-animation 10s cubic-bezier(0.65, 0.05, 0.36, 1) infinite;
 
 		// background: radial-gradient(at 10% 61%, rgb(201, 255, 202) 0px, transparent 30%),
 		// 	radial-gradient(at 1% 8%, rgb(245, 255, 170) 0px, transparent 40%),
