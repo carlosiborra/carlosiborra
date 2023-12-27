@@ -16,7 +16,7 @@ Hello world!, I am @carlosiborra
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" alt="Rocket" width="25" height="25" /> Portfolio
 
-If you really want to read an extended biography, you have my portfolio at the following link (legacy as I'm currently on to other projects): https://carlosiborra.github.io/carlosiborra/
+If you really want to read an extended biography, you have my portfolio at the following link (legacy as I'm currently on to other projects): https://carlosiborra.com
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20professions/Technologist%20Light%20Skin%20Tone.png" alt="Technologist Light Skin Tone" width="30" height="30" /> Skills
 <!-- ![](https://img.shields.io/badge/Code-Python-informational?style=flat&logo=python&logoColor=white&color=yellow)
