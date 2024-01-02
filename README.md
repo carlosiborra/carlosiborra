@@ -29,6 +29,15 @@ If you really want to read an extended biography, you have my portfolio at the f
  <a>
   </a>
   <img src="https://github.com/carlosiborra/Better-GitHub-Stats/blob/master/generated/languages.svg#gh-dark-mode-only" />
+<!--  <a>
+  </a>
+  <img src="https://github-readme-stats-ecru-mu.vercel.app/api?username=carlosiborra&show_icons=true&rank_icon=github&theme=transparent&title_color=e1dad4&text_color=e1dad4&icon_color=e1dad4&hide_border=true&include_all_commits=trueg" />
+ <a>
+  </a>
+  <img src="https://github-readme-stats-ecru-mu.vercel.app/api/wakatime?username=carlosiborra&layout=compact&langs_count=14&theme=transparent&title_color=e1dad4&text_color=e1dad4&icon_color=e1dad4&hide_border=true&include_all_commits=true&custom_title=WakaTime%20Time%20Spent%20since%20June%202023" />
+ <a>
+  </a>
+  <img src="https://github-readme-stats-ecru-mu.vercel.app/api/top-langs/?username=carlosiborra&layout=compact&langs_count=14&theme=transparent&title_color=e1dad4&text_color=e1dad4&icon_color=e1dad4&hide_border=true&include_all_commits=true" /> -->
 </a>
 
 <hr>
