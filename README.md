@@ -38,7 +38,7 @@ For a more detailed biography and work, visit [my new Svelte portfolio](https://
 </a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://github.com/carlosiborra/Better-GitHub-Stats">
-  <img src="https://github-readme-stats-ecru-mu.vercel.app/api/wakatime?username=carlosiborra&layout=compact&langs_count=14&theme=aura&title_color=e1dad4&text_color=e1dad4&icon_color=e1dad4&include_all_commits=true&border_color=true&custom_title=WakaTime%20Time%20Spent%20since%20June%202023" alt="GitHub WakaTime Stats">
+  <img src="https://github-readme-stats-ecru-mu.vercel.app/api/wakatime?username=carlosiborra&layout=compact&langs_count=14&theme=aura&title_color=e1dad4&text_color=e1dad4&icon_color=e1dad4&hide_border=true&include_all_commits=true&border_color=true&custom_title=WakaTime%20Time%20Spent%20since%20June%202023" alt="GitHub WakaTime Stats">
 </a>
 
 <hr>
