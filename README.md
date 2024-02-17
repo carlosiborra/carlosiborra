@@ -29,16 +29,16 @@ For a more detailed biography and work, visit [my new Svelte portfolio](https://
 
 <!-- Better GitHub stats provided by https://github.com/jstrieb/github-stats -->
 <a href="https://github.com/carlosiborra/Better-GitHub-Stats">
-  <img src="https://github-readme-stats-ecru-mu.vercel.app/api?username=carlosiborra&show_icons=true&rank_icon=github&theme=transparent&title_color=e1dad4&text_color=e1dad4&icon_color=e1dad4&include_all_commits=true" alt="GitHub Stats">
+  <img src="https://github-readme-stats-ecru-mu.vercel.app/api?username=carlosiborra&show_icons=true&rank_icon=github&theme=aura&title_color=e1dad4&text_color=e1dad4&icon_color=e1dad4&include_all_commits=true&hide_border=true" alt="GitHub Stats">
 </a>
 <br><br>
 
 <a href="https://github.com/carlosiborra/Better-GitHub-Stats">
-  <img src="https://github-readme-stats-ecru-mu.vercel.app/api/top-langs/?username=carlosiborra&layout=compact&langs_count=14&theme=transparent&title_color=e1dad4&text_color=e1dad4&icon_color=e1dad4&include_all_commits=true" alt="GitHub Top Languages Stats">
+  <img src="https://github-readme-stats-ecru-mu.vercel.app/api/top-langs/?username=carlosiborra&layout=compact&langs_count=14&theme=aura&title_color=e1dad4&text_color=e1dad4&icon_color=e1dad4&include_all_commits=true&hide_border=true" alt="GitHub Top Languages Stats">
 </a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://github.com/carlosiborra/Better-GitHub-Stats">
-  <img src="https://github-readme-stats-ecru-mu.vercel.app/api/wakatime?username=carlosiborra&layout=compact&langs_count=14&theme=transparent&title_color=e1dad4&text_color=e1dad4&icon_color=e1dad4&include_all_commits=true&custom_title=WakaTime%20Time%20Spent%20since%20June%202023" alt="GitHub WakaTime Stats">
+  <img src="https://github-readme-stats-ecru-mu.vercel.app/api/wakatime?username=carlosiborra&layout=compact&langs_count=14&theme=aura&title_color=e1dad4&text_color=e1dad4&icon_color=e1dad4&include_all_commits=true&border_color=true&custom_title=WakaTime%20Time%20Spent%20since%20June%202023" alt="GitHub WakaTime Stats">
 </a>
 
 <hr>
