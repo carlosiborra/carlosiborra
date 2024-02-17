@@ -4,40 +4,40 @@
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Bubbles.png" alt="Bubbles" width="25" height="25"/> Table of Contents
 <a href = "url"><img src = "https://media.giphy.com/media/jdPMeyv9rn0hZHh8n9/giphy.gifhttps://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" align="right" width="160" height="150"></a>
-* [Personal Data](#personal-data) 
-* [Skills](#skills)
-* [Portfolio](#portfolio) - legacy
-* [Contact](#contact)
+- [Personal Data](#personal-data)
+- [Skills](#skills)
+- [Portfolio](#portfolio)
+- [Contact](#contact)
+
+<br>
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Sauropod.png" alt="Sauropod" width="30" height="30" /> Personal Data
-Hello world!, I am @carlosiborra
-  - I am currently studying Computer Science Engineering at Carlos III de Madrid University.
-  - So as not to waste your time with a 2600-letter biography, I will reduce it to the fact that I love programming, coming up with  innovative ideas, and solving problems. I am always on the lookout for new things and projects to start.
+Hello world! I am Carlos Iborra, a Computer Science Engineering student at Carlos III de Madrid University.  
+Passionate about programming, innovative ideas, and problem-solving.
+
+I'm always exploring new projects and opportunities.
+
+<br>
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" alt="Rocket" width="25" height="25" /> Portfolio
 
-If you really want to read an extended biography, you have my portfolio at the following link: https://carlosiborra.com
+For a more detailed biography and work, visit [my new Svelte portfolio](https://carlosiborra.com).
+
+<br>
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20professions/Technologist%20Light%20Skin%20Tone.png" alt="Technologist Light Skin Tone" width="30" height="30" /> Skills
-<!-- ![](https://img.shields.io/badge/Code-Python-informational?style=flat&logo=python&logoColor=white&color=yellow)
-![](https://img.shields.io/badge/Code-Selenium-informational?style=flat&logo=Selenium&logoColor=white&color=brown)
-![](https://img.shields.io/badge/Code-Arduino-informational?style=flat&logo=Arduino&logoColor=white&color=lightgrey) -->
 
-<!-- This better GitHub stats were provided by https://github.com/jstrieb/github-stats -->
+<!-- Better GitHub stats provided by https://github.com/jstrieb/github-stats -->
 <a href="https://github.com/carlosiborra/Better-GitHub-Stats">
-  <img src="https://github.com/carlosiborra/Better-GitHub-Stats/blob/master/generated/overview.svg#gh-dark-mode-only" align="left" />
- <a>
-  </a>
-  <img src="https://github.com/carlosiborra/Better-GitHub-Stats/blob/master/generated/languages.svg#gh-dark-mode-only" />
-<!--  <a>
-  </a>
-  <img src="https://github-readme-stats-ecru-mu.vercel.app/api?username=carlosiborra&show_icons=true&rank_icon=github&theme=transparent&title_color=e1dad4&text_color=e1dad4&icon_color=e1dad4&hide_border=true&include_all_commits=trueg" />
- <a>
-  </a>
-  <img src="https://github-readme-stats-ecru-mu.vercel.app/api/wakatime?username=carlosiborra&layout=compact&langs_count=14&theme=transparent&title_color=e1dad4&text_color=e1dad4&icon_color=e1dad4&hide_border=true&include_all_commits=true&custom_title=WakaTime%20Time%20Spent%20since%20June%202023" />
- <a>
-  </a>
-  <img src="https://github-readme-stats-ecru-mu.vercel.app/api/top-langs/?username=carlosiborra&layout=compact&langs_count=14&theme=transparent&title_color=e1dad4&text_color=e1dad4&icon_color=e1dad4&hide_border=true&include_all_commits=true" /> -->
+  <img src="https://github-readme-stats-ecru-mu.vercel.app/api?username=carlosiborra&show_icons=true&rank_icon=github&theme=transparent&title_color=e1dad4&text_color=e1dad4&icon_color=e1dad4&include_all_commits=true" alt="GitHub Stats">
+</a>
+<br><br>
+<a href="https://github.com/carlosiborra/Better-GitHub-Stats">
+  <img src="https://github-readme-stats-ecru-mu.vercel.app/api/top-langs/?username=carlosiborra&layout=compact&langs_count=14&theme=transparent&title_color=e1dad4&text_color=e1dad4&icon_color=e1dad4&include_all_commits=true" alt="GitHub Top Languages Stats">
+</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/carlosiborra/Better-GitHub-Stats">
+  <img src="https://github-readme-stats-ecru-mu.vercel.app/api/wakatime?username=carlosiborra&layout=compact&langs_count=14&theme=transparent&title_color=e1dad4&text_color=e1dad4&icon_color=e1dad4&include_all_commits=true&custom_title=WakaTime%20Time%20Spent%20since%20June%202023" alt="GitHub WakaTime Stats">
 </a>
 
 <hr>
@@ -61,13 +61,25 @@ Markdown                   2 hrs 52 mins   ⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁�
 
 <!--END_SECTION:waka-->
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Spiral%20Calendar.png" alt="Spiral Calendar" width="25" height="25" /> Contact
-In order to reach me, you can do it through:
-  - Mail
-  - [![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-Profile-informational?style=flat&logo=linkedin&logoColor=white&color=0D76A8)](https://www.linkedin.com/in/carlos-iborra-llopis-bb84a1214/)
-  - [![Mail Badge](https://img.shields.io/static/v1?label=My&message=WebPage&color=red)](https://carlosiborra.github.io/carlosiborra/)
+<br>
 
-#
-![LinkedIn Badge](http://ForTheBadge.com/images/badges/built-by-developers.svg)
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Spiral%20Calendar.png" alt="Spiral Calendar" width="25" height="25" /> Contact
+Reach out to me via:
+
+<a href="mailto:contact@carlosiborra.com?subject=Carlos%20Iborra%27s%20Portfolio&body=Good%20%5Bmorning%2Fafternoon%5D%2C%0D%0A%0D%0A%5BEnter%20text%5D%0D%0A%0D%0ABest%20regards%2C%0D%0A%0D%0A%5BYour%20Full%20Name%5D%0D%0A%5BYour%20Contact%20Information%5D%0D%0A%5BYour%20Website%20URL%2C%20if%20applicable%5D">
+  <img src="https://img.shields.io/badge/Email-grey?style=flat&logo=mail.ru&logoColor=white&color=3abb3a" alt="Mail Badge">
+</a>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://www.linkedin.com/in/carlos-iborra-llopis-bb84a1214/">
+  <img src="https://img.shields.io/badge/LinkedIn%20Profile-grey?style=flat&logo=linkedin&logoColor=white&color=0D76A8" alt="LinkedIn Badge">
+</a>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://carlosiborra.github.io/carlosiborra/">
+  <img src="https://img.shields.io/badge/Portfolio-grey?style=flat&logo=googledocs&logoColor=white&color=904646" alt="Web Badge">
+</a>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://twitter.com/iboorraa/">
+  <img src="https://img.shields.io/badge/Twitter-grey?style=rounded&logo=x&logoColor=white&color=3cbbff" alt="Twitter Badge">
+</a>
 
 <!-- See you! -->
