@@ -46,15 +46,15 @@ For a more detailed biography and work, visit [my new Svelte portfolio](https://
 <!--START_SECTION:waka-->
 
 ```txt
-Total Time: 533 hrs 54 mins
+Total Time: 535 hrs 17 mins
 
-Svelte                     121 hrs 2 mins  ⠿⠿⠿⠿⠿⠛⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   22.67 %
-SCSS                       108 hrs 6 mins  ⠿⠿⠿⠿⠿⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   20.25 %
-Python                     95 hrs 23 mins  ⠿⠿⠿⠿⠉⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   17.87 %
-TypeScript                 52 hrs 33 mins  ⠿⠿⠉⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   09.84 %
-TeX                        43 hrs 27 mins  ⠿⠿⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   08.14 %
-HTML                       38 hrs 3 mins   ⠿⠛⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   07.13 %
-Other                      22 hrs 52 mins  ⠿⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   04.28 %
+Svelte                     121 hrs 2 mins  ⠿⠿⠿⠿⠿⠛⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   22.61 %
+SCSS                       108 hrs 6 mins  ⠿⠿⠿⠿⠿⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   20.20 %
+Python                     95 hrs 23 mins  ⠿⠿⠿⠿⠉⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   17.82 %
+TypeScript                 52 hrs 33 mins  ⠿⠿⠉⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   09.82 %
+TeX                        44 hrs 45 mins  ⠿⠿⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   08.36 %
+HTML                       38 hrs 3 mins   ⠿⠛⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   07.11 %
+Other                      22 hrs 52 mins  ⠿⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   04.27 %
 JSON                       15 hrs 39 mins  ⠛⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   02.93 %
 C                          11 hrs 52 mins  ⠛⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   02.22 %
 Markdown                   3 hrs 56 mins   ⠉⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   00.74 %
