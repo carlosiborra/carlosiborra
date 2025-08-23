@@ -1,27 +1,12 @@
 <!-- Hello World! This is Carlos Iborra's readme -->
+![carlosiborra header image](https://github.com/user-attachments/assets/8c830821-61ca-4039-b8f2-b0bcaeb29830)
 
-<a href = "url"><img src = "https://user-images.githubusercontent.com/41797418/153309984-33746328-34c8-45d9-8810-296fdc9a1686.gif" align="center" ></a>
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Bubbles.png" alt="Bubbles" width="25" height="25"/> Table of Contents
 <a href = "url"><img src = "https://media.giphy.com/media/jdPMeyv9rn0hZHh8n9/giphy.gifhttps://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" align="right" width="160" height="150"></a>
-- [Personal Data](#personal-data)
+- [Personal Web](https://carlosiborra.com)
 - [Skills](#skills)
-- [Portfolio](#portfolio)
 - [Contact](#contact)
-
-<br>
-
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Sauropod.png" alt="Sauropod" width="30" height="30" /> Personal Data
-Hello world! I am Carlos Iborra, a Computer Science Engineering student at Carlos III de Madrid University.  
-Passionate about programming, innovative ideas, and problem-solving.
-
-I'm always exploring new projects and opportunities.
-
-<br>
-
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" alt="Rocket" width="25" height="25" /> Portfolio
-
-For a more detailed biography and work, visit [my new Svelte portfolio](https://carlosiborra.com).
 
 <br>
 
@@ -41,7 +26,7 @@ For a more detailed biography and work, visit [my new Svelte portfolio](https://
   <img src="https://github-readme-stats-ecru-mu.vercel.app/api/wakatime?username=carlosiborra&layout=compact&langs_count=14&theme=aura&title_color=e1dad4&text_color=e1dad4&icon_color=e1dad4&hide_border=true&include_all_commits=true&border_color=true&custom_title=WakaTime%20Time%20Spent%20since%20June%202023" alt="GitHub WakaTime Stats">
 </a>
 
-<hr>
+<br>
 
 <!--START_SECTION:waka-->
 
@@ -75,7 +60,7 @@ Reach out to me via:
   <img src="https://img.shields.io/badge/LinkedIn%20Profile-grey?style=flat&logo=linkedin&logoColor=white&color=0D76A8" alt="LinkedIn Badge">
 </a>&nbsp;&nbsp;&nbsp;&nbsp;
 
-<a href="https://carlosiborra.github.io/carlosiborra/">
+<a href="https://carlosiborra.com">
   <img src="https://img.shields.io/badge/Portfolio-grey?style=flat&logo=googledocs&logoColor=white&color=904646" alt="Web Badge">
 </a>&nbsp;&nbsp;&nbsp;&nbsp;
 
