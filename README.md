@@ -1,46 +1,38 @@
-<!-- Original animated header -->
-<img src="https://github.com/user-attachments/assets/8c830821-61ca-4039-b8f2-b0bcaeb29830" alt="Carlos Iborra" width="100%">
-
-<h1 align="center">Carlos Iborra</h1>
-
+<!-- Carlos's original animated header. Keep the GIF, not a replacement banner. -->
 <p align="center">
-  <strong>Software &amp; Data Engineer</strong><br>
-  AI platforms · data systems · product engineering
+  <img src="https://github.com/user-attachments/assets/8c830821-61ca-4039-b8f2-b0bcaeb29830" alt="Welcome to my page. Computer Scientist &amp; Engineer." width="720">
 </p>
 
+<h3 align="center">Carlos Iborra</h3>
+
 <p align="center">
-  <a href="https://carlosiborra.com">Website</a>
-  &nbsp;·&nbsp;
-  <a href="https://www.linkedin.com/in/carlos-iborra-llopis-bb84a1214/">LinkedIn</a>
-  &nbsp;·&nbsp;
-  <a href="mailto:contact@carlosiborra.com">Email</a>
+  Software &amp; Data Engineer · Madrid, Spain<br>
+  <samp>
+    <a href="https://carlosiborra.com">website</a> ·
+    <a href="https://www.linkedin.com/in/carlos-iborra-llopis-bb84a1214/">linkedin</a> ·
+    <a href="mailto:contact@carlosiborra.com">email</a>
+  </samp>
 </p>
 
-<br>
+### Curiosity, put into practice.
 
-### I like building things to understand them.
+I work on **AI and data platforms**. Outside work, I build applications, experiment with new technologies, and automate things I'd rather not do twice. Most ideas start with something I wish existed, or something I want to understand better.
 
-I work on **AI and data platforms** and spend a lot of my own time experimenting with software: building applications, trying new technologies, automating repetitive work, and turning rough ideas into things I can actually use.
+I enjoy the whole process: designing the experience, building the systems behind it, and making it all work together.
 
-What interests me most is the space where **software, AI, data, and product thinking meet**. I like working end to end: understanding the problem, designing the experience, building the system behind it, and iterating until it feels simple.
+> **The goal:** build useful products, keep learning, and make complex things feel simple.
 
-### Things I keep exploring
+<p>
+  <samp>DRAWN TO</samp><br>
+  AI &amp; agents · Web &amp; native apps · Data systems · Developer tools · Self-hosting
+</p>
 
-- **AI & agents** — practical agent workflows, evaluation, tooling, and the infrastructure behind them.
-- **Applications** — web and native products, from interface to backend and deployment.
-- **Data systems** — pipelines, analytics platforms, modeling, and making data useful.
-- **Infrastructure & automation** — self-hosting, developer tooling, CI/CD, and removing unnecessary manual work.
+<p>
+  <samp>WORKING WITH</samp><br>
+  Python · TypeScript · SQL · React · PostgreSQL · Docker · Linux<br>
+  <sub>Also exploring Swift, Rust, and Go.</sub>
+</p>
 
-### How I like to build
+---
 
-**Simple before clever. Observable before magical. Automate the repetitive. Keep feedback loops short. Ship, learn, refine.**
-
-### Toolbox
-
-`Python` · `TypeScript` · `SQL` · `React` · `PostgreSQL` · `Docker` · `Linux`
-
-Currently exploring more **Swift**, **Rust**, **Go**, native development, and better ways of building reliable AI-driven software.
-
-<br>
-
-<p align="center"><sub>Outside the editor: running, boxing, mountains, and learning whatever catches my curiosity next.</sub></p>
+<p align="center"><sub>Beyond the keyboard: running, boxing, and time in the mountains.</sub></p>
