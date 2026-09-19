@@ -1,9 +1,5 @@
-<!-- Keep Carlos's original header. Reduced-motion visitors get the existing static alternative. -->
-<picture>
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/header-light.svg">
-  <img src="https://github.com/user-attachments/assets/8c830821-61ca-4039-b8f2-b0bcaeb29830" alt="Carlos Iborra" width="100%">
-</picture>
+<!-- Carlos's original animated header. Keep this as the primary hero. -->
+<img src="https://github.com/user-attachments/assets/8c830821-61ca-4039-b8f2-b0bcaeb29830" alt="Carlos Iborra" width="100%">
 
 <p align="center"><strong>Carlos Iborra</strong><br>Software &amp; Data Engineer · Madrid</p>
 
