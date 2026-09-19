@@ -1,48 +1,46 @@
-<!-- Carlos's original animated header. Keep this as the primary hero. -->
+<!-- Original animated header -->
 <img src="https://github.com/user-attachments/assets/8c830821-61ca-4039-b8f2-b0bcaeb29830" alt="Carlos Iborra" width="100%">
 
-<p align="center"><strong>Carlos Iborra</strong><br>Software &amp; Data Engineer · Madrid</p>
+<h1 align="center">Carlos Iborra</h1>
 
 <p align="center">
-  <a href="https://carlosiborra.com">Website</a> &nbsp; / &nbsp;
-  <a href="https://www.linkedin.com/in/carlos-iborra-llopis-bb84a1214/">LinkedIn</a> &nbsp; / &nbsp;
+  <strong>Software &amp; Data Engineer</strong><br>
+  AI platforms · data systems · product engineering
+</p>
+
+<p align="center">
+  <a href="https://carlosiborra.com">Website</a>
+  &nbsp;·&nbsp;
+  <a href="https://www.linkedin.com/in/carlos-iborra-llopis-bb84a1214/">LinkedIn</a>
+  &nbsp;·&nbsp;
   <a href="mailto:contact@carlosiborra.com">Email</a>
 </p>
 
----
+<br>
 
-### I learn by building.
+### I like building things to understand them.
 
-I work on AI and data platforms. Outside work, I experiment with new technologies and build applications of my own, from the first idea to the interface, backend, and infrastructure.
+I work on **AI and data platforms** and spend a lot of my own time experimenting with software: building applications, trying new technologies, automating repetitive work, and turning rough ideas into things I can actually use.
 
-I’m drawn to **web and native apps**, **AI and agents**, and **developer tools that make everyday work easier**. My goal is to turn that curiosity into useful products that people enjoy using.
+What interests me most is the space where **software, AI, data, and product thinking meet**. I like working end to end: understanding the problem, designing the experience, building the system behind it, and iterating until it feels simple.
 
-### Ralphban
+### Things I keep exploring
 
-**See what your AI agents are working on.**
+- **AI & agents** — practical agent workflows, evaluation, tooling, and the infrastructure behind them.
+- **Applications** — web and native products, from interface to backend and deployment.
+- **Data systems** — pipelines, analytics platforms, modeling, and making data useful.
+- **Infrastructure & automation** — self-hosting, developer tooling, CI/CD, and removing unnecessary manual work.
 
-A VS Code extension I built to turn JSON task files into an editable Kanban board. The file stays the source of truth. No backend, accounts, or telemetry.
+### How I like to build
 
-<a href="https://github.com/carlosiborra/Ralphban#readme">
-  <img src="https://raw.githubusercontent.com/carlosiborra/Ralphban/main/images/demo-ultracropped.gif" alt="Ralphban: agent tasks displayed as a Kanban board inside VS Code" width="100%">
-</a>
+**Simple before clever. Observable before magical. Automate the repetitive. Keep feedback loops short. Ship, learn, refine.**
 
-<p>
-  <a href="https://marketplace.visualstudio.com/items?itemName=carlosiborra.ralphban"><strong>Install for VS Code</strong></a> &nbsp; / &nbsp;
-  <a href="https://github.com/carlosiborra/Ralphban">Explore the source</a>
-</p>
+### Toolbox
 
----
+`Python` · `TypeScript` · `SQL` · `React` · `PostgreSQL` · `Docker` · `Linux`
 
-<p align="center"><strong>Tools I work with</strong></p>
+Currently exploring more **Swift**, **Rust**, **Go**, native development, and better ways of building reliable AI-driven software.
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py,ts,react,postgres,docker,linux&amp;perline=6&amp;theme=dark">
-    <img src="https://skillicons.dev/icons?i=py,ts,react,postgres,docker,linux&amp;perline=6&amp;theme=light" alt="Python, TypeScript, React, PostgreSQL, Docker, and Linux" width="240">
-  </picture>
-</p>
+<br>
 
-<p align="center">Also exploring Swift, Rust, and self-hosted systems.</p>
-
-<p align="center"><sub>Outside code: running, boxing, and time in the mountains.</sub></p>
+<p align="center"><sub>Outside the editor: running, boxing, mountains, and learning whatever catches my curiosity next.</sub></p>
