@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 168" role="img" aria-labelledby="title desc">
+  <title id="title">Software. Data. AI.</title>
+  <desc id="desc">An understated typographic header with connected geometric paths.</desc>
+  <rect width="960" height="168" rx="12" fill="#F5F3EE"/>
+  <path d="M38 40h36" stroke="#477A6E" stroke-width="3"/>
+  <text x="36" y="119" fill="#213A36" font-family="Georgia, 'Times New Roman', serif" font-size="62" letter-spacing="-1.4">Software. Data. AI.</text>
+  <g fill="none" stroke="#E3E6DE" stroke-width="1">
+    <path d="M658 24v120M722 24v120M786 24v120M850 24v120M914 24v120"/>
+    <path d="M634 40h300M634 84h300M634 128h300"/>
+  </g>
+  <g fill="none" stroke="#B6C6BE" stroke-width="1.5">
+    <path d="M650 128h52q20 0 20-20V60q0-20 20-20h44"/>
+    <path d="M650 84h136q20 0 20 20v4q0 20 20 20h88"/>
+    <path d="M786 40h44q20 0 20 20v4q0 20 20 20h44"/>
+  </g>
+  <path d="M650 128h52q20 0 20-20v-4q0-20 20-20h44q20 0 20-20v-4q0-20 20-20h88" fill="none" stroke="#477A6E" stroke-width="2.5"/>
+  <g fill="#F5F3EE" stroke="#477A6E" stroke-width="2">
+    <circle cx="650" cy="128" r="5"/>
+    <circle cx="770" cy="84" r="5"/>
+    <circle cx="914" cy="40" r="5"/>
+  </g>
+</svg>

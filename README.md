@@ -1,71 +1,49 @@
-<!-- Hello World! This is Carlos Iborra's readme -->
-![carlosiborra header image](https://github.com/user-attachments/assets/8c830821-61ca-4039-b8f2-b0bcaeb29830)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/header-light.svg">
+  <img src="assets/header-light.svg" alt="Software. Data. AI." width="100%">
+</picture>
 
+# Carlos Iborra
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Bubbles.png" alt="Bubbles" width="25" height="25"/> Table of Contents
-<a href = "url"><img src = "https://media.giphy.com/media/jdPMeyv9rn0hZHh8n9/giphy.gifhttps://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" align="right" width="160" height="150"></a>
-- [Personal Web](https://carlosiborra.com)
-- [Skills](#skills)
-- [Contact](#contact)
+**Software & Data Engineer · Madrid, Spain**
 
-<br>
+I work on AI and data platforms, and build tools and products on the side. I care about making complex systems useful, understandable, and reliable.
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20professions/Technologist%20Light%20Skin%20Tone.png" alt="Technologist Light Skin Tone" width="30" height="30" /> Skills
+[Website](https://carlosiborra.com) · [LinkedIn](https://www.linkedin.com/in/carlos-iborra-llopis-bb84a1214/) · [Email](mailto:contact@carlosiborra.com)
 
-<!-- Better GitHub stats provided by https://github.com/jstrieb/github-stats -->
-<a href="https://github.com/carlosiborra/Better-GitHub-Stats">
-  <img src="https://github-readme-stats-ecru-mu.vercel.app/api?username=carlosiborra&show_icons=true&rank_icon=github&theme=aura&title_color=e1dad4&text_color=e1dad4&icon_color=e1dad4&include_all_commits=true&hide_border=true" alt="GitHub Stats">
-</a>
-<br><br>
+## What I work on
 
-<a href="https://github.com/carlosiborra/Better-GitHub-Stats">
-  <img src="https://github-readme-stats-ecru-mu.vercel.app/api/top-langs/?username=carlosiborra&layout=compact&langs_count=14&theme=aura&title_color=e1dad4&text_color=e1dad4&icon_color=e1dad4&include_all_commits=true&hide_border=true" alt="GitHub Top Languages Stats">
-</a>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://github.com/carlosiborra/Better-GitHub-Stats">
-  <img src="https://github-readme-stats-ecru-mu.vercel.app/api/wakatime?username=carlosiborra&layout=compact&langs_count=14&theme=aura&title_color=e1dad4&text_color=e1dad4&icon_color=e1dad4&hide_border=true&include_all_commits=true&border_color=true&custom_title=WakaTime%20Time%20Spent%20since%20June%202023" alt="GitHub WakaTime Stats">
-</a>
+- **AI & data platforms:** the infrastructure, pipelines, and services behind AI and analytics products.
+- **Developer tooling:** agent workflows, automation, and tools that make engineering work easier to inspect and debug.
+- **Product engineering:** connecting backend systems, interfaces, and infrastructure into useful applications.
 
-<br>
+## Selected public work
 
-<!--START_SECTION:waka-->
+### [Ralphban](https://github.com/carlosiborra/Ralphban)
 
-```txt
-Total Time: 1,684 hrs
+**A visual workspace for LLM tasks, inside VS Code.**
 
-TypeScript                 432 hrs 28 mins       ⠿⠿⠿⠿⠿⠿⠉⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   25.68 %
-SCSS                       210 hrs 18 mins       ⠿⠿⠿⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   12.49 %
-Python                     202 hrs 33 mins       ⠿⠿⠿⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   12.03 %
-TeX                        173 hrs 27 mins       ⠿⠿⠛⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   10.30 %
-Svelte                     146 hrs 24 mins       ⠿⠿⠉⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   08.69 %
-HTML                       93 hrs 52 mins        ⠿⠉⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   05.57 %
-JSON                       66 hrs 9 mins         ⠿⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   03.93 %
-Astro                      65 hrs 8 mins         ⠿⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   03.87 %
-Other                      42 hrs 33 mins        ⠛⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   02.53 %
-Markdown                   39 hrs 11 mins        ⠛⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁   02.33 %
-```
+Ralphban turns JSON task files into an editable Kanban board, with filtering, progress tracking, and live file synchronization. The task file stays the source of truth: inspect it, version it, or let an agent update it. No backend, accounts, or telemetry.
 
-<!--END_SECTION:waka-->
+`TypeScript` · `VS Code API` · `JSON Schema`
 
-<br>
+[See the demo](https://github.com/carlosiborra/Ralphban/blob/main/images/demo-ultracropped.gif) · [How it works](https://github.com/carlosiborra/Ralphban#how-it-works)
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Spiral%20Calendar.png" alt="Spiral Calendar" width="25" height="25" /> Contact
-Reach out to me via:
+### Earlier experiments
 
-<a href="mailto:contact@carlosiborra.com?subject=Carlos%20Iborra%27s%20Portfolio&body=Good%20%5Bmorning%2Fafternoon%5D%2C%0D%0A%0D%0A%5BEnter%20text%5D%0D%0A%0D%0ABest%20regards%2C%0D%0A%0D%0A%5BYour%20Full%20Name%5D%0D%0A%5BYour%20Contact%20Information%5D%0D%0A%5BYour%20Website%20URL%2C%20if%20applicable%5D">
-  <img src="https://img.shields.io/badge/Email-grey?style=flat&logo=mail.ru&logoColor=white&color=3abb3a" alt="Mail Badge">
-</a>&nbsp;&nbsp;&nbsp;&nbsp;
+A few projects from my systems, machine-learning, and embedded-software work:
 
-<a href="https://www.linkedin.com/in/carlos-iborra-llopis-bb84a1214/">
-  <img src="https://img.shields.io/badge/LinkedIn%20Profile-grey?style=flat&logo=linkedin&logoColor=white&color=0D76A8" alt="LinkedIn Badge">
-</a>&nbsp;&nbsp;&nbsp;&nbsp;
+- **[Message delivery](https://github.com/carlosiborra/message-delivery-python-c):** a Python client and C server communicating over TCP sockets, with queued messages and a text-formatting web service.
+- **[Solar-energy prediction](https://github.com/carlosiborra/AMS-2013-2014-Solar-Energy-Prediction-Contest):** machine-learning coursework exploring solar-energy data, feature analysis, and time-series-aware validation.
+- **[Temperature regulator](https://github.com/carlosiborra/Meadow-Indoor-Temperature-Regulator):** an embedded Meadow project with a temperature-monitoring and control API.
 
-<a href="https://carlosiborra.com">
-  <img src="https://img.shields.io/badge/Portfolio-grey?style=flat&logo=googledocs&logoColor=white&color=904646" alt="Web Badge">
-</a>&nbsp;&nbsp;&nbsp;&nbsp;
+## Working style
 
-<a href="https://twitter.com/iboorraa/">
-  <img src="https://img.shields.io/badge/Twitter-grey?style=rounded&logo=x&logoColor=white&color=3cbbff" alt="Twitter Badge">
-</a>
+Python, TypeScript, and SQL are central to my work. My interests also extend to Rust, Swift, and self-hosted infrastructure.
 
-<!-- See you! -->
+I prefer simple designs, explicit trade-offs, and tests around failure modes. Good tooling should make a system easier to understand, not add another layer to debug.
+
+---
+
+Outside the editor: running, boxing, and time in the mountains.
