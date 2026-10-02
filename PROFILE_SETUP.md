@@ -18,6 +18,15 @@ The profile describes Carlos's interest in learning through building, creating a
 
 The existing generated header SVGs remain in the repository but are not referenced by the README. This revision does not change their contents, delete history, modify other repositories, or alter native account pins.
 
+## Site-language revision (2 October 2026)
+
+Brings the look of carlosiborra.com into the profile without changing the rules above: the original GIF stays, there are still no projects, widgets or workflows.
+
+- A Vim statusline line and `:`-style contact links (adds a `:notes` link to carlosiborra.com/notes), echoing the site's hero.
+- Two contour-line dividers with a route, drawn by `scripts/make-topo.mjs` from a noise field in the site's cream, navy and yellow-olive. Light and dark variants through `<picture>`; decorative, so no essential content is inside them.
+- Copy moved closer to the site's About text ("I wonder how that works?"), and Terraform, Neovim and build systems added, all of which the site already states.
+- Unchanged on purpose: the employer is not named, and no project is shown.
+
 ## Research and selection
 
 These are references for specific design patterns, not an objective ranking of developers or their profiles. No biography, achievements, artwork, or personal claims were copied.
@@ -36,6 +45,10 @@ These are references for specific design patterns, not an objective ranking of d
 No setup is required. There is no new GitHub Actions workflow, PAT, OAuth app, Pages deployment, WakaTime integration, or paid service. The only image request in the README remains the existing GitHub-hosted header.
 
 The existing Website, LinkedIn, and Email destinations are preserved. Preserving an address is not a claim that the remote website or mailbox was live-tested.
+
+## Verification boundary (site-language revision)
+
+Rendered through GitHub's own Markdown API (so every tag survived GitHub's sanitiser) and previewed locally with github-markdown-css at 320, 390, 768 and 1024px in light and dark: no horizontal overflow, the statusline and contact row stay on one line at 320px, dividers scale with the page. Not verified: the live github.com page, the signed GIF URL and the SVG paths as served by GitHub (relative `assets/` paths are rewritten by github.com, not by the API).
 
 ## Verification boundary
 
