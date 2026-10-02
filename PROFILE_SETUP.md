@@ -20,13 +20,12 @@ The existing generated header SVGs remain in the repository but are not referenc
 
 ## Site-language revision (2 October 2026)
 
-Brings the look of carlosiborra.com into the profile without changing the rules above: the original GIF stays, there are still no projects, and no workflows or widget services.
+Brings carlosiborra.com into the profile without changing the rules above: the original GIF stays, there are still no projects, and no workflows or widget services.
 
-- The first attempt used a Vim statusline, `:`-style links and `-- LABEL --` rows. They meant nothing to most visitors, so the final version uses plain labels and a clear order: role and links, introduction, facts, the last 12 months, writing, sign-off.
-- Two contour-line dividers with a route, drawn by `scripts/make-topo.mjs` from a noise field in the site's cream, navy and yellow-olive (light and dark through `<picture>`; decorative).
-- A contribution calendar with a caption and its totals as text, drawn by `scripts/make-activity.mjs` from the website's aggregate activity snapshot (daily counts and totals only). It is a snapshot: re-run the script to refresh it.
-- A "Writing" row linking two notes and the notes index.
-- Copy closer to the site's About text; Terraform, Neovim and build systems added because the site already states them. Unchanged on purpose: the employer is not named and no project is shown.
+- First attempts used a Vim statusline, `:`-style links and `-- LABEL --` rows, then plain text with small contour dividers. The first meant nothing to most visitors; the second was tidy but did not look like the site.
+- Research (about 25 profiles, from text-only ones to heavily designed ones) showed the same pattern: the respected profiles are text-first with something real and current, badge walls and stat-widget stacks look generic, and the best designed ones use a few self-hosted SVG banners as one coherent system (one palette, big typography, dark and light variants) with the text left in Markdown.
+- Result: two slab cards (hero and last 12 months) in the site's glass-slab language, with the site's own fonts set as outlines, and everything else as plain Markdown. See `AGENTS.md` for how they are generated and refreshed.
+- Copy is close to the site's About text; Terraform, Neovim and build systems were added because the site already states them. Unchanged on purpose: the employer is not named and no project is shown.
 
 ## Research and selection
 
@@ -49,7 +48,7 @@ The existing Website, LinkedIn, and Email destinations are preserved. Preserving
 
 ## Verification boundary (site-language revision)
 
-Rendered through GitHub's own Markdown API (every tag survived its sanitiser) and previewed locally with github-markdown-css at 320, 390, 768 and 1024px in light and dark: no horizontal overflow and dividers and calendar scale with the page. The earlier version was also loaded live on github.com (images, links, statusline); the final version's live page is checked after publishing.
+Rendered through GitHub's own Markdown API (every tag survived its sanitiser) and previewed locally with github-markdown-css at 320, 390, 768 and 1024px in light and dark: no horizontal overflow, cards scale with the page. The cards contain only paths and shapes (text is outlined), so they do not depend on fonts loading. The live github.com page for the final version is checked after publishing.
 
 ## Verification boundary
 
