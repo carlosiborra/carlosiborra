@@ -1,18 +1,13 @@
 <!-- Carlos's original animated header. Keep the GIF, not a replacement banner. -->
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/8c830821-61ca-4039-b8f2-b0bcaeb29830" alt="Welcome to my page. Computer Scientist &amp; Engineer." width="720">
+  <img src="https://github.com/user-attachments/assets/8c830821-61ca-4039-b8f2-b0bcaeb29830" alt="Welcome to my page. I am Carlos Iborra, Computer Scientist &amp; Engineer." width="720">
 </p>
 
-<h3 align="center">Carlos Iborra</h3>
-
-<p align="center">
-  Software &amp; Data Engineer · Madrid,&nbsp;Spain<br>
-  <samp><b>NORMAL</b>&nbsp; main &nbsp;README.md &nbsp;1:1</samp>
-</p>
+<h3 align="center">Software &amp; Data Engineer · Madrid, Spain</h3>
 
 <p align="center">
   <samp>
-    <a href="https://carlosiborra.com">:website</a> &ensp;<a href="https://carlosiborra.com/notes">:notes</a> &ensp;<a href="https://www.linkedin.com/in/carlos-iborra-llopis-bb84a1214/">:linkedin</a> &ensp;<a href="mailto:contact@carlosiborra.com">:email</a>
+    <a href="https://carlosiborra.com">Website</a> &ensp;<a href="https://carlosiborra.com/notes">Notes</a> &ensp;<a href="https://www.linkedin.com/in/carlos-iborra-llopis-bb84a1214/">LinkedIn</a> &ensp;<a href="mailto:contact@carlosiborra.com">Email</a>
   </samp>
 </p>
 
@@ -25,38 +20,37 @@
 
 ### Curiosity, put into practice.
 
-Hey 👋 I'm a software engineer working across **data engineering, AI infrastructure, and developer tools**. Outside work, I build applications, experiment with new technologies, and automate things I'd rather not do twice.
+Hey 👋 I'm Carlos. I work across **data engineering, AI infrastructure, and developer tools**. Outside work, I build applications, experiment with new technologies, and automate things I'd rather not do twice.
 
-As a kid I wanted to be an inventor. Software became the closest thing I found to it: a place where curiosity and persistence can turn an idea into something real. It's my profession, my hobby, and the rabbit hole I happily return to. “I wonder how that works?” is behind most of what I build, much of what I learn, and an unreasonable number of open tabs.
+As a kid I wanted to be an inventor. Software became the closest thing I found to it: a place where curiosity and persistence can turn an idea into something real. “I wonder how that works?” is behind most of what I build, much of what I learn, and an unreasonable number of open tabs.
 
 > **The goal:** build useful products, keep learning, and make complex things feel simple.
 
 <p>
-  <samp>-- DRAWN TO --</samp><br>
-  AI &amp; agents · Web &amp; native apps · Data systems · Developer tools · Build systems · Self-hosting
+  <samp>Based in</samp> Madrid, Spain<br>
+  <samp>Studied</samp> Computer Science at Universidad Carlos III de Madrid<br>
+  <samp>Interested in</samp> AI &amp; agents · Web &amp; native apps · Data systems · Developer tools · Build systems · Self-hosting<br>
+  <samp>Working with</samp> Python · TypeScript · SQL · React · PostgreSQL · Docker · Terraform · Linux · Neovim<br>
+  <samp>Exploring</samp> Swift · Rust · Go
 </p>
 
 <p>
-  <samp>-- WORKING WITH --</samp><br>
-  Python · TypeScript · SQL · React · PostgreSQL · Docker · Terraform · Linux · Neovim<br>
-  <sub>Also exploring Swift, Rust, and Go.</sub>
-</p>
-
-<p>
-  <samp>-- LAST 12 MONTHS --</samp><br>
+  <samp>The last 12 months</samp><br>
+  <sub>One square per day, GitHub and GitLab together. Darker means busier.</sub><br>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg">
     <img src="assets/activity-light.svg" alt="Calendar of contributions per day over the last 12 months" width="720">
   </picture><br>
   <!-- activity:summary -->
-  <sub>4,775 contributions across GitHub and GitLab · 147 active days · longest streak 29 days. Private and work activity included, counted anonymously. Updated 2 October 2026.</sub>
+  <sub>4,775 contributions · 147 active days · longest streak 29 days. Private and work activity is included and counted anonymously. Updated 2 October 2026.</sub>
   <!-- /activity:summary -->
 </p>
 
 <p>
-  <samp>-- FROM THE NOTES --</samp><br>
-  <a href="https://carlosiborra.com/notes/configurations/configuring-neovim-ubuntu">Configuring Neovim on Ubuntu / WSL</a> ·
-  <a href="https://carlosiborra.com/notes/configurations/setting-up-fail2ban-debian-server-with-discord-notifications">Fail2Ban with Discord alerts on Debian</a>
+  <samp>Writing</samp> Setups I want to remember, written up as notes:
+  <a href="https://carlosiborra.com/notes/configurations/configuring-neovim-ubuntu">Neovim on Ubuntu / WSL</a> ·
+  <a href="https://carlosiborra.com/notes/configurations/setting-up-fail2ban-debian-server-with-discord-notifications">Fail2Ban with Discord alerts on Debian</a> ·
+  <a href="https://carlosiborra.com/notes">all notes</a>
 </p>
 
 <p align="center">
@@ -66,7 +60,4 @@ As a kid I wanted to be an inventor. Software became the closest thing I found t
   </picture>
 </p>
 
-<p align="center">
-  <sub>Beyond the keyboard: running, boxing, and time in the mountains.</sub><br>
-  <samp>:wq</samp>
-</p>
+<p align="center"><sub>Beyond the keyboard: running, boxing, and time in the mountains.</sub></p>

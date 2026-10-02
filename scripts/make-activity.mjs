@@ -100,7 +100,7 @@ for (const theme of Object.keys(THEMES)) {
 const n = new Intl.NumberFormat("en-GB");
 const total = data.last12Months.github + data.last12Months.gitlab;
 const updated = new Date(data.generatedAt).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "Europe/Madrid" });
-const line = `<sub>${n.format(total)} contributions across GitHub and GitLab · ${data.last12Months.activeDays} active days · longest streak ${data.last12Months.longestStreak} days. Private and work activity included, counted anonymously. Updated ${updated}.</sub>`;
+const line = `<sub>${n.format(total)} contributions · ${data.last12Months.activeDays} active days · longest streak ${data.last12Months.longestStreak} days. Private and work activity is included and counted anonymously. Updated ${updated}.</sub>`;
 const readmeUrl = new URL("../README.md", import.meta.url);
 const readme = await readFile(readmeUrl, "utf8");
 const pattern = /(<!-- activity:summary -->)[\s\S]*?(<!-- \/activity:summary -->)/;

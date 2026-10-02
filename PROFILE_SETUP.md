@@ -20,13 +20,13 @@ The existing generated header SVGs remain in the repository but are not referenc
 
 ## Site-language revision (2 October 2026)
 
-Brings the look of carlosiborra.com into the profile without changing the rules above: the original GIF stays, there are still no projects, widgets or workflows.
+Brings the look of carlosiborra.com into the profile without changing the rules above: the original GIF stays, there are still no projects, and no workflows or widget services.
 
-- A Vim statusline line and `:`-style contact links (adds a `:notes` link to carlosiborra.com/notes), echoing the site's hero.
-- Two contour-line dividers with a route, drawn by `scripts/make-topo.mjs` from a noise field in the site's cream, navy and yellow-olive. Light and dark variants through `<picture>`; decorative, so no essential content is inside them.
-- Copy moved closer to the site's About text ("I wonder how that works?"), and Terraform, Neovim and build systems added, all of which the site already states.
-- A contribution calendar and a two-link "from the notes" row, added at Carlos's request to go further. The calendar is a self-drawn SVG from the website's aggregate activity snapshot (daily counts and totals only), with the numbers repeated as text. It is a snapshot: refresh it by re-running `scripts/make-activity.mjs`.
-- Unchanged on purpose: the employer is not named, and no project is shown.
+- The first attempt used a Vim statusline, `:`-style links and `-- LABEL --` rows. They meant nothing to most visitors, so the final version uses plain labels and a clear order: role and links, introduction, facts, the last 12 months, writing, sign-off.
+- Two contour-line dividers with a route, drawn by `scripts/make-topo.mjs` from a noise field in the site's cream, navy and yellow-olive (light and dark through `<picture>`; decorative).
+- A contribution calendar with a caption and its totals as text, drawn by `scripts/make-activity.mjs` from the website's aggregate activity snapshot (daily counts and totals only). It is a snapshot: re-run the script to refresh it.
+- A "Writing" row linking two notes and the notes index.
+- Copy closer to the site's About text; Terraform, Neovim and build systems added because the site already states them. Unchanged on purpose: the employer is not named and no project is shown.
 
 ## Research and selection
 
@@ -49,7 +49,7 @@ The existing Website, LinkedIn, and Email destinations are preserved. Preserving
 
 ## Verification boundary (site-language revision)
 
-Rendered through GitHub's own Markdown API (so every tag survived GitHub's sanitiser) and previewed locally with github-markdown-css at 320, 390, 768 and 1024px in light and dark: no horizontal overflow, the statusline and contact row stay on one line at 320px, dividers scale with the page. Not verified: the live github.com page, the signed GIF URL and the SVG paths as served by GitHub (relative `assets/` paths are rewritten by github.com, not by the API).
+Rendered through GitHub's own Markdown API (every tag survived its sanitiser) and previewed locally with github-markdown-css at 320, 390, 768 and 1024px in light and dark: no horizontal overflow and dividers and calendar scale with the page. The earlier version was also loaded live on github.com (images, links, statusline); the final version's live page is checked after publishing.
 
 ## Verification boundary
 
