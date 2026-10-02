@@ -25,6 +25,7 @@ Brings the look of carlosiborra.com into the profile without changing the rules 
 - A Vim statusline line and `:`-style contact links (adds a `:notes` link to carlosiborra.com/notes), echoing the site's hero.
 - Two contour-line dividers with a route, drawn by `scripts/make-topo.mjs` from a noise field in the site's cream, navy and yellow-olive. Light and dark variants through `<picture>`; decorative, so no essential content is inside them.
 - Copy moved closer to the site's About text ("I wonder how that works?"), and Terraform, Neovim and build systems added, all of which the site already states.
+- A contribution calendar and a two-link "from the notes" row, added at Carlos's request to go further. The calendar is a self-drawn SVG from the website's aggregate activity snapshot (daily counts and totals only), with the numbers repeated as text. It is a snapshot: refresh it by re-running `scripts/make-activity.mjs`.
 - Unchanged on purpose: the employer is not named, and no project is shown.
 
 ## Research and selection

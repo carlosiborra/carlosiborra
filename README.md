@@ -42,6 +42,23 @@ As a kid I wanted to be an inventor. Software became the closest thing I found t
   <sub>Also exploring Swift, Rust, and Go.</sub>
 </p>
 
+<p>
+  <samp>-- LAST 12 MONTHS --</samp><br>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg">
+    <img src="assets/activity-light.svg" alt="Calendar of contributions per day over the last 12 months" width="720">
+  </picture><br>
+  <!-- activity:summary -->
+  <sub>4,775 contributions across GitHub and GitLab · 147 active days · longest streak 29 days. Private and work activity included, counted anonymously. Updated 2 October 2026.</sub>
+  <!-- /activity:summary -->
+</p>
+
+<p>
+  <samp>-- FROM THE NOTES --</samp><br>
+  <a href="https://carlosiborra.com/notes/configurations/configuring-neovim-ubuntu">Configuring Neovim on Ubuntu / WSL</a> ·
+  <a href="https://carlosiborra.com/notes/configurations/setting-up-fail2ban-debian-server-with-discord-notifications">Fail2Ban with Discord alerts on Debian</a>
+</p>
+
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/topo-end-dark.svg">
