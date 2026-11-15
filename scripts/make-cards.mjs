@@ -344,7 +344,7 @@ for (const theme of Object.keys(THEMES)) {
 
 // the same numbers as plain text, under the calendar
 const updated = new Date(activity.generatedAt).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "Europe/Madrid" });
-const line = `<sub>${nf.format(totals.contributions)} contributions · ${totals.activeDays} active days · longest streak ${totals.streak} days. Private and work activity is included and counted anonymously. Updated ${updated}.</sub>`;
+const line = `<sub>${nf.format(totals.contributions)} contributions · ${totals.activeDays} active days · longest streak ${totals.streak} days. Private activity is included and counted anonymously. Updated ${updated}.</sub>`;
 const readmeUrl = new URL("../README.md", import.meta.url);
 const readme = await readFile(readmeUrl, "utf8");
 const pattern = /(<!-- activity:summary -->)[\s\S]*?(<!-- \/activity:summary -->)/;

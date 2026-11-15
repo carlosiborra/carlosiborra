@@ -39,7 +39,7 @@ As a kid I wanted to be an inventor. Software became the closest thing I found t
 
 <p align="center">
   <!-- activity:summary -->
-  <sub>4,775 contributions · 147 active days · longest streak 29 days. Private and work activity is included and counted anonymously. Updated 2 October 2026.</sub>
+  <sub>4,775 contributions · 147 active days · longest streak 29 days. Private activity is included and counted anonymously. Updated 2 October 2026.</sub>
   <!-- /activity:summary -->
 </p>
 
