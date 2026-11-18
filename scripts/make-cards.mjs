@@ -283,7 +283,7 @@ function stats(theme) {
 
   const [title, sub, n1, l1, n2, l2, n3, l3, less, more, ...months] = outlines([
     serif("The last 12 months", 30),
-    sans("GitHub and GitLab, work and personal projects", 14.5, 500),
+    sans("GitHub and GitLab, public and private projects", 14.5, 500),
     serif(nf.format(totals.contributions), 54),
     sans("contributions", 14.5, 500),
     serif(String(totals.activeDays), 54),
@@ -344,7 +344,7 @@ for (const theme of Object.keys(THEMES)) {
 
 // the same numbers as plain text, under the calendar
 const updated = new Date(activity.generatedAt).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "Europe/Madrid" });
-const line = `<sub>${nf.format(totals.contributions)} contributions · ${totals.activeDays} active days · longest streak ${totals.streak} days. Private activity is included and counted anonymously. Updated ${updated}.</sub>`;
+const line = `<sub>${nf.format(totals.contributions)} contributions, ${totals.activeDays} active days, longest streak ${totals.streak} days. Private activity is included and counted anonymously. Updated ${updated}.</sub>`;
 const readmeUrl = new URL("../README.md", import.meta.url);
 const readme = await readFile(readmeUrl, "utf8");
 const pattern = /(<!-- activity:summary -->)[\s\S]*?(<!-- \/activity:summary -->)/;

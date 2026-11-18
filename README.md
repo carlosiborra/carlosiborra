@@ -16,18 +16,16 @@
   </picture>
 </p>
 
-Hey 👋 I'm Carlos. I work across **data engineering, AI infrastructure, and developer tools**. Outside work, I build applications, experiment with new technologies, and automate things I'd rather not do twice.
+Hey 👋 I'm Carlos. As a kid I wanted to be an inventor; software turned out to be the closest thing. I build data systems and AI infrastructure, and in my own time apps and tools that automate whatever I'd rather not do twice.
 
-As a kid I wanted to be an inventor. Software became the closest thing I found to it: a place where curiosity and persistence can turn an idea into something real. “I wonder how that works?” is behind most of what I build, much of what I learn, and an unreasonable number of open tabs.
-
-> **The goal:** build useful products, keep learning, and make complex things feel simple.
+> **The goal:** build useful things, keep learning, and make complex things feel simple.
 
 <p>
   <samp>Based in</samp> Madrid, Spain<br>
-  <samp>Studied</samp> Computer Science at Universidad Carlos III de Madrid<br>
-  <samp>Interested in</samp> AI &amp; agents · Web &amp; native apps · Data systems · Developer tools · Build systems · Self-hosting<br>
-  <samp>Working with</samp> Python · TypeScript · SQL · React · PostgreSQL · Docker · Terraform · Linux · Neovim<br>
-  <samp>Exploring</samp> Swift · Rust · Go
+  <samp>Studied</samp> Computer Science, Universidad Carlos III de Madrid<br>
+  <samp>Interested in</samp> AI agents, web and native apps, data systems, developer tools, self-hosting<br>
+  <samp>Working with</samp> Python, TypeScript, SQL, React, PostgreSQL, Docker, Terraform, Linux, Neovim<br>
+  <samp>Exploring</samp> Swift, Rust, Go
 </p>
 
 <p align="center">
@@ -39,14 +37,14 @@ As a kid I wanted to be an inventor. Software became the closest thing I found t
 
 <p align="center">
   <!-- activity:summary -->
-  <sub>4,775 contributions · 147 active days · longest streak 29 days. Private activity is included and counted anonymously. Updated 2 October 2026.</sub>
+  <sub>6,118 contributions, 157 active days, longest streak 29 days. Private activity is included and counted anonymously. Updated 18 November 2026.</sub>
   <!-- /activity:summary -->
 </p>
 
 <p>
-  <samp>Writing</samp> Setups I want to remember, written up as notes:
-  <a href="https://carlosiborra.com/notes/configurations/configuring-neovim-ubuntu">Neovim on Ubuntu / WSL</a> ·
-  <a href="https://carlosiborra.com/notes/configurations/setting-up-fail2ban-debian-server-with-discord-notifications">Fail2Ban with Discord alerts on Debian</a> ·
+  <samp>Writing</samp> Setups worth remembering:
+  <a href="https://carlosiborra.com/notes/configurations/configuring-neovim-ubuntu">Neovim on Ubuntu and WSL</a>,
+  <a href="https://carlosiborra.com/notes/configurations/setting-up-fail2ban-debian-server-with-discord-notifications">Fail2Ban with Discord alerts</a>,
   <a href="https://carlosiborra.com/notes">all notes</a>
 </p>
 
