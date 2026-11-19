@@ -12,7 +12,7 @@ I'm Carlos, a software and data engineer in Madrid. As a kid I wanted to be an i
 
 <samp>Building</samp>
 
-- **[MisRutas](https://misrutas.net)** A route planner and outdoor tracker for hikers and cyclists in Spain, rebuilt with my father: a server-rendered web app, live, and an [iOS and Android app](https://carlosiborra.com/projects/myroutes) with offline maps, in testing.
+- **[MisRutas](https://misrutas.net)** (also [myroutes.pro](https://myroutes.pro)) A route planner and outdoor tracker for hikers and cyclists in Spain, rebuilt with my father: a server-rendered web app, live, and an [iOS and Android app](https://carlosiborra.com/projects/myroutes) with offline maps, in testing.
 - **[Herdr plugins](https://carlosiborra.com/projects/herdr-plugins)** Find, fleet, layouts and motion: four plugins for the Herdr terminal workspace manager for AI coding agents, on its marketplace.
 - **[Ralphban](https://github.com/carlosiborra/Ralphban)** A VS Code extension for Ralph agents.
 - **[carlosiborra.com](https://carlosiborra.com)** Notes, projects and a living 3D landscape in raw WebGL, built with Astro and Svelte.
