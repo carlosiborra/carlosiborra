@@ -8,16 +8,14 @@ This repository renders Carlos Iborra's GitHub profile.
 - Keep the voice personal and technically credible. Not a corporate resume, not a manifesto of engineering slogans.
 - Do not invent achievements, adoption figures, expertise, employer internals, or career claims. Never name the employer.
 
-## Composition (full remake, 19 November 2026)
+## Composition (remade 19 November 2026)
 
-Carlos asked for a full remake and chose a minimal, typographic direction that keeps only the carlosiborra.com look (navy, cream, yellow-olive). The animated GIF header, the activity calendar card and the old "no projects" rule are retired by that decision.
+Carlos asked for a full remake. The profile is now minimal: a looping GIF, a links row, one short intro, a "Building" list, facts rows and a short footer. The old header GIF, the activity calendar, the generated SVG cards and the "no projects" rule are retired.
 
-- One hero card, `assets/hero-{dark,light}.svg` (name, role, three focus chips, contour lines and a route), light and dark through `<picture>`. It is generated, not hand-edited: `node scripts/make-cards.mjs <path to the carlosiborra.com repo>` (python3 with `fonttools` and `brotli`; set `PYTHON` to pick the interpreter). It reads only the site's two font files, makes no network calls and needs no tokens.
-- Everything else is plain Markdown: contact row, one short intro, a "Building" list (Herdr plugins, Ralphban, carlosiborra.com), the facts rows (Based in, Studied, Working with, Exploring, Writing) and a short personal footer. Essential content stays selectable text.
-- Keep one column and natural wrapping. No Skill Icons, stats cards, streaks, trophies, visitor counters, language charts, typing animations, snakes, or widget services. No Vim-statusline gimmicks.
-- Only list projects that are Carlos's own and public. University coursework (message-delivery, solar-energy-prediction, Meadow, bus planning) is never presented as a personal product.
-- Never expose private repository names or change repository visibility. Leave native account pins untouched unless asked.
-- No workflows, tokens, OAuth apps, private-repository access, paid services, or account-setting changes are needed. WakaTime is not used; never restore it.
+- `assets/home.gif` is a recording of the live carlosiborra.com homepage in dark theme: the waving hand, "Hello World!", the Vim status bar and the 3D landscape behind them. It is cropped to exclude the navbar and everything below the status bar (the hero text under it names an employer, which must never appear). Re-record with Playwright: spoof `navigator.webdriver` as false (the terrain does not start otherwise), decline the analytics banner and switch to dark in a throwaway context, then record a second context with that storage state and wait for `#topo-bg-three.is-ready`. A recording-only CSS tweak adds space above `.title-holder .status`. Crop with ffmpeg, optimise with gifsicle.
+- Everything else is plain Markdown. Keep one column, natural wrapping, no em dashes or middle dots. No stats cards, streaks, trophies, counters, typing animations, snakes or widget services.
+- "Building" lists only Carlos's own public work: MisRutas (misrutas.net and its mobile app, in testing; myroutes.com is not his), Herdr plugins, Ralphban, carlosiborra.com. University coursework is never presented as a personal product.
+- Never expose private repository names, name the employer, or change repository visibility. Leave native account pins untouched unless asked. No workflows, tokens or paid services. WakaTime is not used.
 
 ## Validation and publication
 

@@ -68,3 +68,5 @@ The local stylesheet uses the relevant inspected rules from [github-markdown-css
 ## Full remake (19 November 2026)
 
 Carlos asked for a full remake and picked a minimal, typographic direction that keeps only the site's look. Changes: the animated GIF and the activity calendar card were dropped, the profile now opens with one hero card carrying the name, and a short "Building" list names the Herdr plugins, Ralphban and the site. Old generated SVGs (header and slab cards) were deleted; they remain in git history.
+
+Later the same day: the banner card and its generator were removed; the profile opens with a dark-theme GIF of the site's homepage and the copy was rewritten (three copywriting passes compared, best lines merged). MisRutas was added to "Building".
