@@ -1,22 +1,16 @@
-// Draws the two "slab" cards in README.md, in the language of carlosiborra.com: a glass-like
-// panel on navy (or cream), the site's serif and sans set as outlines, contour lines with a
-// route, and the last-12-months calendar. Each card comes in dark and light:
+// Draws the hero card in README.md, in the language of carlosiborra.com: a glass-like panel
+// on navy (or cream), the site's serif and sans set as outlines, contour lines with a route.
+// It comes in dark and light:
 //
-//   assets/slab-hero-{dark,light}.svg
-//   assets/slab-stats-{dark,light}.svg
-//
-// It also rewrites the text summary under the calendar (between the activity:summary markers
-// in README.md), so the numbers stay available as plain, selectable text.
+//   assets/hero-{dark,light}.svg
 //
 //   node scripts/make-cards.mjs <path to the carlosiborra.com repository>
 //
-// Inputs, all local: <site>/src/data/activity.json (the aggregate snapshot the website
-// publishes: daily counts and totals only, no repository names) and the site's two font files.
-// No network, no tokens. Needs python3 with `pip install fonttools brotli` (set PYTHON to the
-// interpreter to use). Deterministic.
+// Inputs, all local: the site's two font files. No network, no tokens. Needs python3 with
+// `pip install fonttools brotli` (set PYTHON to the interpreter to use). Deterministic.
 
 import { execFileSync } from "node:child_process";
-import { readFile, writeFile } from "node:fs/promises";
+import { writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -26,7 +20,6 @@ if (!site) {
   process.exit(1);
 }
 const here = dirname(fileURLToPath(import.meta.url));
-const activity = JSON.parse(await readFile(join(site, "src/data/activity.json"), "utf8"));
 const SERIF = join(site, "public/fonts/Literata/Literata-VariableFont_opsz,wght.woff2");
 const SANS = join(site, "public/fonts/Red Hat Display/RedHatDisplay-VariableFont_wght.woff2");
 
@@ -181,7 +174,7 @@ function hero(theme) {
   const H = 236;
   const id = `hero-${theme}`;
   const [headline, role, ...chips] = outlines([
-    serif("Curiosity, put into practice.", 46),
+    serif("Carlos Iborra", 54),
     sans("Software & Data Engineer in Madrid", 19, 500),
     sans("AI infrastructure", 14.5, 600),
     sans("Data engineering", 14.5, 600),
@@ -212,7 +205,7 @@ function hero(theme) {
   const marker = route[Math.round(80 * 0.78)];
 
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img">
-  <title>Curiosity, put into practice. Software and data engineer in Madrid: AI infrastructure, data engineering, developer tools.</title>
+  <title>Carlos Iborra. Software and data engineer in Madrid: AI infrastructure, data engineering, developer tools.</title>
   ${slab(c, H, id)}
   <defs>
     <linearGradient id="${id}-fade" x1="0" x2="1" y1="0" y2="0">
@@ -242,113 +235,7 @@ function hero(theme) {
 `;
 }
 
-// ---------- last 12 months ----------
-const days = activity.daily;
-const sum = (d) => d.github + d.gitlab;
-const nonZero = days.map(sum).filter((n) => n > 0).sort((a, b) => a - b);
-const q = (p) => nonZero[Math.min(nonZero.length - 1, Math.floor(p * nonZero.length))] ?? 1;
-const thresholds = [q(0.25), q(0.5), q(0.75)];
-const level = (n) => (n === 0 ? 0 : n <= thresholds[0] ? 1 : n <= thresholds[1] ? 2 : n <= thresholds[2] ? 3 : 4);
-const weekday = (iso) => (new Date(`${iso}T00:00:00Z`).getUTCDay() + 6) % 7; // Mon = 0
-const offset = weekday(days[0].date);
-const weeks = Math.ceil((days.length + offset) / 7);
-const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-const nf = new Intl.NumberFormat("en-GB");
-const totals = {
-  contributions: activity.last12Months.github + activity.last12Months.gitlab,
-  activeDays: activity.last12Months.activeDays,
-  streak: activity.last12Months.longestStreak,
-};
-
-function stats(theme) {
-  const c = THEMES[theme];
-  const PAD = 40;
-  const pitch = (W - PAD * 2) / weeks;
-  const cell = pitch * 0.78;
-  const GRID_Y = 246;
-  const H = Math.ceil(GRID_Y + 7 * pitch + 50);
-  const id = `stats-${theme}`;
-
-  // month labels
-  const labels = [];
-  let lastMonth = -1;
-  days.forEach((d, i) => {
-    const col = Math.floor((i + offset) / 7);
-    const month = Number(d.date.slice(5, 7)) - 1;
-    if (month !== lastMonth && (i === 0 || Number(d.date.slice(8, 10)) <= 7)) {
-      lastMonth = month;
-      if (PAD + col * pitch < W - PAD - 30 && (!labels.length || col * pitch - labels[labels.length - 1].x > 34)) labels.push({ x: col * pitch, text: MONTHS[month] });
-    }
-  });
-
-  const [title, sub, n1, l1, n2, l2, n3, l3, less, more, ...months] = outlines([
-    serif("The last 12 months", 30),
-    sans("GitHub and GitLab, public and private projects", 14.5, 500),
-    serif(nf.format(totals.contributions), 54),
-    sans("contributions", 14.5, 500),
-    serif(String(totals.activeDays), 54),
-    sans("active days", 14.5, 500),
-    serif(String(totals.streak), 54),
-    sans("days in a row", 14.5, 500),
-    sans("Less", 12, 500),
-    sans("More", 12, 500),
-    ...labels.map((l) => sans(l.text, 12, 500)),
-  ]);
-
-  const rect = (x, y, l) =>
-    `<rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${cell.toFixed(1)}" height="${cell.toFixed(1)}" rx="${(cell * 0.24).toFixed(1)}" fill="${c.cell[l]}" fill-opacity="${c.cellAlpha[l]}"/>`;
-  const cells = days.map((d, i) => rect(PAD + Math.floor((i + offset) / 7) * pitch, GRID_Y + ((i + offset) % 7) * pitch, level(sum(d)))).join("\n    ");
-  const monthSvg = months.map((m, k) => `<path transform="translate(${(PAD + labels[k].x).toFixed(1)} ${GRID_Y - 10})" d="${m.d}"/>`).join("\n    ");
-
-  const legendY = GRID_Y + 7 * pitch + 12;
-  const sw = cell + 3;
-  const legendW = less.width + 8 + 5 * sw + more.width;
-  let lx = W - PAD - legendW;
-  const legend = [
-    `<path transform="translate(${lx.toFixed(1)} ${legendY + cell - 1})" d="${less.d}"/>`,
-    ...[0, 1, 2, 3, 4].map((l) => rect(lx + less.width + 8 + l * sw, legendY, l)),
-    `<path transform="translate(${(lx + less.width + 8 + 5 * sw + 2).toFixed(1)} ${legendY + cell - 1})" d="${more.d}"/>`,
-  ].join("\n    ");
-
-  const COLS = [PAD, PAD + 224, PAD + 448];
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img">
-  <title>The last 12 months: ${nf.format(totals.contributions)} contributions, ${totals.activeDays} active days, longest streak ${totals.streak} days, and a calendar of contributions per day.</title>
-  ${slab(c, H, id)}
-  <g fill="${c.ink}">
-    <path transform="translate(${PAD} 68)" d="${title.d}"/>
-    <path transform="translate(${PAD} 92)" d="${sub.d}" fill-opacity="${c.mutedAlpha + 0.1}"/>
-    <path transform="translate(${COLS[0]} 166)" d="${n1.d}"/>
-    <path transform="translate(${COLS[0]} 190)" d="${l1.d}" fill-opacity="${c.mutedAlpha + 0.1}"/>
-    <path transform="translate(${COLS[1]} 166)" d="${n2.d}"/>
-    <path transform="translate(${COLS[1]} 190)" d="${l2.d}" fill-opacity="${c.mutedAlpha + 0.1}"/>
-    <path transform="translate(${COLS[2]} 166)" d="${n3.d}" fill="${c.accent}"/>
-    <path transform="translate(${COLS[2]} 190)" d="${l3.d}" fill-opacity="${c.mutedAlpha + 0.1}"/>
-  </g>
-  <g fill="${c.ink}" fill-opacity="${c.mutedAlpha}">
-    ${monthSvg}
-    ${legend}
-  </g>
-  <g>
-    ${cells}
-  </g>
-  ${rim(c, H, id)}
-</svg>
-`;
-}
-
 for (const theme of Object.keys(THEMES)) {
-  await writeFile(new URL(`../assets/slab-hero-${theme}.svg`, import.meta.url), hero(theme));
-  await writeFile(new URL(`../assets/slab-stats-${theme}.svg`, import.meta.url), stats(theme));
-  console.log(`assets/slab-{hero,stats}-${theme}.svg`);
-}
-
-// the same numbers as plain text, under the calendar
-const updated = new Date(activity.generatedAt).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "Europe/Madrid" });
-const line = `<sub>${nf.format(totals.contributions)} contributions, ${totals.activeDays} active days, longest streak ${totals.streak} days. Private activity is included and counted anonymously. Updated ${updated}.</sub>`;
-const readmeUrl = new URL("../README.md", import.meta.url);
-const readme = await readFile(readmeUrl, "utf8");
-const pattern = /(<!-- activity:summary -->)[\s\S]*?(<!-- \/activity:summary -->)/;
-if (pattern.test(readme)) {
-  await writeFile(readmeUrl, readme.replace(pattern, `$1\n  ${line}\n  $2`));
-  console.log("README.md summary updated");
+  await writeFile(new URL(`../assets/hero-${theme}.svg`, import.meta.url), hero(theme));
+  console.log(`assets/hero-${theme}.svg`);
 }

@@ -5,45 +5,22 @@ This repository renders Carlos Iborra's GitHub profile.
 ## Positioning
 
 - Carlos is a Software & Data Engineer working around AI platforms, data systems, software engineering, and product development.
-- Communicate curiosity, experimentation, end-to-end application building, and a preference for useful, understandable systems.
-- Keep the voice personal and technically credible. Do not turn it into a corporate resume or a manifesto of generic engineering slogans.
-- Do not invent achievements, adoption figures, expertise, employer internals, or career claims.
+- Keep the voice personal and technically credible. Not a corporate resume, not a manifesto of engineering slogans.
+- Do not invent achievements, adoption figures, expertise, employer internals, or career claims. Never name the employer.
 
-## Projects
+## Composition (full remake, 19 November 2026)
 
-- Do not add a project showcase unless Carlos explicitly asks for one. This includes Ralphban.
-- The previously featured message-delivery, solar-energy-prediction, and Meadow temperature-regulator repositories are university coursework. Never present them as personal products.
-- Never expose private repository names or change repository visibility for the profile. Leave other repositories and native account pins untouched.
+Carlos asked for a full remake and chose a minimal, typographic direction that keeps only the carlosiborra.com look (navy, cream, yellow-olive). The animated GIF header, the activity calendar card and the old "no projects" rule are retired by that decision.
 
-## Composition
-
-- Preserve the original animated header URL:
-  https://github.com/user-attachments/assets/8c830821-61ca-4039-b8f2-b0bcaeb29830
-- Keep its proportions. The current image is centered with width="720" and no fixed height, so the normal GitHub maximum-width rule can shrink it on narrow screens.
-- Do not replace the GIF with the old generated SVGs, including through an automatic source selection. Do not crop, redraw, or rewrite the animation without a specific request.
-- Follow the compact composition: original GIF; small centered name, role, and contact links; two short personal paragraphs; one goal callout; plain interest/tool rows; brief personal footer.
-- The profile borrows the look of carlosiborra.com through two "slab" cards, and every line must say something to a visitor (no in-jokes that need Vim knowledge):
-  - `assets/slab-hero-*.svg` (headline, role, three focus chips, contour lines and a route) and `assets/slab-stats-*.svg` (the last 12 months: three totals and the contribution calendar), each in a dark and a light variant through `<picture>`. They use the site's navy, cream and yellow-olive, the site's Literata and Red Hat Display set as outlines (no font loading), and the glass-slab look (lit rim, soft sheen);
-  - they are generated, not hand-edited: `node scripts/make-cards.mjs <path to the carlosiborra.com repo>` (needs python3 with `fonttools` and `brotli`; set `PYTHON` to pick the interpreter). It reads the site's `src/data/activity.json` (daily counts and totals only, no repository names) and its font files, makes no network calls and needs no tokens or workflow. It also rewrites the plain-text summary between the `activity:summary` markers, so the numbers stay selectable;
-  - the calendar is the one exception to "no statistics", requested by Carlos on 2 October 2026. Still no streak/trophy/language cards, snakes or third-party widget services;
-  - all essential text stays in Markdown (alt text on the cards repeats their content): the contact row, the introduction, the facts rows (Based in, Studied, Interested in, Working with, Exploring) and the "Writing" row.
-  A Vim statusline, `:`-style links, `-- LABEL --` rows, a `:wq` sign-off and separate contour dividers were tried and removed on Carlos's feedback ("make it make sense", "can be done way better"): do not bring them back.
-- Use native Markdown and supported HTML. Essential content must remain selectable text, not an image. Keep one column and natural wrapping.
-- Avoid the large underlined name heading, spacer-only br tags, repeated section headings, all-bold manifestos, and a code-styled wall of technology names.
-- Avoid Skill Icons, statistics cards, streaks, trophies, visitor counters, language charts, typing animations, and contribution snakes unless specifically requested.
-- A general request to improve the design does not override the explicit no-projects or original-header preferences.
-
-## Content and privacy
-
-- Current themes: AI and agents, applications, data systems, developer tooling, infrastructure, and automation.
-- Tools currently shown: Python, TypeScript, SQL, React, PostgreSQL, Docker, Linux. Swift, Rust, and Go are described as exploration, not established expertise.
-- WakaTime is no longer used. Never restore its widgets, generated sections, markers, or workflows.
-- No workflows, tokens, OAuth apps, private-repository access, paid services, or account-setting changes are needed for this profile.
+- One hero card, `assets/hero-{dark,light}.svg` (name, role, three focus chips, contour lines and a route), light and dark through `<picture>`. It is generated, not hand-edited: `node scripts/make-cards.mjs <path to the carlosiborra.com repo>` (python3 with `fonttools` and `brotli`; set `PYTHON` to pick the interpreter). It reads only the site's two font files, makes no network calls and needs no tokens.
+- Everything else is plain Markdown: contact row, one short intro, a "Building" list (Herdr plugins, Ralphban, carlosiborra.com), the facts rows (Based in, Studied, Working with, Exploring, Writing) and a short personal footer. Essential content stays selectable text.
+- Keep one column and natural wrapping. No Skill Icons, stats cards, streaks, trophies, visitor counters, language charts, typing animations, snakes, or widget services. No Vim-statusline gimmicks.
+- Only list projects that are Carlos's own and public. University coursework (message-delivery, solar-energy-prediction, Meadow, bus planning) is never presented as a personal product.
+- Never expose private repository names or change repository visibility. Leave native account pins untouched unless asked.
+- No workflows, tokens, OAuth apps, private-repository access, paid services, or account-setting changes are needed. WakaTime is not used; never restore it.
 
 ## Validation and publication
 
-- Read current files and revisions before changing them. Preserve unrelated content and concurrent changes. Never force-push a profile update.
-- Inspect real media when possible. A labeled frame from a user-provided screenshot may support a static composition preview; it is not evidence that the live GIF or complete animation was fetched or tested.
-- Test 320px and 390px mobile widths and larger layouts in light and dark themes. Check natural wrapping, image proportions, missing-image behavior, and contact links.
-- Do not confuse a local GitHub-style renderer with the live GitHub renderer. State unverified checks plainly.
-- After publishing, verify the default branch and file contents. Do not leave a requested live update only in a draft branch and call it published.
+- Read current files and revisions before changing them. Never force-push a profile update.
+- Check 390px and 840px, light and dark: wrapping, image proportions, links. A local render is not the live GitHub renderer; state unverified checks plainly.
+- After publishing, verify the default branch and the live page.
