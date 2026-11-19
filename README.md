@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/home.gif" alt="The carlosiborra.com homepage: a waving hand above the words Hello World, switching between light and dark themes." width="720">
+  <img src="assets/home.gif" alt="The carlosiborra.com homepage: a waving hand above the words Hello World, in front of a 3D mountain landscape that switches between a light sunrise and a dark night with an aurora." width="720">
 </p>
 
 <p align="center">
