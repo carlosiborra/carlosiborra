@@ -1,4 +1,8 @@
 <p align="center">
+  <img src="assets/home.gif" alt="The carlosiborra.com homepage: a waving hand above the words Hello World, switching between light and dark themes." width="720">
+</p>
+
+<p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
     <img src="assets/hero-light.svg" alt="Carlos Iborra. Software and data engineer in Madrid: AI infrastructure, data engineering, developer tools." width="800">
